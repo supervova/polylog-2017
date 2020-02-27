@@ -1,0 +1,100 @@
+{% extends "/pages/base/base.twig" %}
+
+{% block body %}
+<body class="section-company">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  {# Page header #}
+  <div class="page-header">
+    <h1 class="page-header-headline">Архив</h1>
+    <span class="page-header-icon" role="presentation"></span>
+  </div>{# / page header #}
+
+  {# Results List & Sidebar #}
+  <div class="row main">
+
+    {# Entries List #}
+    <ul class="list-view narrow chronology">
+      <li class="list-view-item"><a href="#todo">
+        День города Москвы 2016: PR-сопровождение и&nbsp;аккредитация СМИ</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Продвижение капсульной коллекции футболок befree: как работать с&nbsp;популярным видеоблогером</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Международный дизайн-хакатон Сбербанка: непростые условия и&nbsp;эффективные решения</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Фестиваль окрошки &laquo;Семейный секрет&raquo;: уроки ивент-менеджмента и&nbsp;PR</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        В&nbsp;Москве пройдет первый Фестиваль окрошки &laquo;Семейный секрет&raquo;</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Российский нефтегазохимический форум</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        VII Съезд Межрегиональной ассоциации хирургов-вертебрологов</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Пресс-тур в&nbsp;Сочи на&nbsp;открытие медицинского центра &laquo;Будь Здоров&raquo; компании &laquo;Ингосстрах&raquo;</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        II&nbsp;Международный аграрный форум овощных культур &laquo;ОвощКульт&raquo;</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Итоговая пресс-конференция компании Scania</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Показ капсульной коллекции Barbie &amp;&nbsp;Hot Wheels by&nbsp;Глюк&rsquo;oZa</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Открытие флагманского магазина KIABI в&nbsp;ТЦ&nbsp;&laquo;АВИАПАРК&raquo; в&nbsp;Москве</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Электронная модель территориальной схемы обращения с&nbsp;отходами</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+      <li class="list-view-item"><a href="#todo">
+        Развитие федеральной информационной системы оказания государственных услуг Минпромторга России</a>
+        <time class="list-view-date" datetime="2016-10-06">06.10.16</time>
+      </li>
+    </ul>
+
+    {# Sidebar #}
+    <aside class="sidebar">
+
+      {# Promo #}
+      {% include "/components/card/polylog-promo/2017-eof/sidebar-module.twig" %}
+
+    </aside>{# / sidebar #}
+
+  </div>{# / row #}
+
+  {# Pagination #}
+  <nav class="pagination">
+    <a class="pagination-prev" href="#" aria-label="Назад" title="Назад"></a>
+    <span class="pagination-counter"><b>1</b> из 24</span>
+    <a class="pagination-next disabled" href="#" aria-label="Вперёд" title="Вперёд"></a>
+  </nav>{# / pagination #}
+</main>
+
+
+
+{% endblock %}{# / block content #}

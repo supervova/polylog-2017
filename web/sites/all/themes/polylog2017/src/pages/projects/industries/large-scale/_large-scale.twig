@@ -1,0 +1,102 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/large-scale/large-scale.jpg' %}
+{% set slag = 'large-scale' %}
+{% set tid = '195' %}
+{% set title = 'Промышленность' %}
+
+{% set
+  client01 = {
+    link: '/ru/news/2016/12-21.htm',
+    title: 'Театральный конкурс золотодобывающей компании «Полюс»',
+    name: 'Полюс Золото',
+    alt: 'Театральный конкурс для золотодобывающей компании «Полюс»',
+    thumbnail: '/a/img/s-projects/industries/large-scale/case-studies/polyus-zoloto-2016-12-21.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2015/09-20.htm',
+    title: 'Открытие завода по&nbsp;производству сэндвич-панелей компании Isopan',
+    name: 'Isopan',
+    alt: 'Торжественное открытие завода Isopan',
+    thumbnail: '/a/img/s-projects/industries/large-scale/case-studies/isopan-2015-12-24.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner left-justified">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для промышленных предприятелей">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">Консалтинговая группа «Полилог» на&nbsp;протяжении многих лет сотрудничает с&nbsp;компаниями промышленного сектора. Нашим первым крупным промышленным клиентом стала российская машиностроительная компания, осуществляющая производство и&nbsp;монтаж оборудования «котельного острова» тепловых электростанций, ЭМАльянс, для которой мы&nbsp;разработали коммуникационную стратегию и&nbsp;реализовали PR-обслуживание. После внедрения коммуникационного решения, обучения сотрудников и&nbsp;проведения надзорного аудита была настроена работа внутренней пресс-службы компании.</p>
+        <p>Мы&nbsp;организовывали коммуникационное сопровождение открытия ряда заводов:</p>
+        <ul>
+          <li>завода фармацевтической компании TEVA в&nbsp;Ярославской области</li>
+          <li>завода по&nbsp;производству мягкой кровли из&nbsp;гибкой черепицы компании RUFLEX&nbsp;в Калужской области</li>
+          <li>завода по&nbsp;производству современной спецтехники Меркатор</li>
+          <li>завода мирового лидера в&nbsp;производстве и&nbsp;продаже металлических и&nbsp;изоляционных панелей Isopan</li>
+          <li>комплекса по&nbsp;производству стройматериалов Vellcom Group</li>
+          <li>судостроительной верфи Пелла</li>
+         </ul>
+        <p>В&nbsp;<span class="nowrap">2011–2014 гг.</span> группа сотрудников Полилога жила и&nbsp;работала в&nbsp;Находке, где мы&nbsp;обеспечивали коммуникационную поддержку строительства нефтеперерабатывающего завода Восточной нефтехимической компании.</p>
+        <p>Для эффективной работы промышленного сектора очень важен имидж, B2B-коммуникации позволяют привлечь партнеров, оказывают существенное влияние на&nbsp;внешнюю оценку компании. При этом имидж компаний, задействованных в&nbsp;тяжелой промышленности, находится под постоянным давлением со&nbsp;стороны общественности из-за экологических вопросов и&nbsp;ряда других аспектов. Часто возникает необходимость выстраивать коммуникацию по&nbsp;отношению к&nbsp;местному сообществу, при этом очень важно разбираться в&nbsp;специфике производства и&nbsp;отрасли. Мы&nbsp;сотрудничаем с&nbsp;экспертами отрасли и&nbsp;всегда стремимся вникнуть в&nbsp;специфику работы компаний-клиентов.</p>
+        <p>Нашими клиентами являются крупные и&nbsp;средние промышленные компании, заинтересованные в&nbsp;расширении рынков сбыта, привлечении инвестиций и&nbsp;налаживании связей с&nbsp;местным сообществом. Мы&nbsp;предлагаем весь спектр коммуникационных решений: от&nbsp;инструментов классического&nbsp;PR до&nbsp;комплексных B2B/B2G-коммуникаций: организации деловых мероприятий (форумов и&nbsp;конгрессов), а&nbsp;также их&nbsp;освещения в&nbsp;информационном поле. Мы&nbsp;знаем, как внедрить креативные решения в&nbsp;проблематику промышленного сектора и&nbsp;сделать коммуникацию эффективной и&nbsp;интересной. <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

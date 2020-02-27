@@ -1,0 +1,107 @@
+{% extends "/pages/base/base.twig" %}
+
+{% block html_head_add_on %}
+  <style type="text/css">
+    .form-wrapper {
+      padding: 1.6rem 0 .2rem;
+    }
+
+    @media (min-width: 768px) {
+      .form-wrapper {
+        padding-top: 4rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .form-wrapper {
+        padding-top: 6.4rem;
+      }
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+<body class="section-company has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">Contact information</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+<!-- Header banner -->
+    <div class="page-header-map">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5D2IyyRQVOW358lBxylPIfSdHWRMJVvs&q=place_id:ChIJU8eyxNFLtUYRIwvQjM5l1gY&&language=en" allowfullscreen></iframe>
+    </div>
+<!-- / header banner -->
+
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+    <div class="row gutters-sm">
+
+      <div class="main-content base">
+        <p><strong>If&nbsp;you need&nbsp;PR services, we&nbsp;look forward to&nbsp;hearing from you! Please contact&nbsp;us at:</strong></p>
+        <ul class="list-icon relaxed">
+          <li class="list-icon-item address">12&nbsp;Krasnopresnenskaya Naberezhnaya<br>
+          (World Trade Center, WTC), Entrance&nbsp;3, Level&nbsp;11, Office&nbsp;1108, Moscow&nbsp;123610
+          </li>
+          <li class="list-icon-item phone-xs">Tel/fax: <a class="link phone-number" href="tel:+7-495-258-2045" title="Call Us">+7 (495) 258-20-45</a><span>, </span><a class="link phone-number" href="tel:+7-495-258-2046" title="Call Us">258-20-46</a><br/>
+          <span class="text-muted"> (weekdays from 10:15 to&nbsp;19:00)</span>
+          </li>
+          <li class="list-icon-item email">
+            <a class="js-contact" href="mailto:service-request(at)gmail(dot)com" title="Contact Us">Email</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 offset-lg-1 hidden-md-down">
+        <figure class="img-module mt-m6">
+
+          <img src="/a/img/s-company/contacts/wtc.png" alt="World Trade Center">
+
+          <figcaption>
+            WTC
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- <?php print render(node_view(node_load(3730), 'full', NULL)); ?> -->
+      {% include "/components/form/contact/form.twig" %}
+    </div>
+<!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}
+
+{% block cta %}
+{% endblock %}{# / block cta #}

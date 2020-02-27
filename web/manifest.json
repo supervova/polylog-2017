@@ -1,0 +1,14 @@
+{
+  "name": "Polylog PR",
+  "short_name": "Polylog",
+  "icons": [{
+    "src": "/a/img/icon/icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "rbg(204, 51, 51)"
+}
+

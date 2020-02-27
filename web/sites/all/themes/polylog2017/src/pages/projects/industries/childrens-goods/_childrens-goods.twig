@@ -1,0 +1,116 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/childrens-goods/children.jpg' %}
+{% set slag = 'childrens-goods' %}
+{% set tid = '186' %}
+{% set title = 'Детские товары<span class="hidden-xs-down"> и&nbsp;услуги</span>' %}
+
+{% set
+  client01 = {
+    link: '/ru/news/2016/12-16.htm',
+    title: 'Интеграция бренда Barbie в&nbsp;коллекцию Алёны Ахмадуллиной',
+    name: 'Barbie',
+    alt: 'PR-услуги для Mattel / Barbie',
+    thumbnail: '/a/img/s-projects/industries/childrens-goods/case-studies/mattel-2016-12-16.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2016/03-27.htm',
+    title: 'Открытие флагманского магазина KIABI в&nbsp;ТЦ&nbsp;&laquo;АВИАПАРК&raquo; в&nbsp;Москве',
+    name: 'KIABI',
+    alt: 'Пиар-услуги для KIABI',
+    thumbnail: '/a/img/s-projects/industries/childrens-goods/case-studies/kiabi-2016-03-27.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для производителей и торговцев детскими товарами">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">Рынок детских товаров и&nbsp;услуг переживает интересные изменения. Повсеместное проникновение информационных технологий делает мир детей зеркалом взрослой жизни, а&nbsp;самих детей&nbsp;— квалифицированными потребителями и&nbsp;агентами влияния. Они следят за&nbsp;трендами, креативны, социальны и&nbsp;технологичны. Недавно нам довелось работать с&nbsp;<span class="nowrap">5-летним</span> блогером, делающим видео-обзоры игрушек и&nbsp;<span class="nowrap">7-летней</span> ведущей новостного канала о&nbsp;моде. В&nbsp;этой новой реальности мы&nbsp;помогаем производителям детских товаров вырабатывать и&nbsp;внедрять актуальные подходы к&nbsp;управлению репутацией. </p>
+        <p>Среди клиентов Консалтинговой группы «Полилог» в&nbsp;этом сегменте такие бренды как Barbie, HiPP, Кидбург, Philips Avent, Fisher Price, Monster High, Ever After High.</p>
+        <p>Благодаря многолетнему опыту работы с&nbsp;детскими брендами, у&nbsp;нас есть пул лояльных специализированных журналистов, блогеров и&nbsp;лидеров мнений. В&nbsp;работе с&nbsp;брендами для самых маленьких мы&nbsp;не&nbsp;ограничиваемся только работой с&nbsp;медиа. Есть опыт вывода новых брендов на&nbsp;рынок, интеграции проектов для детей в&nbsp;образовательное пространство, проведения фестивалей. Кроме этого мы&nbsp;оказываем услуги по&nbsp;разработке позиционирования брендов, управлению репутацией и&nbsp;имиджем детских торговых марок, работе с&nbsp;сообществами родителей.</p>
+        <p>Особенность работы с&nbsp;индустрией детских товаров заключается в&nbsp;том, что нужно разделять аудитории для коммуникации. Потребители и&nbsp;покупатели детских товаров не&nbsp;представлены в&nbsp;едином лице, ввиду чего в&nbsp;зависимости от&nbsp;аудитории коммуникационной политики варьируются каналы продвижения.</p>
+        <p>Разумеется, сильное влияние на&nbsp;отрасль оказывает развитие коммуникационных технологий. Продвижение брендов охватывает не&nbsp;только лайфстайл издания, но&nbsp;и&nbsp;видео-блоги, социальные сети, мобильные приложения, онлайн-игры и&nbsp;пр.</p>
+        <p>Понимая специфику отрасли, мы&nbsp;бережно относимся к&nbsp;репутации клиентов и&nbsp;умеем создавать интерес к&nbsp;детским брендам. В&nbsp;зависимости от&nbsp;потребностей заказчика мы&nbsp;можем предложить как краткосрочные проекты, адаптированные под отдельные каналы продвижения или площадки, так и&nbsp;комплексное PR-сопровождение на&nbsp;год и&nbsp;более. <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+<!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

@@ -1,0 +1,36 @@
+{% set
+  project01 = {
+    link: '/en/news/2016/10-17.htm',
+    title: 'LeEco: opening of the first shop in Russia and organization of a Flash Sale',
+    name: 'LeEco',
+    alt: 'BTL for LeEco',
+    thumbnail: '/a/img/clients/thumbnails/2017-01-26-leeco.jpg'
+  }
+%}
+
+{% set
+  project02 = {
+    link: '/en/news/2016/09-17.htm',
+    title: 'Promotion of the collection Maria Way for befree',
+    name: 'befree',
+    alt: 'PR for befree',
+    thumbnail: '/a/img/s-projects/industries/fashion/case-studies/befree-2016-09-17.jpg'
+  }
+%}
+
+{# The 1st project #}
+<a class="project" href="{{ project01.link }}">
+  <img src="{{ project01.thumbnail }}" alt="{{ project01.alt }}">
+  <div class="project-caption">
+    <h3 class="project-eyebrow" title="{{ project01.name }}">{{ project01.name }}</h3>
+    <h2 class="project-headline">{{ project01.title }}</h2>
+  </div>
+</a>{# / the 1st project #}
+
+<a class="project hidden-xs-down" href="{{ project02.link }}">
+  <img src="{{ project02.thumbnail }}" alt="{{ project02.alt }}">
+  <div class="project-caption">
+    <h3 class="project-eyebrow" title="{{ project02.name }}">{{ project02.name }}</h3>
+    <h2 class="project-headline">{{ project02.title }}</h2>
+  </div>
+</a>{# / the 2nd project #}

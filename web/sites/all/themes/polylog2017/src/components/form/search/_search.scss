@@ -1,0 +1,197 @@
+// -----------------------------------------------------------------------------
+// Search Form
+// -----------------------------------------------------------------------------
+
+.header .search.form {
+  background: $color-background-alt-row;
+  border-bottom: 1px solid $color-border;
+  text-align: left;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 56px;
+  z-index: $zindex-fixed + 1;
+
+  @include media-breakpoint-down(sm) {
+    // Hide
+    transform: translateY(-57px);
+    transition: transform .2s ease-in;
+
+    &.open {
+      transform: translateY(0);
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 0;
+    width: round(percentage(434 / 657));
+    width: calc(100% - 223px);
+    height: 48px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: round(percentage(672 / 900));
+    width: calc(100% - 228px);
+  }
+
+}
+
+
+// -------------------------------------
+// Input
+// -------------------------------------
+
+.search-input {
+  @extend %form-control;
+
+  border: 0;
+  border-radius: 0;
+  padding: 3px 40px 0;
+  height: 55px;
+  width: round(percentage(240 / 320));
+  width: calc(100% - 80px);
+
+  @include media-breakpoint-up(md) {
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: $border-radius;
+    padding: 3px 40px 0;
+    width: 100%;
+    height: 48px;
+  }
+}
+
+// -------------------------------------
+// Buttons
+// -------------------------------------
+
+.search-submit,
+.search-reset,
+.search-toggler {
+  @extend %btn;
+
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  height: 56px;
+
+  @include media-breakpoint-up(md) {
+    height: 48px;
+  }
+}
+
+// -------------------------------------
+// Search button
+// -------------------------------------
+
+.search-submit {
+  text-align: left;
+  padding: 0;
+  width: 40px;
+
+  .icon.find {
+    fill: rgb(221, 224, 228);
+    margin: .3rem 0 0 15px;
+  }
+
+  &:hover .icon.find {
+    fill: rgb(181, 184, 188);
+  } // hover .icon.search-submit
+} // serach submit
+
+
+// -------------------------------------
+// Search icon
+// -------------------------------------
+
+.icon.find {
+  display: inline-block;
+  position: static;
+  transition: .2s fill;
+  width: 18px;
+  height: 18px;
+}
+
+
+// -------------------------------------
+// Search toggler
+// -------------------------------------
+
+.search-toggler {
+  @extend .hidden-md-up;
+
+  padding-top: 21px;
+  right: 0;
+  box-shadow: -1px 0 rgba(0, 0, 0, .08);
+  width: 48px;
+
+  .icon.find {
+    fill: rgb(148, 151, 155);
+    filter: drop-shadow(0 1px 0 $negative-hint);
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, .04);
+  }
+}
+
+// -------------------------------------
+// Reset button
+// -------------------------------------
+
+.search-reset {
+  @extend .hidden-md-up;
+
+  display: none;
+  // opacity: 0;
+  position: absolute;
+  right: 80px;
+  width: 40px;
+
+  .icon {
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.search-reset.open {
+  display: flex;
+  opacity: 1;
+  animation: resetAppearing .2s;
+}
+
+@keyframes resetAppearing {
+  0%   { display: none; opacity: 0; }
+  1%   { display: block; opacity: 0; }
+  100% { display: none; opacity: 1; }
+}
+
+
+// -------------------------------------
+// Cancel Button
+// -------------------------------------
+
+.search .search-cancel {
+  appearance: none;
+}
+
+.search-cancel {
+  @extend .hidden-md-up;
+
+  background: transparent;
+  border: 0;
+  color: $color-text-secondary;
+  display: inline-block;
+  font-size: $font-size-sm;
+  padding: 5px 8px 0;
+  position: absolute;
+  top: 0;
+  right: .3rem;
+  vertical-align: middle;
+  height: 55px;
+}
+
+
+

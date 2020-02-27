@@ -1,0 +1,175 @@
+{% extends "/pages/base/base.twig" %}
+{#
+{% block content %}
+
+  {% for post in posts %}
+    {% include ['03-media-object/media-object-'~post.post_type~'.twig', '03-media-object/media-object.twig'] %}
+  {% endfor %}
+
+{% endblock %}
+#}
+
+{% block body %}
+<body class="page-search">
+{% endblock %}
+
+{# -----------------------------------------------------------------------------
+    HEADER
+   -------------------------------------------------------------------------- #}
+
+{% block content %}
+
+<main class="container">
+
+  {# Results List & Sidebar #}
+  <div class="row main">
+
+    {# Entries List #}
+    <div class="search list-view narrow">
+
+      <h1 class="search-headline">поисковый запрос</h1>
+      <p class="search-counter">Найдено 30 результатов</p>
+
+      <ol class="list-view-inner">
+
+        {# Entry #1 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+              <strong>PR</strong>&nbsp;(public relations, связи с&nbsp;общественностью)&nbsp;| <strong>PR</strong>...
+            </a>
+          </h2>
+          <p class="entry-summary"><strong>PR</strong>&nbsp;(связи с&nbsp;общественностью)&nbsp;— меры по&nbsp;созданию и&nbsp;поддержанию взаимопонимания и&nbsp;хороших отношений между...</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/ru/<strong>pr</strong>-help/public-relations.htm</a>
+        </li>
+
+        {# Entry #2 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+              <strong>PR</strong>-агентство «Полилог»
+            </a>
+          </h2>
+          <p class="entry-summary">«Полилог»: создаем интерес и&nbsp;уважение (маркетинговые коммуникации: BTL , пиар etc) // We&nbsp;offer integrated, full-service marketing solutions (<strong>PR</strong>, GR, IR, ...</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/</a>
+        </li>
+
+        {# Entry #3 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+              Блог: <strong>пиар (PR)</strong> и&nbsp;смежные отрасли&nbsp;| <strong>PR</strong>-агентство «Полилог»
+            </a>
+          </h2>
+          <p class="entry-summary">Однажды к&nbsp;<strong>PR</strong>-агентству Naked Communications обратилась всем известная компания Danone с&nbsp;просьбой провести рекламную кампанию для их&nbsp;нового ...</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/ru/<strong>pr</strong>-blog/</a>
+        </li>
+
+        {# Entry #4 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+              Общие сведения о&nbsp;компании&nbsp;| <strong>PR</strong>-агентство «Полилог»
+            </a>
+          </h2>
+          <p class="entry-summary">Общие сведения о&nbsp;<strong>PR</strong>-группе «Полилог» (маркетинговые коммуникации: BTL, пиар etc)</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/ru/company/overview.htm</a>
+        </li>
+
+        {# Entry #5 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+              Комплексное <strong>пиар</strong>-сопровождение&nbsp;| <strong>PR</strong>-агентство «Полилог»
+            </a>
+          </h2>
+          <p class="entry-summary">КГ&nbsp;«Полилог» специализируется на&nbsp;комплексном пиар-сопровождении компаний и&nbsp;брендов. Большинство наших клиентов&nbsp;— это постоянные клиенты, ...</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/ru/services/public-relations.htm</a>
+        </li>
+
+        {# Entry #6 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+              Примеры решений&nbsp;| <strong>PR</strong>-агентство «Полилог»
+            </a>
+          </h2>
+          <p class="entry-summary">Примеры решений <strong>PR</strong>-группы «Полилог» (маркетинговые коммуникации: BTL, пиар etc)</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/ru</a>
+        </li>
+
+        {# Entry #7 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+              <strong>PR</strong>&nbsp;в&nbsp;условиях кризиса, или Вверх по&nbsp;лестнице ведущей...
+            </a>
+          </h2>
+          <p class="entry-summary">Кризис-менеджмент&nbsp;— экспертное выступление в&nbsp;прессе специалистов <strong>PR</strong>-агенства «Полилог» (маркетинговые коммуникации: <strong>пиар</strong>, продвижение etc).</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/ru/press/crisis-management-howto.htm</a>
+        </li>
+
+        {# Entry #8 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+              Промоушн&nbsp;| <strong>PR</strong>-агентство «Полилог»
+            </a>
+          </h2>
+          <p class="entry-summary">Промоушн&nbsp;— это усилия по&nbsp;стимулированию спроса: реклама и&nbsp;<strong>PR</strong>, проще говоря. Энциклопедия маркетинговых коммуникаций <strong>PR</strong>-группы «Полилог» ...</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/ru/<strong>pr</strong>-help/promotion.htm</a>
+        </li>
+
+        {# Entry #9 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+              WOM (word of&nbsp;mouth, «сарафанное радио»)&nbsp;| <strong>PR</strong>-агентство...
+            </a>
+          </h2>
+          <p class="entry-summary">... «по&nbsp;горизонтали»&nbsp;— в&nbsp;процессе личного общения. Энциклопедия маркетинговых коммуникаций <strong>PR</strong>-группы «Полилог» (бизнес-пиар, GR, IR&nbsp;etc)</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/ru/pr-help/word-of-mouth.htm</a>
+        </li>
+
+        {# Entry #10 #}
+        <li class="entry">
+          <h2 class="entry-headline">
+            <a href="#todo">
+            Пиар (<strong>PR</strong>)&nbsp;| <strong>PR</strong>-агентство «Полилог»
+            </a>
+          </h2>
+          <p class="entry-summary">5&nbsp;сен 2016 ... <strong>PR</strong>-поддержка: от&nbsp;подготовки к&nbsp;проведению мероприятий ... Это потребует эффективного <strong>PR</strong>-сопровождения процесса подготовки и ...</p>
+          <a class="entry-url" href="#todo">www.polylog.ru/ru/pr-blog/<strong>pr</strong>/</a>
+        </li>
+
+      </ol>{# / results list #}
+    </div>
+
+    {# Sidebar #}
+    <aside class="sidebar">
+
+      {# Promo #}
+      {% include "/components/card/polylog-promo/2019-eof/sidebar-module.twig" %}
+
+    </aside>{# / sidebar #}
+
+  </div>{# / row #}
+
+  {# Pagination #}
+  <nav class="pagination">
+    <a class="pagination-prev" href="#" aria-label="Назад" title="Назад"></a>
+    <span class="pagination-counter"><b>1</b> из 24</span>
+    <a class="pagination-next disabled" href="#" aria-label="Вперёд" title="Вперёд"></a>
+  </nav>{# / pagination #}
+</main>
+
+{% endblock %}{# / block content #}
+
+{% block scripts_add_on %}
+  <script>
+    jQuery(document).ready(function($) {
+      $('.search-input').val('пиар');
+    });
+  </script>
+{% endblock %}
+

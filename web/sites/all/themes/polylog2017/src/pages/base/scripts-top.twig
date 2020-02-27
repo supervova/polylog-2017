@@ -1,0 +1,22 @@
+  {#
+    @todo: Uncomment WP scripts and remove custom scripts on CMS integration
+    stage
+  #}
+
+  {# WP SCRIPTS ------------------------------------------------------------- #}
+
+  {# {{ function('wp_footer') }} #}
+
+  {# CUSTOM SCRIPTS --------------------------------------------------------- #}
+
+    {# The newest jQuery. It conflict w/ jQuery mobile
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/a/js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+    #}
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/a/js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+
+    <script src="https://b24go.com/form/v3/polylog-pr.bitrix24.ru/form.js" async></script>
+    <script src="/a/js/plugins.js"></script>
+    <script src="/a/js/main.js"></script>

@@ -1,0 +1,267 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set titles = {
+  phone: 'Звоните',
+  email: 'Написать письмо',
+} %}
+
+{# При необходимости переноса, добавить break: true #}
+
+{% set
+  persons = {
+
+    olegKarpilov: {
+      slug: 'oleg',
+      name: 'Олег Карпилов',
+      nameEn: 'Oleg Karpilov',
+      job: 'генеральный<br>директор',
+      jobEn: 'CEO'
+    },
+
+    maxSuchkov: {
+      slug: 'max',
+      name: 'Максим Сучков',
+      nameEn: 'Maxim Suchkov',
+      job: 'первый заместитель генерального директора',
+      email: 'suchkov',
+      jobEn: 'First Deputy CEO'
+    },
+
+    nadyaPervova: {
+      slug: 'nadya-pervova',
+      name: 'Надежда Первова',
+      nameEn: 'Nadezhda Pervova',
+      job: 'заместитель генерального директора по&nbsp;PR',
+      jobEn: '<span class="nowrap">Deputy CEO, PR</span>',
+      email: 'pervova',
+      break: true
+    },
+
+    valeriyaIsakova: {
+      slug: 'valeriya-isakova',
+      name: 'Валерия Исакова',
+      nameEn: 'Valeriya Isakova',
+      job: 'пресс-секретарь',
+      jobEn: 'Spokesperson',
+      email: 'isakova'
+    },
+
+    zhenyaBoltack: {
+      slug: 'zhenya-boltack',
+      name: 'Евгения Болтак',
+      nameEn: 'Evgeniya Boltak',
+      job: 'руководитель <span class="nowrap">HR-департамента</span>',
+      jobEn: 'Chief Human Resources Officer',
+      email: 'hr'
+    },
+
+    alexanderMolchanov: {
+      slug: 'alexander-molchanov',
+      name: 'Александр Молчанов',
+      nameEn: 'Alexander Molchanov',
+      job: 'руководитель департамента мероприятий',
+      jobEn: 'Head of&nbsp;the&nbsp;Event Management Division',
+      email: 'molchanov'
+    },
+
+    lyudaBogatyreva: {
+      slug: 'lyuda-bogatyreva',
+      name: 'Людмила Богатырева',
+      nameEn: 'Lyudmila Bogatyreva',
+      job: 'руководитель департамента цифровых решений',
+      jobEn: 'Head of&nbsp;the&nbsp;Digital Division',
+      email: 'bogatyreva'
+    },
+
+    romanMolozhon: {
+      slug: 'roman-molozhon',
+      name: 'Роман Моложон',
+      nameEn: 'Roman Molozhon',
+      job: 'руководитель департамента спецпроектов',
+      jobEn: 'Head of&nbsp;the&nbsp;Special Projects Division',
+      email: 'molozhon'
+    },
+
+    annaBelousova: {
+      slug: 'anna-belousova',
+      name: 'Анна Белоусова',
+      nameEn: 'Anna Belousova',
+      job: 'руководитель департамента мероприятий',
+      jobEn: 'Head of&nbsp;the&nbsp;Event Management Division',
+      email: 'belousova'
+    },
+
+    lizaSlyozkina: {
+      slug: 'liza-slyozkina',
+      name: 'Елизавета Слёзкина',
+      nameEn: 'Elizabeth Slyozkina',
+      job: 'руководитель департамента по&nbsp;развитию бизнеса',
+      jobEn: 'Head of&nbsp;Business Development',
+      email: 'slezkina'
+    },
+
+    lyliaDrambyan: {
+      slug: 'lylia-drambyan',
+      name: 'Лиля Драмбян',
+      nameEn: 'Lilya Drambyan',
+      job: 'руководитель <span class="nowrap">PR-департамента</span>',
+      jobEn: 'Head of&nbsp;the&nbsp;PR Division',
+      email: 'drambyan'
+    },
+
+    ekaterinaVeski: {
+      slug: 'ekaterina-veski',
+      name: 'Екатерина Вески',
+      nameEn: 'Ekaterina Veski',
+      job: 'руководитель департамента мониторинга',
+      jobEn: 'Head of&nbsp;the&nbsp;Monitoring Department',
+      email: 'veski'
+    },
+
+    rodionZorin: {
+      slug: 'rodion-zorin',
+      name: 'Родион Зорин',
+      nameEn: 'Rodion Zorin',
+      job: '<span class="nowrap">и. о. руководителя</span> <span class="nowrap">PR-департамента</span>',
+      jobEn: 'Acting Head of&nbsp;the&nbsp;PR Division',
+      email: 'zorin'
+    },
+
+    andreyMakeev: {
+      slug: 'andrey-makeev',
+      name: 'Андрей Макеев',
+      nameEn: 'Andrey Makeev',
+      job: 'заместитель руководителя департамента цифровых решений',
+      jobEn: 'Deputy Head of&nbsp;the&nbsp;Digital Division',
+      email: 'makeev'
+    },
+
+    nikitaSetov: {
+      slug: 'nikita-setov',
+      name: 'Никита Сетов',
+      nameEn: 'Nikita Setov',
+      job: 'заместитель руководителя департамента спецпроектов',
+      jobEn: 'Deputy Head of&nbsp;the&nbsp;Special Projects Division',
+      email: 'setov'
+    },
+
+    svetlanaPlatonova: {
+      slug: 'svetlana-platonova',
+      name: 'Светлана Платонова',
+      nameEn: 'Svetlana Platonova',
+      job: 'заместитель руководителя департамента спецпроектов',
+      jobEn: 'Deputy Head of&nbsp;the&nbsp;Special Projects Division',
+      email: 'platonova'
+    },
+
+    aleksandraKoledinskaya: {
+      slug: 'aleksandra-koledinskaya',
+      name: 'Александра Колединская',
+      nameEn: 'Alexandra Koledinskaya',
+      job: 'заместитель руководителя департамента мероприятий',
+      jobEn: 'Deputy Head of&nbsp;the&nbsp;Event Management Division',
+      email: 'koledinskaya'
+    },
+
+    dariaMenshova: {
+      slug: 'daria-menshova',
+      name: 'Дарья Меньшова',
+      nameEn: 'Daria Menshova',
+      job: 'заместитель руководителя департамента мероприятий',
+      jobEn: 'Deputy Head of&nbsp;the&nbsp;Event Management Division',
+      email: 'menshova'
+    }
+  }
+%}
+
+{% block html_head_add_on %}
+  {# <div class="br-flex"></div> #}
+  <style type="text/css">
+    @media (min-width: 1016px) {
+      .br-flex {
+        flex-basis: 100%;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+      }
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+<body class="section-company has-page-header">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">Команда</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+    <div class="page-lead d-flex justify-content-center text-center pt-6 mb-42">
+      <p class="col-lg-7">В&nbsp;агентстве работает свыше 90&nbsp;человек. Но&nbsp;клиенты, главным образом, общаются с&nbsp;руководством и&nbsp;ведущими сотрудниками. Знакомьтесь.</p>
+    </div>
+
+    <div class="management row">
+
+      {# Staff #}
+      {% for person in persons %}
+        <figure class="img-person" itemscope itemtype="http://schema.org/Person">
+          <img src="/a/img/people/{{ person.slug }}.png" srcset="/a/img/people/{{ person.slug }}.png 1x, /a/img/people/{{ person.slug }}@2x.png 2x" itemprop="image" alt="{{ person.name }}">
+          <figcaption>
+            {% if person.email %}
+              <a class="img-person-contact js-contact" href="mailto:{{ person.email }}(at)gmail(dot)com?subject=polylog.ru" itemprop="email" title="{{ titles.email }}">
+                <span itemprop="name">{{ person.name }}</span>
+              </a>
+            {% else %}
+            <span class="img-person-name" itemprop="name">
+              {{ person.name }}
+            </span>
+            {% endif %}
+            <span itemprop="jobTitle">{{ person.job }}</span>
+            {% if person.phone %}
+              <a class="link phone-number" href="tel:{{ person.phoneLink }}" content="{{ person.phoneSchema }}" itemprop="telephone" title="{{ titles.phone }}">{{ person.phone }}</a>
+            {% endif %}
+          </figcaption>
+        </figure>
+        {% if person.break %}
+          <div class="br-flex"></div>
+        {% endif %}
+      {% endfor %}
+    </div>{# / gallery #}
+<!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+
+  </article>
+
+  <hr class="text2cta hidden">
+
+</main>
+
+{% endblock %}{# / block content #}

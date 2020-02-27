@@ -1,0 +1,118 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/agriculture/agriculture.jpg' %}
+{% set slag = 'agriculture' %}
+{% set tid = '185' %}
+{% set title = 'Агробизнес' %}
+
+{% set
+  client01 = {
+    link: '/ru/news/2017/01-17.htm',
+    title: 'Как сделать отраслевое мероприятие интересным',
+    name: 'Молочный форум',
+    alt: 'Event-менеджмент Молочного форума',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2016/04-18.htm',
+    title: 'II&nbsp;Международный аграрный форум овощных культур &laquo;ОвощКульт&raquo;',
+    name: 'ОвощКульт',
+    alt: 'Event-менеджмент ОвощКульта',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/ovoschcult-2016-04-18.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для агропромышленного комплекса">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">Агропромышленный комплекс, пожалуй, больше чем другие отрасли зависит от&nbsp;эффективного регулирования, доступности денег и&nbsp;передовых технологий. Мы&nbsp;поняли это в&nbsp;2005&nbsp;году, когда продвигали первый в&nbsp;России частный агрокомплекс, занимающийся выращиванием и&nbsp;заморозкой шампиньонов. </p>
+        <p>Несмотря на&nbsp;историческую предрасположенность, в&nbsp;стране мало кто разбирается в&nbsp;специфике отрасли и&nbsp;может внятно сформулировать позицию, например, по&nbsp;механизмам господдержки овощеводства на&nbsp;закрытом грунте. Мы&nbsp;можем. Поэтому наши услуги в&nbsp;равной степени востребованы и&nbsp;у&nbsp;агробизнесменов, и&nbsp;у&nbsp;администраций сельхозрегионов. </p>
+        <p>Одно из&nbsp;наших ноу-хау для агропромышленной отрасли&nbsp;— отраслевые мероприятия, которые позволяют участникам обменяться мнениями по&nbsp;поводу важных вопросов развития этого сектора экономики. В&nbsp;их&nbsp;числе: Международный аграрный форум овощных культур «Овощкульт» и&nbsp;Международный агропромышленный молочный форум.</p>
+        <p>Мы&nbsp;делаем такие мероприятия «под ключ»: берем на&nbsp;себя организацию работы с&nbsp;участниками и&nbsp;партнерами, формирование деловой программы и&nbsp;выставочной экспозиции и&nbsp;полное PR-сопровождение мероприятия.</p>
+        <p>Полилог всегда предлагает своим заказчикам оригинальные решения, позволяющие вовлечь участников в&nbsp;мероприятие и&nbsp;создать максимально эффективные каналы для бизнес-коммуникации и&nbsp;нетворкинга. Мы&nbsp;умеем обеспечивать информационную поддержку таких мероприятий на&nbsp;федеральном уровне благодаря опыту работы со&nbsp;всеми ключевыми информагентствами, общественно-политическими и&nbsp;деловыми СМИ.</p>
+        <p>Зная о&nbsp;том, что волнует аграриев и&nbsp;что думают по&nbsp;поводу развития отрасли органы власти, мы&nbsp;организуем площадки для обмена мнениями и&nbsp;выработки работающих решений. Большое внимание уделяем современным технологиям взаимодействия участников и&nbsp;обработки данных. Это позволяет сделать отраслевые форумы действительно интересными и&nbsp;полезными для всех без исключения. <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+ <!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+
+
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

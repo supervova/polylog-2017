@@ -1,0 +1,59 @@
+  {#
+    @todo on CMS integration stage:
+    1) Remove <title>. It will be added by Drupal
+    2) Uncomment Drupal <head> output. Metatag dule will add: Description,
+    canonical and partly Twitter Card, OG Protocol.
+    3) Uncomment dist styles
+  #}
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ post.title }}</title>
+
+  <meta name="author" content="{{site.name}}">
+
+  {# DRUPAL <HEAD> OUTPUT --------------------------------------------------- #}
+
+  {# <?php print $head; ?> #}
+
+  {# OG and Twitter Card Add-ons -------------------------------------------- #}
+  <meta property="og:title" content="{{post.title}}">
+  <meta property="fb:admins" content="{{social.facebookAdmins}}">
+  <meta property="fb:page_id" content="{{social.facebook}}">
+  <meta name="twitter:title" content="{{post.title}}">
+  <meta name="twitter:site" content="{{social.twitter}}">
+  <meta name="twitter:creator" content="@supervova">
+
+  {# Add to homescreen for Chrome on Android #}
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="{{post.title}}">
+  <link rel="icon" sizes="192x192" href="/a/img/icon/touch/chrome-touch-icon-192x192.png">
+
+  {# Add to homescreen for Safari on iOS #}
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="{{post.title}}">
+  <link rel="apple-touch-icon" href="/a/img/icon/touch/apple-touch-icon.png">
+
+  {# Tile icon for Win8 (apple touch + tile color) and prompt users
+  to switch to "Desktop Mode" and disable tap highlight on IE #}
+  <meta name="msapplication-TileImage" content="/a/img/icon/touch/apple-touch-icon.png">
+  <meta name="msapplication-TileColor" content="{{company.brandColor}}">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  {# Suggest the color that browsers and OSes should use if they customize
+  the display of individual pages in their UIs #}
+  <meta name="theme-color" content="{{company.brandColor}}">
+
+  {# Addional links #}
+  <link rel="home" href="{{site.link}}">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  {# If https://www.drupal.org/project/i18n_contrib #}
+  <link rel="alternate" hreflang="en" href="/en/{{post.linkRootRelative}}">
+  <link rel="alternate" href="{{site.rss}}" type="application/rss+xml" title="{{titleRSS}}">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600i%7CRoboto:100,300,400,500&amp;subset=cyrillic" rel="stylesheet">
+  {# <link rel="stylesheet" href="/sites/all/themes/polylog2017/src/css/main.css"> #}
+  <link rel="stylesheet" href="/a/css/main.css">

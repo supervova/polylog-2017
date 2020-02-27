@@ -1,0 +1,111 @@
+{% extends "/pages/base/base.twig" %}
+
+{% block html_head_add_on %}
+  <style type="text/css">
+    .msu-philosophy {
+      background:
+        url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%22147%2036%2032%2032%22%3E%3Cg%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M148.9%2036L177.1%2036C178.1%2036%20179%2036.9%20179%2037.9L179%2066.1C179%2067.1%20178.1%2068%20177.1%2068L148.9%2068C147.9%2068%20147%2067.1%20147%2066.1L147%2037.9C147%2036.9%20147.9%2036%20148.9%2036L148.9%2036Z%22%20fill%3D%22%2326268C%22%2F%3E%3Cpath%20d%3D%22M168.3%2047.9C165.3%2045.4%20160.8%2045.4%20157.7%2047.9L156%2047.3%20156%2050%20157%2054%20154%2054%20155%2050%20155%2046.9%20154%2046.5%20163%2043%20172%2046.5%20168.3%2047.9ZM158%2051L158%2049%20158.1%2049C158.6%2047.9%20160.6%2047%20163%2047%20165.4%2047%20167.4%2047.9%20167.9%2049L168%2049%20168%2051%20158%2051ZM168%2061L156%2061%20156%2060%20157%2060%20157%2058%20156%2058%20156%2057%20168%2057C169.1%2057%20170%2057.9%20170%2059%20170%2060.1%20169.1%2061%20168%2061ZM168%2058L158%2058%20158%2060%20168%2060C168.6%2060%20169%2059.6%20169%2059%20169%2058.4%20168.6%2058%20168%2058ZM159%2056L169%2056%20169%2055%20168%2055%20168%2053%20169%2053%20169%2052%20159%2052C157.9%2052%20157%2052.9%20157%2054%20157%2055.1%20157.9%2056%20159%2056ZM159%2053L167%2053%20167%2055%20159%2055C158.5%2055%20158%2054.6%20158%2054%20158%2053.4%20158.5%2053%20159%2053Z%22%20fill%3D%22%237373D9%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') 50% 3.6rem no-repeat,
+        url('/a/img/wip/2017/01-31/msu-philosophy.jpg') no-repeat,
+        rgb(51, 51, 153);
+    }
+    .alyona {
+      background-image: url('/a/img/wip/2017/01-31/alyona.jpg?02');
+    }
+    .christina-nadya {
+      background-image: url('/a/img/wip/2017/01-31/christina-nadya.jpg?02');
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+<body class="section-news">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article" itemscope itemtype="https://schema.org/Article">
+
+    <header class="article-eyebrow meta">
+      <a class="meta-link section back" href="/ru/company/wip" itemprop="articleSection">События&nbsp;— архив</a>
+    </header>
+
+    <h1 class="article-headline" itemprop="headline">
+      Новые лекции консультантов<span class="slaquo-h1"> </span> <span class="hlaquo-h1">«</span>Полилога» в&nbsp;МГУ
+    </h1>
+
+    <figure class="mosaic">
+
+      <div class="row">
+
+        {# Photos and map #}
+        <div class="col-lg-9">
+          <div class="row">
+
+            {# Img #}
+            <div class="col-sm-6">
+              <div class="mosaic-pic alyona" role="img" aria-label="Алёна Ванторина" itemprop="image" title="Алёна Ванторина"></div>
+            </div>{# / img #}
+
+            {# Img #}
+            <div class="col-sm-6">
+              <div class="mosaic-pic christina-nadya" role="img" aria-label="" itemprop="image" title=""></div>
+            </div>{# / img #}
+
+            {# Map #}
+            <div class="col-12">
+              <div class="media-wrapper">
+                <iframe class="mosaic-embed" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sru!2s!4v1485884336274!6m8!1m7!1s03T0cy5h4urn3503Rp0SIA!2m2!1d55.70139434923178!2d37.52143133499811!3f227.03549194335938!4f1.079620361328125!5f0.7820865974627469" allowfullscreen></iframe>
+              </div>{# / media-wrapper #}
+            </div>{# / map #}
+
+          </div>{# / row #}
+        </div>{# / photos and map #}
+
+        {# Philosophy fuculty box #}
+        <div class="col-lg-3 hidden-md-down">
+          <div class="card text-center has-footer">
+
+            <header class="card-header poster msu-philosophy">
+              <h3 class="card-headline">Философский факультет</h3>
+              <p class="card-subhead">Московского государственного университета</p>
+            </header>{# / card-header #}
+
+            <div class="card-body text-muted">
+              Студенты обучаются по&nbsp;5&nbsp;направлениям: философия, религиоведение, культурология, pеклама и&nbsp;PR, политология
+            </div>{# / card-body #}
+
+            <div class="card-footer link">
+              <a href="https://ru.wikipedia.org/wiki/Философский_факультет_МГУ" target="_blank">Википедия</a>
+            </div>{# / card-footer #}
+
+          </div>{# / card #}
+        </div>{# / philosophy fuculty box #}
+
+      </div>{# / outer row #}
+
+      <figcaption class="mosaic-caption">
+        Алёна, Надежда, Кристина и философский факультет
+      </figcaption>
+
+    </figure>
+
+    <p class="article-lead" itemprop="about">Консалтинговая группа «Полилог» продолжает делиться знаниями о&nbsp;комплексных коммуникационных проектах со&nbsp;студентами философского факультета МГУ.</p>
+
+    <div class="article-body" itemprop="articleBody">
+
+      <p>Сегодня Алёна Ванторина рассказывала о&nbsp;разработке PR-стратегии, а&nbsp;Надежда Первова и&nbsp;Кристина Эйрих провели занятие на&nbsp;тему «Формирование проектной команды».</p>
+      <p>Как и&nbsp;всегда, теоретические знания были снабжены информацией о&nbsp;реализованных кейсах и&nbsp;практическими заданиями для обучающихся.</p>
+
+    </div>{# / article-body #}
+
+    <footer class="article-footer meta">
+      <time class="meta-date" itemprop="datePublished" datetime="2017-02-02"><i>2</i> фев 2017</time>
+    </footer>
+
+  </article>
+
+</main>
+
+{% endblock %}{# / block content #}

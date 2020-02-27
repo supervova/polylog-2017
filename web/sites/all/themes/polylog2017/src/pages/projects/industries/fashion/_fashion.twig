@@ -1,0 +1,94 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/fashion/fashion.jpg' %}
+{% set slag = 'fashion' %}
+{% set tid = '188' %}
+{% set title = 'Индустрия моды' %}
+
+{% set
+  client01 = {
+    link: '/ru/news/2016/09-17.htm',
+    title: 'Продвижение капсульной коллекции футболок befree',
+    name: 'befree',
+    alt: 'PR-услуги для befree',
+    thumbnail: '/a/img/s-projects/industries/fashion/case-studies/befree-2016-09-17.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2016/03-27.htm',
+    title: 'Открытие флагманского магазина KIABI в&nbsp;ТЦ&nbsp;&laquo;АВИАПАРК&raquo; в&nbsp;Москве',
+    name: 'KIABI',
+    alt: 'PR-услуги для торговой марки KIABI',
+    thumbnail: '/a/img/s-projects/industries/childrens-goods/case-studies/kiabi-2016-03-27.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для модельеров и модных магазинов">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">22&nbsp;октября 2012 года состоялся показ Dasha Gauser for Barbie в&nbsp;рамках программы Mercedes-Benz Fashion Week. Тогда команда консалтинговой группы «Полилог», которая разработала и&nbsp;реализовала стратегию проекта, обеспечив полный цикл PR- и&nbsp;event- сопровождения, познакомилась с&nbsp;особенностями коммуникаций в&nbsp;области fashion. </p>
+        <p>В&nbsp;дальнейшем мы&nbsp;делали коллаборации бренда Barbie с&nbsp;другими дизайнерами, продвигали капсульную коллекцию футболок Maria Way для бренда befree, выводили на&nbsp;российский рынок французскую марку KIABI, обеспечивали комплексную PR-поддержку марок Schwarzkopf, Philips Beauty, Alessandro Group.</p>
+        <p>Сегодня, когда компании оптимизируют маркетинговые бюджеты, PR&nbsp;является наиболее результативным способом продвижения. Коммуникационные решения Полилога позволяют установить связь с&nbsp;целевой аудиторией, расширить пул клиентов и&nbsp;повысить их&nbsp;лояльность. Используя&nbsp;PR, небольшие молодые бренды могут находиться в&nbsp;одном информационном поле с&nbsp;гигантами fashion-индустрии.</p>
+        <p>Главный запрос отрасли&nbsp;— качественные публикации в&nbsp;статусных СМИ, а&nbsp;также сотрудничество со&nbsp;звездами и&nbsp;лидерами общественного мнения. Помимо стандартной пресс-поддержки мы&nbsp;предлагаем нашим клиентам специальные проекты с&nbsp;блогерами, выпуск капсульных коллекций, организацию модных показов. В&nbsp;отдельный блок работ можно выделить организацию шоу-румов для работы со&nbsp;СМИ и&nbsp;социальными медиа.</p>
+        <p>Мода постоянно развивается и&nbsp;становится более персонализированной: модные товары постоянно обновляются и&nbsp;требуют продвижения. Партнерство Консалтинговой группы «Полилог» с&nbsp;ключевыми лайфстайл СМИ и&nbsp;блогерами позволяет обеспечить это продвижение, а&nbsp;наш опыт и&nbsp;экспертиза позволяют нам разрабатывать оригинальные и&nbsp;эффективные коммуникационные стратегии. Мы&nbsp;также можем организовать клиентский сервис, внедрить CRM-системы, провести тренинг персонала. <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

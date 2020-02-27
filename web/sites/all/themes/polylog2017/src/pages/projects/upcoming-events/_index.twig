@@ -1,0 +1,93 @@
+{% extends "/pages/base/base.twig" %}
+
+
+{% block body %}
+<body class="section-upcoming-events page-event has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">III Конгресс военных анестезиологов-реаниматологов</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="/a/img/s-projects/upcoming-events/headers/combat-medics-2018.jpg" alt="III Конгресс военных анестезиологов-реаниматологов">
+    </figure>
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+<div class="row gutters-sm pt-lg-66 pb-2">
+  <div class="main-content base" itemscope itemtype="http://schema.org/Event">
+
+    <p class="lead">
+      <span itemprop="name">III Конгресс военных анестезиологов-реаниматологов</span>
+      состоится
+      <span class="nowrap">
+        <time datetime="2018-11-22T10:00" itemprop="startDate" content="2018-11-22T10:00">22</time>–<time datetime="2018-11-23T19:00" itemprop="endDate" content="2018-11-23T19:00">23</time>
+      </span> ноября 2018 года
+      <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          в&nbsp;<span itemprop="addressLocality">Санкт-Петербурге</span>
+        </span>
+        в&nbsp;гостинице Park Inn by&nbsp;Radisson Прибалтийская.
+      </span>
+      Форум будет посвящен <span class="nowrap">60-летию</span> Кафедры анестезиологии и&nbsp;реаниматологии Военно-медицинской академии&nbsp;им. С.М. Кирова. Место встречи: гостиница Park Inn by&nbsp;Radisson Прибалтийская.</p>
+    <p>Конгресс проводится по&nbsp;инициативе Минобороны России. Организаторы мероприятия, как и&nbsp;в&nbsp;2016&nbsp;году,&nbsp;— Главное военно-медицинское управление Минобороны, ГВКГ им. Н.Н. Бурденко, Военно-медицинская академия имени С.М. Кирова и&nbsp;Консалтинговая группа «Полилог».</p>
+    <p itemprop="description">Нас ждут выступления ведущих специалистов в&nbsp;области анестезиологии-реаниматологии и&nbsp;смежных направлений, дискуссии по&nbsp;острым вопросам, симпозиумы, посвященные новейшим достижениям. По&nbsp;традиции откроется выставка, где производители и&nbsp;поставщики медицинских изделий, оборудования, лекарственных средств представят лучшие разработки. Мы&nbsp;обсудим достижения и&nbsp;трудности нашей отрасли, особенности работы в&nbsp;полевых условиях, на&nbsp;удаленных территориях, в&nbsp;очагах массовых санитарных потерь.</p>
+    <p><a href="http://marcongress.ru/" itemprop="url" target="_blank">Регистрация участников</a></p>
+  </div>
+
+  <div class="col-lg-3 offset-lg-1">
+    <figure itemscope itemtype="http://schema.org/Person">
+      <div class="media-wrapper hidden-md-down">
+        <img src="/a/img/people/aleksandra-koledinskaya.jpg" itemprop="image" alt="Александра Колединская, менеджер проектов">
+      </div>
+      <figcaption class="img-person-caption mt-lg-30">
+        <h3 class="mb-0">Контакты</h3>
+        <span itemprop="name">Александра Колединская</span>
+        <ul class="list-icon">
+          <li class="list-icon-item phone-xs">
+            <a class="link phone-number" href="tel:+7-916-466-9896" content="+79164669896" title="Звоните">+7 (916) 466-98-96</a>
+          </li>
+          <li class="list-icon-item email">
+            <a class="js-contact" href="mailto:koledinskaya(at)gmail(dot)com?subject=polylog.ru" title="Написать письмо">Написать письмо</a>
+          </li>
+        </ul>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+<!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+  </article>
+</main>
+
+{% endblock %}{# / block content #}
+
+{% block cta %}
+  {% include "/components/cta/cta-careers-cv.twig" %}
+{% endblock %}{# / block cta #}

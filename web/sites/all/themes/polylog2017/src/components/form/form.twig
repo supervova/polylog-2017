@@ -1,0 +1,35 @@
+{# Input #}
+{% macro input(name, label, placeholder, value, max, type) %}
+  <fieldset class="form-group has-feedback">
+
+    <label for="form-{{ name }}">{{ label }}</label>
+    <input class="form-control" id="form-{{ name }}" type="{{ type | default('text') }}" value="{{ value | e }}" maxlength="{{ max }}" placeholder="{{ max }}">
+
+
+    <div class="alert -warning" role="alert" aria-hidden="true">
+  <!--     <span class="icon -state-success form-control-feedback" role="presentation"></span>
+      <span class="icon -state-error form-control-feedback" role="presentation"></span>  -->
+    </div>
+
+  </fieldset>
+{% endmacro %}
+
+{# Textarea #}
+{% macro textarea(name, label, value, rows, cols) %}
+  <fieldset class="form-group">
+    <label for="form-{{ name }}">{{ label }}</label>
+    <textarea class="form-control" id="form-{{ name }}" rows="{{ rows|default(4) }}" cols="{{ cols }}">{{ value | e }}</textarea>
+  </fieldset>
+{% endmacro %}
+
+{#
+
+Create form in any templates importing this macros
+
+{% import 'form.twig' as form %}
+
+{{ form.input('username', 'Username', 'Username', null, '24') }}
+{{ form.input('password', 'Password', 'Password', null, '24', 'password') }}
+{{ form.textarea('comment', 'Your comment', 'Your comment') }}
+
+#}

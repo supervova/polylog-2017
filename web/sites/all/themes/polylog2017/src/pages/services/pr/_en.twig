@@ -1,0 +1,408 @@
+{# PR #}
+
+{% extends "/pages/base/base.twig" %}
+
+{% block html_head_add_on %}
+  <style type="text/css">
+    .what-is-it .mosaic {
+      padding-top: 1.8rem;
+    }
+
+    @media (min-width: 1016px) {
+      .what-is-it .mosaic {
+        padding-top: 4.2rem;
+      }
+    }
+
+    .mosaic-pic.phone {
+      background-image: url('/a/img/s-services/pr/mosaic/public-relations-effect-01.jpg');
+    }
+    .mosaic-pic.camera {
+      background-image: url('/a/img/s-services/pr/mosaic/public-relations-effect-02.jpg');
+    }
+    .mosaic-pic.microphone {
+      background-image: url('/a/img/s-services/pr/mosaic/public-relations-effect-03.jpg');
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+<body class="section-services page-pr has-dark-jumbotron separated-jumbotron">
+{% endblock %}
+
+
+{% block content %}
+
+{# -----------------------------------------------------------------------------
+    JUMBOTRON
+   -------------------------------------------------------------------------- #}
+
+<article class="jumbotron base">
+
+  <div class="jumbotron-container">
+
+    {# Body #}
+    <div class="jumbotron-body">
+
+      <h1 class="jumbotron-headline ani-slide-down">
+        Public relations
+      </h1>
+
+      <blockquote class="jumbotron-quote ani-slide-down">
+        <span class="hlaquo-body">“</span>Polylog was founded as&nbsp;a&nbsp;PR agency. PR&nbsp;is&nbsp;our first and main competence. We&nbsp;have worked with every sector of&nbsp;the&nbsp;economy: starting with nuclear industries to&nbsp;Barbie dolls.<span class="hidden-xs-down"> We&nbsp;have established relations with media as&nbsp;Polylog Consulting Group hosts press centers at&nbsp;most major business events. Our contact base exceeds 1&nbsp;thousand journalists.</span>”
+      </blockquote>
+
+      <a class="jumbotron-btn ani-slide-down js-open-modal" href="/en/company/contact-us" data-target="#modal" data-toggle="modal" role="button">
+        Get in Touch
+      </a>
+    </div>{# / jumbotron body #}
+
+    {# Person #}
+    <figure class="jumbotron-person pr ani-fade-in">
+      <img class="jumbotron-portrait" src="/a/img/people/max.png" alt="Maxim Suchkov, Business Director">
+      <figcaption class="mb-1s">
+        Maxim Suchkov,<br>
+        Business Director
+      </figcaption>
+    </figure>{# / person #}
+
+  </div>{# / jumbotron-container #}
+</article>{# / jumbotron #}
+
+
+{# -----------------------------------------------------------------------------
+    BODY COPY
+   -------------------------------------------------------------------------- #}
+
+<main class="container">
+
+
+{# -----------------------------------------------------------------------------
+    What Is It
+   -------------------------------------------------------------------------- #}
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+  <section class="what-is-it section container">
+
+    <h2 class="section-headline text-center pt-18 pt-md-0 pb-1s">
+      Public opinion management<br>
+      <small class="hidden-md-down">Getting into the&nbsp;public eye with the&nbsp;targeted image is&nbsp;the&nbsp;result</small>
+    </h2>
+
+    <div class="row justify-content-between">
+
+      <div class="col-lg-6">
+        <p><b>We&nbsp;provide services that allow our clients to&nbsp;establish effective communication with:</b></p>
+        <ul class="list-ul two-sm columns text-muted">
+          <li>Consumers</li>
+          <li>Investors and stakeholders (IR)</li>
+          <li>Distributors</li>
+          <li>Suppliers</li>
+          <li>Emploees</li>
+          <li>Media</li>
+          <li>Authorities (GR)</li>
+          <li>Experts</li>
+          <li>Local dwellers</li>
+         </ul>
+        <p>We&nbsp;have proved experience in&nbsp;working with both traditional journalists and new media tools. Key messages also adapt depending on&nbsp;core audience:</p>
+        <ul class="list-ul two-sm columns text-muted">
+          <li>Press materials</li>
+          <li>Brand journalistics</li>
+          <li>Native advertising</li>
+          <li>Video blogging</li>
+          <li> Expert articles</li>
+          <li>Infographics</li>
+          <li>Annual reports</li>
+          <li>Corporate publishing</li>
+          <li>Video, 2D&nbsp;and 3D&nbsp;animation</li>
+          <li>Traditional publications and other</li>
+         </ul>
+      </div>{# / 'what is it' first column #}
+
+      <div class="col-lg-6">
+        <ol class="list-ol">
+          <li class="mb-1s">PR&nbsp;has turned out to&nbsp;be&nbsp;a&nbsp;natural way of&nbsp;communication with the&nbsp;public that provides great trust to&nbsp;the&nbsp;source.</li>
+          <li class="mb-1s hidden-md-down">Reputation is&nbsp;formed by&nbsp;PR tools. Aimed development of&nbsp;reputation capital means establishing positive and lasting relations with the&nbsp;audience.</li>
+          <li class="mb-1s hidden-md-down">PR&nbsp;launches dialog with the&nbsp;public. You are not only a&nbsp;speaker but a&nbsp;conversation partner.</li>
+          <li class="mb-1s hidden-md-down">Flexibility is&nbsp;our nickname. PR&nbsp;is&nbsp;a&nbsp;long-term strategy that can swiftly adopt to&nbsp;external shifts and changes.</li>
+          <li class="mb-1s">PR&nbsp;costs less in&nbsp;comparison with direct advertising.</li>
+          <li class="mb-1s">PR&nbsp;does influence financial standing. Not that directly and measurably as&nbsp;advertising but still does.<span class="hidden-md-down"> Interested in&nbsp;advertising, a&nbsp;consumer is&nbsp;looking for additional information. And here again you will benefit from&nbsp;PR.</span></li>
+        </ol>
+      </div>{# / 'what is it' first column #}
+    </div>{# / 'what is it' row #}
+
+    <figure class="mosaic">
+      <div class="row">
+
+        {# Img #}
+        <div class="col-lg-3 hidden-md-down">
+          <div class="mosaic-pic phone" role="presentation"></div>
+        </div>{# / img #}
+
+        {# Img #}
+        <div class="col-sm-8 col-lg-6">
+          <div class="mosaic-pic camera" role="presentation"></div>
+        </div>{# / img #}
+
+        {# Img #}
+        <div class="col-sm-4 col-lg-3 hidden-xs-down">
+          <div class="mosaic-pic microphone" role="presentation"></div>
+        </div>{# / img #}
+
+      </div>{# / row #}
+    </figure>
+  </section>{# / what is it #}
+
+  <hr class="box2title">
+
+
+{# -----------------------------------------------------------------------------
+    Todo
+   -------------------------------------------------------------------------- #}
+
+  <section class="section container">
+
+    <h2 class="section-headline text-center next-is-text">
+      A&nbsp;brief summary of&nbsp;our&nbsp;work<br>
+      <small>Traditional tools and&nbsp;advent of&nbsp;new technology</small>
+    </h2>
+
+    <div class="row">
+
+      <div class="col-lg-6 pl-72">
+        <h3 class="list-caption has-icon planning">
+          PR&nbsp;Strategy development
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item">Market research</li>
+          <li class="list-to-do-item">Expert survey</li>
+          <li class="list-to-do-item">Strategic sessions</li>
+          <li class="list-to-do-item">Work planning</li>
+          <li class="list-to-do-item">Brand positioning</li>
+          <li class="list-to-do-item">Communication tools’ development</li>
+        </ul>
+
+        <h3 class="list-caption has-icon monitoring">
+          Regular media screening
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item">Drawing up&nbsp;of&nbsp;a&nbsp;target media list</li>
+          <li class="list-to-do-item">Publications’ quantity &amp;&nbsp;quality analysis</li>
+          <li class="list-to-do-item">Search queries’ compilation</li>
+          <li class="list-to-do-item">Media screening</li>
+          <li class="list-to-do-item">Press clipping</li>
+          <li class="list-to-do-item">Content analysis</li>
+          <li class="list-to-do-item">Citation indexing</li>
+          <li class="list-to-do-item">Critics’ analysis</li>
+          <li class="list-to-do-item">Counter theses development</li>
+        </ul>
+
+        <h3 class="list-caption has-icon media">
+          Media and blogger pools formation
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item">Research of&nbsp;relevant media outlets and bloggers</li>
+          <li class="list-to-do-item">Intersection of&nbsp;interests search</li>
+          <li class="list-to-do-item">Media list compilation</li>
+          <li class="list-to-do-item">Contact establishment</li>
+          <li class="list-to-do-item">Requests handling</li>
+          <li class="list-to-do-item">Preparation of&nbsp;materials</li>
+          <li class="list-to-do-item">Regular contacting</li>
+        </ul>
+
+        <h3 class="list-caption has-icon specials">
+          Special projects management
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item">Definition of&nbsp;a&nbsp;target audience and communication channels</li>
+          <li class="list-to-do-item">Concept development</li>
+          <li class="list-to-do-item">Planning</li>
+          <li class="list-to-do-item">Content generation</li>
+          <li class="list-to-do-item">Project promotion</li>
+        </ul>
+
+      </div>{# / col (1): todos #}
+
+      <div class="col-lg-6 pl-72">
+        <h3 class="list-caption has-icon expert">
+          Expert pool formation
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item">Screening of&nbsp;relevant experts</li>
+          <li class="list-to-do-item">Publicity analysis</li>
+          <li class="list-to-do-item">Contact establishment</li>
+          <li class="list-to-do-item">Assistance in&nbsp;material preparation</li>
+          <li class="list-to-do-item">Initiation of&nbsp;public performances and expert comments</li>
+          <li class="list-to-do-item">Invitation to&nbsp;events</li>
+          <li class="list-to-do-item">Regular contacting</li>
+        </ul>
+
+        <h3 class="list-caption has-icon participation">
+          Side events integration
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item">Profile event screening</li>
+          <li class="list-to-do-item">Program analysis</li>
+          <li class="list-to-do-item">Slot reservation</li>
+          <li class="list-to-do-item">Preparation of&nbsp;materials</li>
+          <li class="list-to-do-item">Technical support</li>
+          <li class="list-to-do-item">Preparation of&nbsp;press materials</li>
+          <li class="list-to-do-item">Media outlets invitation</li>
+        </ul>
+
+          <h3 class="list-caption has-icon event-management">
+            Event management
+          </h3>
+          <ul class="list-to-do">
+            <li class="list-to-do-item">Concept development</li>
+            <li class="list-to-do-item">Planning</li>
+            <li class="list-to-do-item">Program management</li>
+            <li class="list-to-do-item">Invitation campaign</li>
+            <li class="list-to-do-item">Technical support</li>
+            <li class="list-to-do-item">Logistics</li>
+            <li class="list-to-do-item">Catering</li>
+            <li class="list-to-do-item">PR&nbsp;support</li>
+          </ul>
+
+          <h3 class="list-caption has-icon content">
+            Content generation
+          </h3>
+          <ul class="list-to-do">
+            <li class="list-to-do-item">Text preparation</li>
+            <li class="list-to-do-item">Design</li>
+            <li class="list-to-do-item">Photo and video</li>
+            <li class="list-to-do-item">Production</li>
+            <li class="list-to-do-item">Content placement</li>
+            <li class="list-to-do-item">Testing</li>
+            <li class="list-to-do-item">Correction</li>
+          </ul>
+
+      </div>{# / col (2): todos #}
+
+    </div>{# / row: todo #}
+  </section>
+
+  <hr class="text2title">
+
+{# -----------------------------------------------------------------------------
+    Case Studies
+   -------------------------------------------------------------------------- #}
+
+  <section class="section container">
+    <div class="container">
+
+      <h2 class="section-headline text-center">
+        Examples of&nbsp;PR projects
+      </h2>
+
+      <div class="section-body col-lg-6 offset-lg-3 text-muted text-center">
+        <p>Agency specializes in&nbsp;complex&nbsp;PR support of&nbsp;events, experts and brands. The&nbsp;majority of&nbsp;our clients come back to&nbsp;us with a&nbsp;request for&nbsp;constant&nbsp;PR assistance.</p>
+      </div>{# / section-body #}
+
+{# ----------------------------------
+    Carousel — Projects
+   ---------------------------------- #}
+
+      <div class="section-footer separated carousel slide js-manual" id="carousel-pr" data-ride="carousel">
+
+        {# Carousel viewport #}
+        <div class="carousel-inner" role="listbox">
+          {# Moscow #}
+          <figure class="carousel-item active">
+            <a class="section-carousel-link" href="/en/news/2016/10-06.htm" title="Moscow City Day">
+              <img src="/a/img/s-services/pr/featured/moscow.jpg" alt="Moscow City Day">
+            </a>
+            <figcaption>
+              Moscow City Day
+            </figcaption>
+          </figure>{#  / moscow #}
+
+          {# befree #}
+          <figure class="carousel-item">
+            <a class="section-carousel-link" href="/en/news/2016/09-17.htm" title="Promotion of the befree T-shirts collection">
+              <img src="/a/img/s-services/pr/featured/befree.jpg" alt="Promotion of the befree T-shirts collection">
+            </a>
+            <figcaption>
+              befree T-shirts promotion
+            </figcaption>
+          </figure>{#  / befree #}
+
+          {# Beeline #}
+          <figure class="carousel-item">
+            <a class="section-carousel-link" href="/en/news/2015/03-30.htm" title="Beeline at Moscow Taxi's 90th Anniversary">
+              <img src="/a/img/s-services/pr/featured/beeline-taxi.jpg" alt="Beeline at Moscow Taxi's 90th Anniversary">
+            </a>
+            <figcaption>
+              Beeline
+            </figcaption>
+          </figure>{#  / Beeline #}
+        </div>{# / viewport #}
+
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-pr" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-pr" data-slide-to="1"></li>
+          <li data-target="#carousel-pr" data-slide-to="2"></li>
+        </ol>
+      </div>{# / carousel #}
+    </div>{# / container #}
+  </section>
+
+  <hr class="box2title hidden">
+
+
+{# -----------------------------------------------------------------------------
+    Testimonials
+   -------------------------------------------------------------------------- #}
+
+  <section class="section testimonials container">
+    <h2 class="section-headline secondary">
+      It's always nice when customers are happy
+    </h2>
+
+    <div class="row">
+
+    <blockquote class="testimonial col-lg-6">
+      <div class="testimonial-bubble">
+        <p class="testimonial-body en first last">Outstanding results of work as the main supplier of PR services… Events for the press and dealers, corporate media, press tours</p>
+      </div>
+      <footer class="testimonial-footer">
+        <span class="testimonial-avatar media-wrapper">
+          <img src="/a/img/s-services/pr/testimonials/philips.jpg" alt="Peter Vullings, Philips">
+        </span>
+        Peter Vullings, General Manager of&nbsp;Philips Consumer Lifestyle Russia and CIS
+      </footer>
+    </blockquote>
+
+    <blockquote class="testimonial col-lg-6">
+      <div class="testimonial-bubble">
+        <p class="testimonial-body en first last">The agency is&nbsp;a&nbsp;highly professional consulting company. Cooperation is&nbsp;not only fruitful, but also enjoyable</p>
+      </div>
+      <footer class="testimonial-footer">
+        <span class="testimonial-avatar media-wrapper">
+          <img src="/a/img/s-services/pr/testimonials/logitech.jpg" alt="Roman Monin, Logitech">
+        </span>
+        Roman Monin, Regional Director CIS at Logitech
+      </footer>
+    </blockquote>
+
+    </div>{# / row #}
+
+  </section>
+
+  <hr class="testimonials2cta">
+<!-- /CUT IN BODY -->
+
+</main>{# / page-content #}
+
+
+
+{% endblock %}{# / block content #}

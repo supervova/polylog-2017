@@ -1,0 +1,293 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set titles = {
+  phone: 'Звоните',
+  email: 'Написать письмо',
+} %}
+
+{% set featured = {
+
+  moscowDay: {
+    link: '/ru/news/2016/10-06.htm',
+    img: '/a/img/s-services/pr/featured/moscow.jpg',
+    alt: 'PR-поддержка Дня города Москвы 2016',
+    title: 'День города Москвы 2016'
+  },
+
+  leeco: {
+    link: '/ru/news/2017/01-26.htm',
+    img: '/a/img/s-services/analytics-creativity/featured/leeco.jpg',
+    alt: 'BTL-акции для LeEco',
+    title: 'BTL-акции для LeEco'
+  },
+
+  vidfest: {
+    link: '/ru/news/2015/06-11.htm',
+    img: '/a/img/s-services/index/fundraising-vidfest.jpg',
+    alt: 'Event-менеджмент — Первый фестиваль видеоблогеров «Видфест»',
+    title: 'Фестиваль видеоблогеров'
+  },
+
+  apec: {
+    link: '/ru/news/2012/10-01.htm',
+    img: '/a/img/s-services/event-management/featured/apec.jpg',
+    alt: 'Деловой саммит АТЭС во Владивостоке',
+    title: 'Деловой саммит АТЭС'
+  }
+} %}
+
+{% set projects = {
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  },
+
+  project: {
+    link: '/ru/news/2017/01-17.htm',
+    thumbnail: '/a/img/s-projects/industries/agriculture/case-studies/podmoskovye-2017-01-17.jpg',
+    alt: 'Event-менеджмент Молочного форума',
+    client: 'Молочный форум',
+    title: 'Как сделать отраслевое мероприятие интересным',
+  }
+} %}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">Наша работа</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    {# Featured projects #}
+    <div class="page-header-carousel carousel slide js-manual hidden-sm-down" id="carousel-fundraising" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        {% for project in featured %}
+          {% if loop.first %}
+            <figure class="carousel-item active">
+          {% else %}
+            <figure class="carousel-item">
+          {% endif %}
+            <a class="section-carousel-link" href="{{ project.link }}" title="{{ project.alt }}">
+              <img src="{{ project.img }}" alt="{{ project.alt }}">
+            </a>
+            <figcaption>
+              {{ project.title }}
+          </figcaption>
+        </figure>
+        {% endfor %}
+
+      </div>
+
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-fundraising" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-fundraising" data-slide-to="1"></li>
+        <li data-target="#carousel-fundraising" data-slide-to="2"></li>
+        <li data-target="#carousel-fundraising" data-slide-to="3"></li>
+      </ol>
+    </div>{# / featured #}
+
+    <form class="form filter row" action="/" method="post">
+
+        <div class="form-group-compact select col-sm-6 col-lg-3 hidden-xs-down">
+          <select class="form-control" name="form-services" id="form-services" aria-label="Фильтр по услугам">
+            <option selected value="all">Все услуги</option>
+            <option value="event">Организация мероприятий</option>
+            <option value="pr">Public Relations</option>
+            <option value="analytics">Аналитика и творческие решения</option>
+            <option value="rnd">Научные исследования и разработка ПО</option>
+            <option value="fundraising">Фандрайзинг</option>
+          </select>
+        </div>
+
+        <div class="form-group-compact select col-sm-6 col-lg-3">
+          <select class="form-control" name="form-industries" id="form-industries" aria-label="Фильтр по услугам">
+            <option selected value="all">Все отрасли</option>
+            <option value="agriculture">Агробизнес</option>
+            <option value="appliances-electronics">Бытовая техника и электроника</option>
+            <option value="auto">Автомобилестроение и транспорт</option>
+            <option value="beauty">Красота и здоровье</option>
+            <option value="childrens-goods">Детские товары и услуги</option>
+            <option value="consulting">Консультационные услуги</option>
+            <option value="fashion">Индустрия моды</option>
+            <option value="finance">Финансы и страхование</option>
+            <option value="fmcg">Потребительские товары (FMCG)</option>
+            <option value="government">Федеральные органы власти</option>
+            <option value="health-care">Здравоохранение и фармацевтика</option>
+            <option value="it">Информационно-коммуникационные технологии</option>
+            <option value="large-scale">Промышленность</option>
+            <option value="nonprofit">Некоммерческие организации</option>
+            <option value="power-municipal-engineering">ТЭК и ЖКХ</option>
+            <option value="real-estate">Недвижимость</option>
+            <option value="regional-authorities">Региональные органы власти</option>
+            <option value="state-corporations">Госкорпорации</option>
+            <option value="tourism">Туризм и индустрия гостеприимства</option>
+          </select>
+        </div>
+
+        <div class="form-group-compact select col-sm-6 col-lg-3 hidden-xs-down">
+          <select class="form-control" name="form-period" id="form-period" aria-label="Фильтр по услугам">
+            <option selected value="all">За всё время</option>
+            <option value="year">За год</option>
+          </select>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <button class="btn btn-primary w-100 disabled " type="submit">Показать</button>
+        </div>
+    </form>
+
+    <div class="projects row">
+
+      {% for project in projects %}
+
+        <a class="project" href="{{ project.link }}">
+          <img src="{{ project.thumbnail }}" alt="{{ project.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ project.client }}">{{ project.client }}</h3>
+            <h2 class="project-headline">{{ project.title }}</h2>
+          </div>
+        </a>
+
+      {% endfor %}
+    </div>
+
+  </article>
+
+</main>
+
+{# Pagination #}
+<div class="item-list pt-5">
+  <ul class="pager">
+    <li class="pager-previous first">&nbsp;</li>
+    <li class="pager-current">1 из 146</li>
+    <li class="pager-next last"><a title="На следующую страницу" href="/ru/pr-blog?page=1">следующая страница</a></li>
+  </ul>
+</div>{# / pagination #}
+
+{% endblock %}{# / block content #}

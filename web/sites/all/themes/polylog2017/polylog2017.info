@@ -1,0 +1,34 @@
+name = Polylog
+description = PR Agency "Polylog" Theme. 2017 Edition.
+
+package = Core
+version = "4.0.0"
+core = 7.x
+engine = phptemplate
+
+screenshot = screenshot.png
+
+; Assets
+; stylesheets[][] = /a/css/styles.css
+; scripts[] = /a/js/scripts.css
+
+; Regions
+regions[alerts]                 = Global alerts
+regions[header]                 = Header
+regions[search_form]            = Search Form
+regions[navigation]             = Navigation Bar
+regions[content]                = Content
+regions[cta]                    = Call-to-Action
+regions[footer]                 = Footer
+regions[body_bottom]            = Modal Shell, SVG, Scripts
+; regions[scripts_addons]         = Additional Scripts
+; regions[page_top]               = Page Top
+; regions[page_bottom]            = Page Bottom
+
+regions[featured_case_studies]  = Featured in the Projects
+regions[sidebar]                = Sidebar
+regions[social_addon]           = Social Options in the Blog
+
+regions[related_case_study]     = Related Case Study
+regions[related_posts]          = Related Blog Posts
+

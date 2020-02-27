@@ -1,0 +1,93 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/state-corporations/state-corporations.jpg' %}
+{% set slag = 'state-corporations' %}
+{% set tid = '186' %}
+{% set title = 'Госкорпорации' %}
+
+{% set
+  client01 = {
+    link: '/ru/projects/2016/pr-kampaniya-premii-razvitiya-vneshekonombanka',
+    title: 'PR-кампания «Премии развития» Внешэкономбанка',
+    name: 'Росатом',
+    alt: 'PR-услуги для ВЭБ',
+    thumbnail: '/a/img/s-projects/industries/finance/case-studies/veb-2016-12-29.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2011/07-28.htm',
+    title: 'Ассамблея начальников железных дорог',
+    name: 'РЖД',
+    alt: 'Организация мероприятий для РЖД',
+    thumbnail: '/a/img/s-projects/industries/state-corporations/case-studies/rzd-2011-07-28.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для государственных корпораций и компаний с государственным участием">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">Работу с&nbsp;государственными корпорациями Консалтинговая группа «Полилог» начала еще в&nbsp;2000&nbsp;году, когда мы&nbsp;выиграли тендер на&nbsp;информационно-аналитическое сопровождение реформы электроэнергетики для РАО «ЕЭС России». Наша работа продолжалась более трех лет до&nbsp;принятия изменений в&nbsp;законодательство Государственной Думой. С&nbsp;тех пор нам выпала честь вести проекты для таких компаний как Федеральная сетевая компания, ГидроОГК, ИнтерРАО, Роснефть, Газпром, Росатом, Объединенная судостроительная корпорация, Внешэкономбанк, Российская венчурная компания, Сбербанк, Российский экспортный центр.</p>
+        <p>Для государственных корпораций Полилог&nbsp;— удобный подрядчик с&nbsp;эффективной системой контроля и&nbsp;управления, соответствующей международным стандартам. Мы&nbsp;являемся аккредитованным поставщиком многих государственных корпораций из&nbsp;разных секторов, участвуем в&nbsp;закупках на&nbsp;государственных и&nbsp;отраслевых площадках, имеем многочисленные рекомендации и&nbsp;благодарности от&nbsp;государственных заказчиков.</p>
+        <p>Уникальные компетенции по&nbsp;нейтрализации экологических и&nbsp;производственных конфликтов позволили нам реализовать ряд проектов для крупнейших промышленных компаний. В&nbsp;нашем портфолио также есть GR-проекты по&nbsp;эффективной коммуникации между бизнесом и&nbsp;властью, разработка и&nbsp;реализация коммуникационных стратегий, интеграционные решения, проекты по&nbsp;выпуску корпоративных газет и&nbsp;журналов.</p>
+        <p>Полилог работает с&nbsp;полным спектром политических и&nbsp;деловых коммуникаций и&nbsp;предлагает своим клиентам релевантный кросс-отраслевой опыт. Мы&nbsp;исходим из&nbsp;индивидуальных требований заказчика и&nbsp;умеем находить решения «под ключ». <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

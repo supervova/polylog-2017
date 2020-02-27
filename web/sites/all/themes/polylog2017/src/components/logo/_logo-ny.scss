@@ -1,0 +1,54 @@
+.logo {
+  @extend %text-hide;
+
+  background: url('/a/img/logo/polylog-logo-ny.svg?v2019') no-repeat;
+}
+
+.header .logo {
+  background-position: -.5rem -3.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 217px;
+  z-index: 1;
+
+  .page-front & {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  @include media-breakpoint-up(sm) {
+    &::before {
+      background: url('/a/img/logo/polylog-logo-wordmark.svg') no-repeat 0 0;
+      display: block;
+      content: '';
+      position: absolute;
+      top: 1.7rem;
+      left: 72px;
+      width: 95px;
+      height: 26px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    background-position: -.2rem 0;
+    position: fixed;
+    height: 129px;
+    width: 85px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-position: 0 0;
+    width: 217px;
+
+    &::before {
+      display: block;
+      top: 5.2rem;
+    }
+  }
+}

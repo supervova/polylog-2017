@@ -1,0 +1,126 @@
+# ------------------------------------------------------------------------------
+# Drupal
+# ------------------------------------------------------------------------------
+
+# Sensitive information
+web/sites/*/*settings*.php
+web/sites/*/private
+web/sites/default/settings.php
+
+# Everything but the "sites" folder
+*.sql
+index.php
+install.php
+scripts
+tmp
+update.php
+web.config
+web/_tmp
+web/a
+web/authorize.php
+web/cron.php
+web/includes
+web/misc
+web/modules
+web/profiles
+web/sites/all/libraries
+web/sites/all/modules
+web/sites/all/themes/contrib/zen
+web/sites/all/themes/polylog2017/**/*.html
+web/sites/all/themes/polylog2017/**/*.css
+web/sites/all/themes/polylog2017/src/_dev
+web/sites/all/themes/polylog2017/src/_tmp.js
+web/sites/all/translations
+web/themes
+xmlrpc.php
+
+# Generated content
+# files
+# sites/*/files
+# sites/*/private
+# uploads
+
+# Default text files
+CHANGELOG.txt
+COPYRIGHT.txt
+INSTALL*.txt
+LICENSE.txt
+MAINTAINERS.txt
+README.txt
+UPGRADE.txt
+
+# ------------------------------------------------------------------------------
+# Sensitive information
+# ------------------------------------------------------------------------------
+
+web/.htaccess
+web/.htaccess-*
+web/sftp-config*
+
+
+# ------------------------------------------------------------------------------
+# Developing
+# ------------------------------------------------------------------------------
+
+web — копия
+
+assets
+backup
+docs
+node_modules
+web/sites/all/themes/polylog2017/src/_labs
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# Build / Editors / IDE Files
+*.app
+*.code-workspace
+*.lock
+*.sass-cache*
+*.sublime-project
+*.sublime-projectcompletions
+*.sublime-workspace
+*_notes
+.editorconfig
+.jsbeautifyrc
+.sublime-grunt.cache
+
+# Media Files
+*.avi
+*.doc
+*.docx
+*.gif
+*.jpeg
+*.jpg
+*.mov
+*.mp3
+*.mp4
+*.mpeg
+*.pdf
+*.png
+*.svg
+*.wmv
+*.xls
+
+# Logs, backups, sitemap
+*.bak
+*.log
+*.swp
+.tmp
+npm-debug.log
+sitemap.xml
+sitemap.xml.gz
+
+# OS generated files
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+*~
+ehthumbs.db
+Icon?
+Thumbs.db
+/yarn.lock

@@ -1,0 +1,49 @@
+{% extends "/pages/base/base.twig" %} {% block html_head_add_on %}
+<!-- EXPAND IN STYLE ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <link rel="stylesheet" href="/sites/all/themes/polylog2017/src/css/head-styles.css"> -->
+<style>
+.about .boxout-body {
+  padding-top: 3.4rem;
+}
+
+@media (min-width: 1016px) {
+  .boxout.about {
+    margin-top: auto;
+    margin-bottom: 3rem;
+  }
+  .about .boxout-body {
+    padding-bottom: 4.2rem;
+  }
+}
+</style>
+
+<!-- / EXPAND IN STYLE ––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{% endblock %}
+
+{% block body %}
+<body class="section-projects has-outstanding-article-body">
+{% endblock %}
+
+  {% block content %}
+
+  <main class="container">
+    <article class="article">
+      <header class="article-eyebrow meta">
+        <a class="meta-link section back" href="/ru/projects">Проекты</a>
+      </header>
+
+      <h1 class="article-headline">
+        Расширяем границы сертификации
+      </h1>
+
+      <div class="article-body">
+
+      <!-- CUT IN BODY ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- / CUT IN BODY ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      </div>
+      <footer class="article-footer meta">
+        <time class="meta-date" datetime="2017-01-20"><i>20</i> янв 2017</time>
+      </footer>
+    </article>
+  </main>
+  {% endblock %}{# / block content #}

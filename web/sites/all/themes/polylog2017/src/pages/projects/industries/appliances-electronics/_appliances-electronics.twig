@@ -1,0 +1,93 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/appliances-electronics/appliances.jpg' %}
+{% set slag = 'appliances-electronics' %}
+{% set tid = '40' %}
+{% set title = 'Бытовая техника<span class="hidden-md-down"> и&nbsp;электроника</span>' %}
+
+{% set
+  client01 = {
+    link: '/ru/news/2014/05-12.htm',
+    title: 'Презентация проекторов Philips для&nbsp;французской Sagemcom',
+    name: 'Sagemcom и Philips',
+    alt: 'PR-услуги для Sagemcom и Philip',
+    thumbnail: '/a/img/s-projects/industries/appliances-electronics/case-studies/philips-2014-05-12.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2009/09-21.htm',
+    title: 'Модные тренды от&nbsp;Philips и&nbsp;лучшего голландского стилиста',
+    name: 'Philips',
+    alt: 'PR-услуги для Philips',
+    thumbnail: '/a/img/s-projects/industries/appliances-electronics/case-studies/philips-2009-09-21.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для производителей товаров длительного пользования">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vitae illo deserunt asperiores, officiis voluptates magnam aspernatur at labore sunt amet, culpa aperiam reiciendis inventore explicabo quisquam. Doloremque, aut, id!</p>
+        <p>At quis architecto sapiente, amet, mollitia ipsa pariatur perspiciatis reprehenderit cum ab tempore sed doloribus error qui impedit fuga incidunt praesentium, laboriosam. Provident quis iusto minima iste nulla architecto dolorum!</p>
+        <p>Quos quam distinctio ipsum animi ad in modi consectetur commodi nesciunt provident unde laudantium dolorum adipisci eaque veritatis voluptatibus dolorem facilis perferendis sapiente at nostrum, quidem reprehenderit rem neque. Deserunt?</p>
+        <p>Quod nesciunt deserunt non officiis suscipit laudantium numquam, similique ab earum soluta saepe eos quaerat magni perferendis sapiente excepturi dolor. Fugit quod tenetur voluptatum illum porro rerum deleniti ex molestias? <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

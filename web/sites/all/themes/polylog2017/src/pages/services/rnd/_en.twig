@@ -1,0 +1,469 @@
+{# R&D #}
+
+{% extends "/pages/base/base.twig" %}
+
+{% block html_head_add_on %}
+  <style type="text/css">
+    .chart {
+      background: transparent url("/a/img/s-services/rnd/what-is-guy.jpg") no-repeat bottom right;
+      position: relative;
+      min-height: 430px; }
+      @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+        .chart {
+          background-image: transparent url("/a/img/s-services/rnd/what-is-guy@2x.jpg"); } }
+      .chart::after {
+        background: transparent url("/a/img/s-services/rnd/what-is-chart.svg") no-repeat 0 0;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 12px;
+        width: 65px;
+        height: 258px; }
+        @media (min-width: 544px) {
+          .chart::after {
+            top: 1.8rem; } }
+        @media (min-width: 768px) {
+          .chart::after {
+            left: 14px;
+            height: 178px; } }
+        @media (min-width: 992px) {
+          .chart::after {
+            left: 17px;
+            width: 188px;
+            height: 395px; } }
+
+    .benefits {
+      background-color: #151212;
+      background-image: linear-gradient(rgba(6, 5, 5, 0) 0%, rgba(6, 5, 5, 0.7) 50%, rgba(6, 5, 5, 0.85) 65%, rgba(6, 5, 5, 0.925) 75.5%, rgba(6, 5, 5, 0.963) 82.85%, rgba(6, 5, 5, 0.981) 88%, #060505 100%), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/a/img/s-services/rnd/benefits-rnd.jpg");
+      background-position: center 384px, center top, center top;
+      background-repeat: no-repeat;
+      background-size: 100% 120px, auto 100%, auto 504px; }
+      @media (min-width: 992px) {
+        .benefits {
+          background-color: #140b00;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/a/img/s-services/rnd/benefits-rnd.jpg");
+          background-position: center top, center top;
+          background-size: auto 100%, auto 504px; } }
+  </style>
+{% endblock %}
+
+{% block body %}
+<body class="section-services page-pr page-rnd has-dark-jumbotron separated-jumbotron">
+{% endblock %}
+
+
+{% block content %}
+
+{# -----------------------------------------------------------------------------
+    JUMBOTRON
+   -------------------------------------------------------------------------- #}
+
+<article class="jumbotron base">
+
+  <div class="jumbotron-container">
+<!--
+
+
+
+
+CUT IN JUMBOTRON
+
+
+
+
+-->
+    {# Body #}
+    <div class="jumbotron-body">
+      <h1 class="jumbotron-headline ani-slide-down">
+        Research and&nbsp;IT solutions for&nbsp;public institutions
+      </h1>
+      <blockquote class="jumbotron-quote ani-slide-down">
+        <span class="hlaquo-body">“</span>Digitalization of&nbsp;public services, development of&nbsp;the&nbsp;interdepartmental electronic interaction system (IEIS)<span class="hidden-xs-down">, transparency maintenance, adaptation of&nbsp;business processes to&nbsp;legislative regulation of&nbsp;the&nbsp;Russian Federation. We&nbsp;optimize business processes before automation and development of&nbsp;IT-solutions</span>.”
+      </blockquote>
+      <a class="jumbotron-btn ani-slide-down js-open-modal" href="/en/company/contact-us" data-target="#modal" data-toggle="modal" role="button">
+        Get in Touch
+      </a>
+    </div>{# / jumbotron-body #}
+
+    {# Person #}
+    <figure class="jumbotron-person rnd ani-fade-in">
+      <a class="js-mfp-video" href="https://www.youtube.com/watch?v=MFQQeqGu3SY" title="[Видео] Руководитель департамента исследований и разработок рассказывает об оптимизации и автоматизации процессов для госструктур">
+        <img class="jumbotron-portrait" src="/a/img/people/lyuda-bogatyreva.png" alt="Lyudmila Bogatyreva, Head of Research &amp; Development">
+      </a>
+      <figcaption>
+        Lyudmila Bogatyreva,<br>
+        Head of&nbsp;Research &amp;&nbsp;Development
+      </figcaption>
+    </figure>{# / person #}
+<!--
+
+
+
+
+/ CUT IN JUMBOTRON
+
+
+
+
+-->
+  </div>{# / jumbotron-container #}
+</article>{# / jumbotron #}
+
+
+{# -----------------------------------------------------------------------------
+    BODY COPY
+   -------------------------------------------------------------------------- #}
+
+<main class="container">
+
+
+{# -----------------------------------------------------------------------------
+    What Is It
+   -------------------------------------------------------------------------- #}
+
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+  <section class="section container">
+    <div class="row gutters-sm">
+      <div class="col-sm-9 col-lg-7 pt-lg-12">
+        <h2 class="section-headline">
+          Our contribution to&nbsp;development <span class="nowrap">of e-government</span><span class="hidden-sm-down">: <small>research and software development</small></span>
+        </h2>
+        <p>Since 2010 Polylog consults public institutions in&nbsp;the&nbsp;field of&nbsp;administrative reform, development and implementation <span class="nowrap">of e-government</span>.</p>
+        <p class="mb-0"><strong>Our services:</strong></p>
+        <ul>
+          <li>optimization of&nbsp;business processes</li>
+          <li>development of&nbsp;draft regulations, standards and instructions</li>
+          <li>strategy development, planning, conceptual engineering</li>
+          <li>creation, development and modernization of&nbsp;IT systems</li>
+          <li>technical and methodical support of&nbsp;IT system utilization</li>
+        </ul>
+        <p>Polylog Consulting Group meets every strongest requirement in&nbsp;the&nbsp;field of&nbsp;information security standards what is&nbsp;confirmed by&nbsp;the&nbsp;protection of&nbsp;confidential information license of&nbsp;the&nbsp;Federal Service for&nbsp;Technical and Export Control (FSTEC&nbsp;license).</p>
+      </div>
+      <div class="pic-vignette chart col-sm-3 col-lg-4 offset-lg-1 hidden-xs-down" role="img" aria-label="От архитектуры процессов до внедрения" title="От архитектуры процессов до внедрения"></div>
+    </div>
+  </section>{# / what is it #}
+
+
+{# -----------------------------------------------------------------------------
+    Benefits
+   -------------------------------------------------------------------------- #}
+
+  <section class="section benefits dark in-box full-width mt-18 mt-md-64 mb-58 mb-md-82">
+    <div class="container">
+      <h2 class="section-headline text-center mb-md-1s">
+        Research and <span class="nowrap">IT-development:</span><br class="hidden-lg-up">
+        <small>products you may purchase</small>
+      </h2>
+      <ul class="list-check two-lg columns">
+        <li class="list-check-item">Optimization and digitalization of&nbsp;public services. <span class="text-muted-negative">We&nbsp;make communication between public institutions, business and citizens easier.</span> <!-- <span class="link negative" data-target="#modal-egovernance" data-toggle="modal">More</span> --></li>
+        <li class="list-check-item">Adaptation to&nbsp;regulations of&nbsp;the&nbsp;Russian Federation. <span class="text-muted-negative">Adjustment of&nbsp;your business processes to&nbsp;last standards and regulations of&nbsp;the&nbsp;Russia.</span> <!-- <span class="link negative" data-target="#modal-feedback" data-toggle="modal">More</span> --></li>
+        <li class="list-check-item">Development of&nbsp;the&nbsp;interdepartmental electronic interaction system (IEIS). <span class="text-muted-negative">IEIS integration that reduces the&nbsp;volume of&nbsp;documents.</span> <!-- <span class="link negative" data-target="#modal-interagency-cooperation" data-toggle="modal">More</span> --></li>
+        <li class="list-check-item">Increase in&nbsp;openness and transparency. <span class="text-muted-negative">We discover and publish open source data in&nbsp;order to&nbsp;maintain your company transparency.</span> <!-- <span class="link negative" data-target="#modal-transparency" data-toggle="modal">More</span> --></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-egovernance" role="dialog" tabindex="-1" aria-labelledby="headline-egovernance" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" data-dismiss="modal" aria-label="Закрыть" title="Закрыть"></button>
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2 class="article-headline" id="headline-egovernance">
+            Оптимизация и&nbsp;перевод в&nbsp;электронную форму государственных услуг
+          </h2>
+          <p>Мы&nbsp;делаем доступным и&nbsp;прозрачным общение органов власти с&nbsp;физическими и&nbsp;юридическими лицами (потребителями услуг). Мы&nbsp;переводим взаимодействие полностью в&nbsp;электронный вид, без необходимости заявителю посещать орган власти, создаем удобные и&nbsp;дружелюбные интерфейсы для электронных заявлений, а&nbsp;также реализуем правовую и&nbsp;техническую основу для выдачи результатов услуг в&nbsp;электронной форме. Не&nbsp;забываем и&nbsp;про удобство сотрудников органов власти, поэтому наши решения максимально автоматизируют их&nbsp;работу и&nbsp;позволяют обрабатывать электронные и&nbsp;бумажные заявления в&nbsp;одной системе.</p>
+          <h3>Рейтинги, в&nbsp;которых мы&nbsp;способствуем росту позиций наших заказчиков</h3>
+          <ul>
+            <li>Мониторинг качества перевода государственных и&nbsp;муниципальных услуг в&nbsp;электронную форму (Минэкономразвития России)</li>
+            <li>Рейтинг работоспособности сервисов в&nbsp;среде СМЭВ (Минкомсвязи России)</li>
+            <li>Рейтинг по&nbsp;выполнению поручения по&nbsp;обеспечению качества работы информационных систем федеральных органов исполнительной власти, государственных внебюджетных фондов и&nbsp;иных организаций (Минкомсвязи России)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-feedback" role="dialog" tabindex="-1" aria-labelledby="headline-feedback" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" data-dismiss="modal" aria-label="Закрыть" title="Закрыть"></button>
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2 class="article-headline" id="headline-feedback">
+            Совершенствование работы с обращениями граждан
+          </h2>
+          <p>Мы&nbsp;разрабатываем стандарты по&nbsp;работе с&nbsp;обращениями, которые включают критерии классификации обращений, типовые ответы, методику прогнозирования объема обращений на&nbsp;плановый период и&nbsp;проведения мониторинга социальной активности с&nbsp;целью оперативного принятия решений, направленных на&nbsp;ее&nbsp;снижение. Это позволяет выстраивать эффективную систему работы с&nbsp;гражданами и&nbsp;повышать качество деятельности наших заказчиков.</p>
+          <p><strong>Мы&nbsp;способствуем росту позиций наших заказчиков в&nbsp;рейтинге</strong> по&nbsp;работе с&nbsp;обращениями и&nbsp;запросами граждан в&nbsp;приемных Президента&nbsp;РФ, в&nbsp;государственных органах и&nbsp;органах местного самоуправления (Администрация Президента России)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-interagency-cooperation" role="dialog" tabindex="-1" aria-labelledby="headline-interagency-cooperation" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" data-dismiss="modal" aria-label="Закрыть" title="Закрыть"></button>
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2 class="article-headline" id="headline-interagency-cooperation">
+            Развитие межведомственного электронного взаимодействия
+          </h2>
+          <p>Межведомственное электронное взаимодействие органов власти позволяет существенно сократить объем документов, который ложится на&nbsp;плечи заявителя, если мы&nbsp;говорим о&nbsp;госуслугах, или&nbsp;же плечи субъекта проверки, если речь идет о&nbsp;контрольно-надзорной деятельности. Это намного практичнее и&nbsp;для самих органов власти, которые в&nbsp;режиме онлайн запрашивают данные друг у&nbsp;друга, без необходимости ведения бумажного документооборота.</p>
+          <h3>Рейтинги, в&nbsp;которых мы&nbsp;способствуем росту позиций наших заказчиков</h3>
+          <ul>
+            <li>Рейтинг работоспособности сервисов в&nbsp;среде СМЭВ (Минкомсвязи России)</li>
+            <li>Рейтинг по&nbsp;выполнению поручения по&nbsp;обеспечению качества работы информационных систем федеральных органов исполнительной власти, государственных внебюджетных фондов и&nbsp;иных организаций (Минкомсвязи России)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-transparency" role="dialog" tabindex="-1" aria-labelledby="headline-transparency" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" data-dismiss="modal" aria-label="Закрыть" title="Закрыть"></button>
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2 class="article-headline" id="headline-transparency">
+            Повышение открытости деятельности
+          </h2>
+          <p>Мы&nbsp;разрабатываем и&nbsp;наполняем сайты ведомств (официальные сайты, отраслевые порталы, системы обратной связи и&nbsp;иные WEB-решения), разрабатываем удобные форматы информирования (инфографика, видеоролики), публикуем сведения в&nbsp;форме открытых данных для дальнейших исследований или использования в&nbsp;электронных сервисах и&nbsp;мобильных приложениях.</p>
+          <h3>Рейтинги, в&nbsp;которых мы&nbsp;способствуем росту позиций наших заказчиков</h3>
+          <ul>
+            <li>Рейтинг официальных сайтов органов власти (Минэкономразвития России)</li>
+            <li>Рейтинг открытых данных (Минэкономразвития России)</li>
+            <li>Рейтинг достигнутых результатов органов власти по&nbsp;внедрению и&nbsp;развитию механизмов открытости (Открытое правительство)</li>
+            <li>Рейтинг федеральных органов исполнительной власти по&nbsp;уровню доверия и&nbsp;удовлетворенности граждан, общественных объединений и&nbsp;предпринимательского сообщества уровнем открытости федеральных органов исполнительной власти (ВЦИОМ совместно с&nbsp;Открытым правительством)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{# -----------------------------------------------------------------------------
+    Todo
+   -------------------------------------------------------------------------- #}
+
+  <section class="section container">
+    <h2 class="section-headline text-center next-is-text">
+      How we&nbsp;do&nbsp;it<span class="hidden-xs-down">:<br>
+      <small>from&nbsp;the&nbsp;analysis of&nbsp;regulatory and legal acts<br>
+      to&nbsp;the&nbsp;implementation of&nbsp;IT&nbsp;solutions</small></span>
+    </h2>
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-0 pl-72">
+
+        <h3 class="list-caption has-icon analysis">
+          Preliminary analysis
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Analysis of&nbsp;regulations</li>
+          <li class="list-to-do-item normal">Analysis of&nbsp;requirements</li>
+          <li class="list-to-do-item normal">Brainstorming</li>
+          <li class="list-to-do-item normal">Formulation of&nbsp;the&nbsp;problem and requirements</li>
+          <li class="list-to-do-item normal hidden-md-down">Specification of&nbsp;the&nbsp;research methodology</li>
+        </ul>
+
+        <h3 class="list-caption has-icon conception pt-lg-1s">
+          Surveying
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Interviewing and surveying</li>
+          <li class="list-to-do-item normal">Collection of&nbsp;data and analysis</li>
+          <li class="list-to-do-item normal">Development of&nbsp;the&nbsp;solution concept</li>
+          <li class="list-to-do-item normal">Concept approval</li>
+          <li class="list-to-do-item normal">Documenting of&nbsp;the&nbsp;requirements</li>
+        </ul>
+
+        <h3 class="list-caption has-icon business-processes pt-lg-1s">
+          Optimization of&nbsp;business processes
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Optimization objective setting</li>
+          <li class="list-to-do-item normal">As&nbsp;is&nbsp;description</li>
+          <li class="list-to-do-item normal">To&nbsp;be&nbsp;description</li>
+          <li class="list-to-do-item normal">Development of&nbsp;regulations</li>
+          <li class="list-to-do-item normal">Specification of&nbsp;the&nbsp;technical design for&nbsp;IT-implementation</li>
+        </ul>
+
+        <h3 class="list-caption has-icon software-design pt-lg-1s">
+          Software design
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Design of&nbsp;data processing</li>
+          <li class="list-to-do-item normal hidden-md-down">Design of&nbsp;management algorithms</li>
+          <li class="list-to-do-item normal">User flows</li>
+          <li class="list-to-do-item normal">Data architecture</li>
+          <li class="list-to-do-item normal">Specification of&nbsp;the&nbsp;technical design for&nbsp;IT-solution</li>
+        </ul>
+
+        <h3 class="list-caption has-icon development pt-lg-1s">
+          Development
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Front-end development</li>
+          <li class="list-to-do-item normal">Back-end development</li>
+          <li class="list-to-do-item normal">Services integration</li>
+        </ul>
+      </div>{# / col (1): to-dos #}
+      <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-0 pl-72">
+
+        <h3 class="list-caption has-icon databases">
+          Database normalization
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Data migration</li>
+          <li class="list-to-do-item normal">Common directory development</li>
+          <li class="list-to-do-item normal">Classification implementation</li>
+          <li class="list-to-do-item normal">Database clearance</li>
+        </ul>
+
+        <h3 class="list-caption has-icon testing">
+        Testing / QA
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Tests development</li>
+          <li class="list-to-do-item normal">Pre-testing</li>
+          <li class="list-to-do-item normal">Prototype testing</li>
+          <li class="list-to-do-item normal">Acceptance testing</li>
+          <li class="list-to-do-item normal">Draft implementation order</li>
+        </ul>
+
+        <h3 class="list-caption has-icon implementation">
+          Implementation
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Server setting</li>
+          <li class="list-to-do-item normal">Software set up</li>
+          <li class="list-to-do-item normal">Use documentation</li>
+          <li class="list-to-do-item normal">Personnel training</li>
+        </ul>
+
+        <h3 class="list-caption has-icon promotion">
+          Promotion
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Instructions</li>
+          <li class="list-to-do-item normal">Video and infographics</li>
+          <li class="list-to-do-item normal">SEO promotion</li>
+          <li class="list-to-do-item normal">Internet banners</li>
+          <li class="list-to-do-item normal">Media campaigns</li>
+        </ul>
+
+        <h3 class="list-caption has-icon expert">
+          Expert support
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Expert consulting</li>
+          <li class="list-to-do-item normal">Expert analytics</li>
+          <li class="list-to-do-item normal">Expert recommendations</li>
+        </ul>
+
+        <h3 class="list-caption has-icon technical-support">
+          Technical support
+        </h3>
+        <ul class="list-to-do">
+          <li class="list-to-do-item normal">Software project tracking and oversight</li>
+          <li class="list-to-do-item normal">Maintenance activity monitoring</li>
+        </ul>
+      </div>{# / col (2): to-dos #}
+    </div>{# / row: todo #}
+  </section>
+
+  <hr class="text2title">
+
+{# -----------------------------------------------------------------------------
+    Case Studies
+   -------------------------------------------------------------------------- #}
+
+  <section class="section details container">
+    <h2 class="section-headline text-center">
+      Examples of&nbsp;our R&amp;D and&nbsp;IT&nbsp;projects
+    </h2>
+    <div class="section-body col-lg-8 offset-lg-2 text-muted text-center hidden-xs-down">
+      <p>Polylog Consulting Group is&nbsp;an&nbsp;experienced player on&nbsp;the&nbsp;R&amp;D and&nbsp;IT market. We&nbsp;have realized projects for&nbsp;the&nbsp;Administration of&nbsp;the&nbsp;President of&nbsp;the&nbsp;Russian Federation, Ministry of&nbsp;Economic Development of&nbsp;the&nbsp;Russian Federation, Ministry of&nbsp;Industry and Trade of&nbsp;the&nbsp;Russian Federation, Federal Agency on&nbsp;Technical Regulating and Metrology, Federal Agency for&nbsp;Tourism and others. We&nbsp;do&nbsp;not offer a&nbsp;typical product for&nbsp;our clients but we&nbsp;develop a&nbsp;unique solution to&nbsp;your specific objectives.</p>
+    </div>
+
+{# ----------------------------------
+    Carousel — Projects
+   ---------------------------------- #}
+
+    <div class="section-footer separated carousel carousel slide js-manual" id="carousel-it" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+
+        {# Unified Federal Register #}
+        <figure class="carousel-item active">
+          <a class="section-carousel-link" href="/en/news/2016/12-12.htm" title="Unified Federal Register of Tour operators">
+            <img src="/a/img/s-services/rnd/featured/rostourism-unified-federal-register.jpg" alt="Unified Federal Register of Tour operators">
+          </a>
+          <figcaption>
+            Unified Federal Register of Tour operators
+          </figcaption>
+        </figure>{#  / unified federal register #}
+
+        {# Risk management methodology #}
+        <figure class="carousel-item">
+          <a class="section-carousel-link" href="/en/news/2011/09-12.htm" title="Risk management methodology in tourist destinations">
+            <img src="/a/img/s-services/rnd/featured/rostourism-risk-management.jpg" alt="Risk management methodology in tourist destinations">
+          </a>
+          <figcaption>
+            Risk management methodology in tourist destinations
+          </figcaption>
+        </figure>{#  / risk management methodology #}
+
+        {# Primorsky Krai #}
+        <figure class="carousel-item">
+          <a class="section-carousel-link" href="/en/news/2011/06-30.htm" title="Competitive environment analysis in&nbsp;the&nbsp;Primorsky Krai">
+            <img src="/a/img/s-services/rnd/featured/primorye.jpg" alt="Competitive environment analysis in&nbsp;the&nbsp;Primorsky Krai">
+          </a>
+          <figcaption>
+            Competitive environment analysis in&nbsp;the&nbsp;Primorsky Krai
+          </figcaption>
+        </figure>{#  / primorsky krai #}
+
+      </div>{# / viewport #}
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-it" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-it" data-slide-to="1"></li>
+        <li data-target="#carousel-it" data-slide-to="2"></li>
+      </ol>
+    </div>{# / carousel #}
+  </section>{# PR ervices #}
+
+  <hr class="box2title hidden">
+
+<!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+
+{# -----------------------------------------------------------------------------
+    Testimonials
+   -------------------------------------------------------------------------- #}
+
+</main>{# / page-content #}
+
+{% endblock %}{# / block content #}
+
+{% block cta %}
+
+  {% include "/components/cta/cta.twig" %}
+  <p class="cta-alt">Можете напрямую связаться с&nbsp;Людмилой Богатырёвой:<br>
+  <a class="link phone-number has-icon" id="contact-it" href="tel:+7-964-536-5844" content="+79645365844" title="Звоните">+7 (964) 536-58-44</a> <a class="link email has-icon js-contact" href="mailto:bogatyreva(at)gmail(dot)com?subject=polylog.ru" title="Написать письмо">email</a></p>
+{% endblock %}{# / block cta #}

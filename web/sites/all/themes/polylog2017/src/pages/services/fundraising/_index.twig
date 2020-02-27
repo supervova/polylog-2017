@@ -1,0 +1,348 @@
+{% extends "/pages/base/base.twig" %}
+
+{% block html_head_add_on %}
+  <style type="text/css">
+    .pic-vignette.fundraising {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      }
+
+    @media (min-width: 544px) {
+      .pic-vignette.fundraising {
+        background-image: url('/a/img/s-services/fundraising/coins-xs.svg');
+        background-position: 12px 90%;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .pic-vignette.fundraising {
+        background-image: url('/a/img/s-services/fundraising/coins-v.svg');
+        background-position: center top;
+        background-size: 100% auto;
+      }
+    }
+
+    @media (min-width: 1016px) {
+      .pic-vignette.fundraising {
+        background-image: url('none');
+        -webkit-box-align: center;
+           -ms-flex-align: center;
+              align-items: center;
+      }
+    }
+
+    .section.benefits {
+      background: rgb(229, 232, 236) url('/a/img/s-services/fundraising/benefits-fundraising.jpg') center top no-repeat;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+<body class="section-services page-fundraising has-dark-jumbotron separated-jumbotron">
+{% endblock %}
+
+
+{% block content %}
+
+{# -----------------------------------------------------------------------------
+    JUMBOTRON
+   -------------------------------------------------------------------------- #}
+
+<article class="jumbotron base">
+
+  <div class="jumbotron-container">
+<!--
+
+
+
+
+CUT IN JUMBOTRON
+
+
+
+
+-->
+    {# Body #}
+    <div class="jumbotron-body">
+
+      <h1 class="jumbotron-headline ani-slide-down">
+        Фандрайзинг&nbsp;— привлечение финансовых средств
+      </h1>
+
+      <blockquote class="jumbotron-quote hidden-xs-down ani-slide-down">
+        <span class="hlaquo-body">«</span>Мы&nbsp;работаем с&nbsp;проектами как со&nbsp;стартовым капиталом, так и&nbsp;без него. Это деловые мероприятия, массовые, привлечение дополнительных финансовых средств для сообществ и&nbsp;ассоциаций. Мы&nbsp;берем на&nbsp;себя ответственность от&nbsp;проработки плана стратегии продаж до&nbsp;сбора обратной связи от&nbsp;партнёров».
+      </blockquote>
+
+      {# <a class="jumbotron-btn video ani-slide-down js-mfp-video" href="https://www.youtube.com/watch?v=PHLxF3bEw2k" role="button"> #}
+      <a class="jumbotron-btn ani-slide-down js-open-modal" href="/ru/company/contact-us" data-target="#modal" data-toggle="modal" role="button">
+        Пообщаемся?
+      </a>
+    </div>{# / jumbotron-body #}
+
+    {# Person #}
+    <figure class="jumbotron-person fundraising ani-fade-in">
+
+      {# <a class="js-mfp-video" href="https://www.youtube.com/watch?v=PHLxF3bEw2k" title="[Видео] Руководитель департамента по развитию бизнеса рассказывает о фандрайзинге для клиентов PR-агентства"> #}
+        <img class="jumbotron-portrait" src="/a/img/people/liza-slyozkina.png" alt="Елизавета Слёзкина, руководитель департамента по развитию бизнеса">
+      {# </a> #}
+      <figcaption>
+        Елизавета Слёзкина,<br>
+        руководитель департамента по&nbsp;развитию бизнеса
+      </figcaption>
+    </figure>{# / person #}
+<!--
+
+
+
+
+/ CUT IN JUMBOTRON
+
+
+
+
+-->
+  </div>{# / jumbotron-container #}
+</article>{# / jumbotron #}
+
+
+{# -----------------------------------------------------------------------------
+    BODY COPY
+   -------------------------------------------------------------------------- #}
+
+<main class="container">
+
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+{# WHAT IS IT #}
+<section class="section container">
+  <div class="row justify-content-between align-items-stretch">
+
+    <div class="col-md-8">
+      <p class="text-center">Услуги в&nbsp;области фандрайзинга мы&nbsp;делим на&nbsp;две категории, исходя из&nbsp;типологии проектов и&nbsp;требуемого объема финансовых вложений:</p>
+      <ul class="list-check mb-0">
+        <li class="list-check-item">Фандрайзинг для деловых и&nbsp;массовых мероприятий&nbsp;— комплексная система монетизации мероприятий на&nbsp;основе привлечения спонсоров, продажи билетов и&nbsp;выставочных площадей.</li>
+        <li class="list-check-item">Фандрайзинг для общественных организаций, ассоциаций и&nbsp;спортивных клубов&nbsp;— разработка и&nbsp;внедрение системы долгосрочной финансовой поддержки деятельности на&nbsp;основе спонсорства, членских взносов, продажи услуг.</li>
+      </ul>
+    </div>
+
+    <figure class="pic-vignette fundraising col-md-3 mb-0" role="presentation">
+      <img src="/a/img/s-services/fundraising/piggy-bank.png" alt="Фандрайзинг">
+    </figure>
+  </div>
+</section>{# / what is it #}
+
+<hr class="box2box hidden">
+
+{# BENEFITS #}
+<section class="section benefits light in-box full-width">
+  <div class="container">
+
+    <h2 class="section-headline text-center mb-md-12">
+      Фандрайзинг для вас: <small>на&nbsp;всё хватит</small>
+    </h2>
+
+    <div class="section-body col-lg-6 offset-lg-3 text-center mb-1ss">
+      <p>Для фандрайзинга нужны трудолюбивый талантливый персонал и&nbsp;24&nbsp;часа в&nbsp;сутки. У&nbsp;нас есть и&nbsp;люди, и&nbsp;время. Мы&nbsp;можем снять с&nbsp;вас непрофильную нагрузку, чтобы вы&nbsp;сосредоточились на&nbsp;основных задачах. Другие преимущества фандрайзинга с&nbsp;&laquo;Полилогом&raquo;<span class="hidden-md-down">&nbsp;— ниже</span>.</p>
+    </div>
+
+    <ul class="list-ul two-lg columns">
+      <li class="hidden-md-down">Дополнительные источники финансирования&nbsp;&mdash; мы&nbsp;проведем анализ рынка, производственных цепочек, смежных сегментов и&nbsp;расширим воронку продаж вашего проекта.</li>
+      <li>Продавцы на&nbsp;аутсорсинге<span class="hidden-xs-down">&nbsp;&mdash; готовая команда, отработанная система обучения, полное техническое обеспечение продаж</span>.</li>
+      <li class="hidden-xs-down">Прозрачная работа&nbsp;&mdash; онлайн доступ ко&nbsp;всем базам, материалам и&nbsp;статусам, регулярная отчетность.</li>
+      <li><span class="hidden-md-down">Снижение нагрузки на&nbsp;бэк-офис&nbsp;&mdash;</span> <span class="text-md-capitalize">берем</span> на&nbsp;себя всю бухгалтерию и&nbsp;работу с&nbsp;документами.</li>
+      <li>Контроль обязательств перед спонсорами<span class="hidden-xs-down">&nbsp;&mdash; сведем в&nbsp;единую матрицу все обязательства, интегрируем в&nbsp;ваш рабочий план, проконтролируем исполнение, отчитаемся перед спонсорами</span>.</li>
+      <li class="hidden-xs-down">Замкнутый цикл&nbsp;&mdash; от&nbsp;разработки концепции до&nbsp;аналитики<span class="hidden-md-down"> (анализ отказов, анализ удовлетворенности и&nbsp;пр.) и&nbsp;рекомендаций</span>.</li>
+      </ul>
+
+  </div>
+</section>
+
+<hr class="box2title hidden">
+
+{# TODO #}
+<section class="section container">
+
+  <h2 class="section-headline text-center">
+    Что мы&nbsp;делаем, вкратце:<br>
+    <small>от&nbsp;SWOT-анализа до&nbsp;многозначных сумм</small>
+  </h2>
+
+  <div class="section-body col-lg-6 offset-lg-3 text-center mb-2s">
+    <p>Фандрайзинг&nbsp;&mdash; многоэтапный процесс, в&nbsp;котором важна каждая деталь. Мы&nbsp;реализуем для наших заказчиков полный цикл работ по&nbsp;привлечению средств, обязательно предполагающий итоговый сбор обратной связи и&nbsp;её&nbsp;анализ. Это позволяет нам улучшать форматы партнерских интеграций и&nbsp;повышать конверсию для наших заказчиков.</p>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-6 pl-72">
+
+      <h3 class="list-caption has-icon analysis">Аналитика</h3>
+      <ul class="list-to-do">
+        <li class="list-to-do-item">SWOT-анализ проекта</li>
+        <li class="list-to-do-item">Анализ рынка потенциальных спонсоров</li>
+        <li class="list-to-do-item">Конкурентный анализ</li>
+        <li class="list-to-do-item">Медиа-аналитика</li>
+        <li class="list-to-do-item">Разработка стратегии и&nbsp;плана монетизации</li>
+      </ul>
+
+      <h3 class="list-caption has-icon preparation-alt">Предпродажная подготовка</h3>
+      <ul class="list-to-do">
+        <li class="list-to-do-item">Позиционирование проекта</li>
+        <li class="list-to-do-item">Разработка стандартных спонсорских материалов</li>
+        <li class="list-to-do-item">Адаптация материалов, подготовка эксклюзивных предложений</li>
+        <li class="list-to-do-item">Подготовка скриптов</li>
+        <li class="list-to-do-item">Обучение менеджеров </li>
+      </ul>
+
+      <h3 class="list-caption has-icon selling">Продажи</h3>
+      <ul class="list-to-do">
+        <li class="list-to-do-item">Подготовка базы потенциальных партнеров</li>
+        <li class="list-to-do-item">Информационные рассылки</li>
+        <li class="list-to-do-item">Переговоры с&nbsp;потенциальными клиентами</li>
+        <li class="list-to-do-item">Закрытие сделки</li>
+      </ul>
+
+    </div>{# / col (1): benefits #}
+
+    <div class="col-lg-6 pl-72">
+
+      <h3 class="list-caption has-icon contracts">Договорная работа</h3>
+      <ul class="list-to-do">
+        <li class="list-to-do-item">Подготовка и&nbsp;заключение договоров</li>
+        <li class="list-to-do-item">Выставление счетов</li>
+        <li class="list-to-do-item">Контроль оплат</li>
+        <li class="list-to-do-item">Обмен закрывающими документами</li>
+      </ul>
+
+      <h3 class="list-caption has-icon assistance">Сопровождение клиентов</h3>
+      <ul class="list-to-do">
+        <li class="list-to-do-item">Матрица обязательств перед спонсорами</li>
+        <li class="list-to-do-item">Подготовка ТЗ&nbsp;для рабочей группы</li>
+        <li class="list-to-do-item">Аудит исполнения обязательств</li>
+        <li class="list-to-do-item">Информационная поддержка клиентов </li>
+      </ul>
+
+      <h3 class="list-caption has-icon analytics">Закрытие проекта</h3>
+      <ul class="list-to-do">
+        <li class="list-to-do-item">Анализ достижения KPI</li>
+        <li class="list-to-do-item">Подготовка отчетов для спонсоров</li>
+        <li class="list-to-do-item">Сбор обратной связи от&nbsp;спонсоров</li>
+        <li class="list-to-do-item">Анализ реализации плана продаж</li>
+        <li class="list-to-do-item">Подготовка рекомендаций по&nbsp;улучшению</li>
+        <li class="list-to-do-item">Подготовка отчета для заказчика</li>
+      </ul>
+
+    </div>{# / col (2): benefits #}
+
+  </div>{# / row: todo #}
+</section>
+
+<hr class="text2title">
+
+{# CASE STUDIES #}
+<section class="section details container">
+
+  <h2 class="section-headline text-center">
+    Примеры наших проектов в&nbsp;области фандрайзинга:<br>
+    <small>фестивали, форумы, конгрессы</small>
+  </h2>
+
+  <div class="section-body col-lg-6 offset-lg-3 text-center mb-2s">
+    <p>Около&nbsp;20% проектов, реализуемых в&nbsp;Консалтинговой группе &laquo;Полилог&raquo;, связаны с&nbsp;привлечением финансовых средств. Фандрайзинг в&nbsp;&laquo;Полилоге&raquo;&nbsp;&mdash; это ежедневная работа и&nbsp;хорошо отлаженная технология, позволяющая достигать запланированных результатов.</p>
+  </div>
+
+  {# ----------------------------------
+      Carousel — Projects
+    ---------------------------------- #}
+
+  <div class="section-footer carousel slide js-manual" id="carousel-fundraising" data-ride="carousel">
+
+      {# Carousel viewport #}
+      <div class="carousel-inner" role="listbox">
+
+        {# Vidfest #}
+        <figure class="carousel-item active">
+
+          <a class="section-carousel-link" href="/ru/news/2015/06-11.htm" title="Первый фестиваль видеоблогеров «Видфест»">
+            <img src="/a/img/s-services/fundraising/featured/fundraising-vidfest.jpg" alt="Первый фестиваль видеоблогеров «Видфест»">
+          </a>
+
+          <figcaption>
+            Фестиваль видеоблогеров
+          </figcaption>
+        </figure>{#  / vidfest #}
+
+        {# Ufa 2106 #}
+        <figure class="carousel-item">
+
+          <a class="section-carousel-link" href="/ru/news/2016/06-07.htm" title="Российский нефтегазохимический форум">
+            <img src="/a/img/s-services/fundraising/featured/fundraising-ufa-2016.jpg" alt="Российский нефтегазохимический форум">
+          </a>
+
+          <figcaption>
+            Нефтегазохимический форум
+          </figcaption>
+        </figure>{#  / ufa 2106 #}
+
+        {# Brics #}
+        <figure class="carousel-item">
+
+          <a class="section-carousel-link" href="/ru/news/2015/11-02.htm" title="Первый Форум малого бизнеса регионов стран-участниц ШОС и БРИКС">
+            <img src="/a/img/s-services/fundraising/featured/fundraising-ufa-2015.jpg" alt="Первый Форум малого бизнеса регионов стран-участниц ШОС и БРИКС">
+          </a>
+
+          <figcaption>
+            ШОС и БРИКС
+          </figcaption>
+        </figure>{#  / brics #}
+      </div>{# / viewport #}
+
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-fundraising" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-fundraising" data-slide-to="1"></li>
+        <li data-target="#carousel-fundraising" data-slide-to="2"></li>
+      </ol>
+  </div>{# / carousel #}
+
+</section>{# case studies #}
+<!--
+
+
+
+
+/ CUT IN Body
+
+
+
+
+-->
+
+
+</main>{# / page-content #}
+
+
+{% endblock %}{# / block content #}
+
+{% block cta %}
+  {% include "/components/cta/cta.twig" %}
+  <p class="cta-alt">Можете напрямую связаться с Елизаветой Слёзкиной:<br>
+  <a class="link phone-number has-icon" href="tel:+7-965-224-1459" content="+79652241459" title="Звоните">+7 (965) 224-14-59</a> <a class="link email has-icon js-contact" href="mailto:slezkina(at)gmail(dot)com?subject=polylog.ru" title="Написать письмо">email</a></p>
+{% endblock %}{# / block cta #}

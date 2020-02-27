@@ -1,0 +1,215 @@
+{% extends "/pages/base/base.twig" %}
+
+{% block html_head_add_on %}
+{# EXPAND IN STYLE #}
+<link rel="stylesheet" href="/sites/all/themes/polylog2017/src/css/head-styles.css">
+
+<style>
+</style>
+
+{# / EXPAND IN STYLE #}
+{% endblock %}
+
+{% block body %}
+<body class="section-projects vr has-dark-jumbotron">
+{% endblock %}
+
+
+{% block content %}
+
+{# -----------------------------------------------------------------------------
+    JUMBOTRON
+   -------------------------------------------------------------------------- #}
+
+<article class="jumbotron base">
+
+  <div class="jumbotron-container">
+<!--
+
+
+
+
+CUT IN JUMBOTRON
+
+
+
+
+-->
+
+{# Закомментировать обёртку, если выравнивание текстового блока
+стандартное — слева #}
+{# <div class="jumbotron-inner jumbotron-inner-center"> #}
+<div class="jumbotron-body">
+  <a class="jumbotron-eyebrow has-secondary-icon rnd ani-slide-down" href="/ru/services/it">
+    IT-решения
+  </a>
+  <h1 class="jumbotron-headline ani-slide-down">
+    <img class="d-none d-lg-block" src="/a/img/s-services/rnd/polydoc/polydoc-logo-ru.svg" alt="Логотип «Полидок»">
+    <span class="d-lg-none">«Полидок»</span>
+  </h1>
+
+  <p class="jumbotron-lead ani-slide-down">
+    Когда деятельность организации слабо автоматизирована, нельзя избежать искажения данных, нарушения регламентов и&nbsp;потери информации. <span class="hidden-xs-down">Если устранять эти недостатки классическими бюрократическими методами, сотрудники будут перегружены рутиной, не&nbsp;приносящей ощутимого вклада в&nbsp;развитие организации.<br><br>
+    Мы&nbsp;предлагаем современное решение: цифровизацию процессов в&nbsp;«Полидок».</span>
+  </p>
+</div>
+{# </div> #}
+{#
+  <span class="hidden-xs-down"></span>
+  <span class="hidden-sm-up"></span>
+#}
+
+<!--
+
+
+
+
+/ CUT IN JUMBOTRON
+
+
+
+
+-->
+  </div>{# / jumbotron-container #}
+</article>{# / jumbotron #}
+
+
+{# -----------------------------------------------------------------------------
+    BODY COPY
+   -------------------------------------------------------------------------- #}
+
+<main class="container">
+
+
+{# -----------------------------------------------------------------------------
+    What Is It
+   -------------------------------------------------------------------------- #}
+
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+{# VIDEO #}
+<div class="section is-video">
+  <div class="col-lg-8">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe src="https://www.youtube.com/embed/4wIYAZgqNgs?rel=0&amp;showinfo=0" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+
+{# INTRO #}
+<div class="section is-intro" role="region">
+  <div class="col-lg-6">
+    <p class="hidden-sm-up">Если устранять эти недостатки классическими бюрократическими методами, сотрудники будут перегружены рутиной, не&nbsp;приносящей ощутимого вклада в&nbsp;развитие организации.<br><br>
+    Мы&nbsp;предлагаем современное решение: цифровизацию процессов в&nbsp;«Полидок».</p>
+    <p><strong><span class="hlaquo-body">«</span>Полидок»&nbsp;— отечественная программная платформа, объединяющая преимущества учетных систем, task-менеджеров, ERP-, CRM- и&nbsp;BPM-систем.</strong></p>
+    <p class="list-caption"><span class="hlaquo-body">«</span>Полидок» уже применяется для:</p>
+    <ul class="list is-completed-todo">
+      <li>Учета и&nbsp;маршрутизации данных</li>
+      <li>Управления проектами</li>
+      <li>Проведения проверок</li>
+      <li>Оказания государственных услуг</li>
+      <li>Межведомственного взаимодействия</li>
+      <li>Хранения знаний и&nbsp;обучения</li>
+      <li>Сбора и&nbsp;анализа статистической отчетности и&nbsp;др.</li>
+    </ul>
+  </div>
+</div>
+
+{# GALLERY #}
+<div class="polydoc-gallery carousel slide" id="polydoc" data-ride="carousel" role="region">
+  <div class="carousel-inner media-wrapper">
+    <div class="carousel-item active">
+      <img src="/a/img/s-services/rnd/polydoc/dashboard-01.png" alt="Основной экран">
+    </div>
+    <div class="carousel-item">
+      <img src="/a/img/s-services/rnd/polydoc/dashboard-02.png" alt="Основной экран">
+    </div>
+  </div>
+  <ol class="carousel-indicators">
+    <li class="active" data-target="#polydoc" data-slide-to="0"></li>
+    <li data-target="#polydoc" data-slide-to="1"></li>
+  </ol>
+  <a class="carousel-control left positive" href="#polydoc" data-slide="prev" role="button" aria-label="Назад"></a>
+  <a class="carousel-control right positive" href="#polydoc" data-slide="next" role="button" aria-label="Вперёд"></a>
+</div>
+
+{# CHART #}
+<aside class="section has-chart">
+  <figure class="chart col-lg-8">
+    <h3><span class="hlaquo-body">«</span>Полидок»</h3>
+    <ul>
+      <li>Данные</li>
+      <li>Операции</li>
+      <li>Коммуникации</li>
+    </ul>
+    <figcaption>Цифровой процесс в&nbsp;«Полидок»</figcaption>
+  </figure>
+</aside>
+
+{# CHART #}
+<section class="section is-features">
+  <div class="col-lg-6">
+    <h2 class="section-headline light"><strong>Данные:</strong> технология «выравнивания»</h2>
+    <p>Цифровой процесс не&nbsp;может существовать без единой экосистемы данных. Ее&nbsp;обеспечивает технология «выравнивания», включающая единый атрибутивный состав сведений и&nbsp;интеграционную шину. С&nbsp;их&nbsp;помощью «Полидок» собирает данные из&nbsp;всех смежных систем, нормализует их&nbsp;и&nbsp;представляет в&nbsp;удобном для пользователя виде</p>
+
+    <h2 class="section-headline light"><strong>Операции:</strong> технология «workflow»</h2>
+    <ul class="list is-completed-todo">
+    <li>«Ведет» пользователя по&nbsp;регламентным траекториям</li>
+    <li>Повышает исполнительскую дисциплину&nbsp;— позволяет увидеть, в&nbsp;чьей зоне ответственности и&nbsp;на&nbsp;какой стадии находится операция</li>
+    <li>Снижает издержки на&nbsp;адаптацию сотрудников&nbsp;— нет необходимости запоминать все регламенты организации, система не&nbsp;даст их&nbsp;нарушить</li>
+    </ul>
+
+    <h2 class="section-headline light"><strong>Коммуникации:</strong> технология «диспетчер»</h2>
+    <p class="list-caption">Автоматизирует принятие микрорешений в&nbsp;коммуникации:</p>
+    <ul class="list is-completed-todo">
+    <li>Маршрутизация документов и&nbsp;сведений сотрудникам при наступлении регламентных событий</li>
+    <li>Оповещение сотрудника о&nbsp;наступлении событий, в&nbsp;т.ч. связанных с&nbsp;проверкой комплектности, содержания, сроков предоставления документов и&nbsp;сведений</li>
+    </ul>
+
+    <h2 class="section-headline light"><strong>Преимущества</strong> «Полидок»</h2>
+    <ul class="list is-completed-todo">
+    <li><strong>Проектирование:</strong> глубокая аналитика, погружение в&nbsp;отрасль, индивидуальный подход</li>
+    <li><strong>Внедрение:</strong> нормализация и&nbsp;миграция всех сведений, обучающие встречи, вебинары, инфографики, видеоролики</li>
+    <li><strong>Использование:</strong> дружелюбный интерфейс, передача исходного кода, обучение IT-специалистов клиента</li>
+    </ul>
+  </div>
+</section>
+
+{# BENEFITS #}
+
+
+<!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+
+{# -----------------------------------------------------------------------------
+    Testimonials
+   -------------------------------------------------------------------------- #}
+
+</main>{# / page-content #}
+
+{% endblock %}{# / block content #}
+
+{% block cta %}
+
+  {% include "/components/cta/cta.twig" %}
+  <p class="cta-alt">Можете напрямую связаться с&nbsp;Людмилой Богатырёвой:<br>
+  <a class="link phone-number has-icon" id="contact-it" href="tel:+7-964-536-5844" content="+79645365844" title="Звоните">+7 (964) 536-58-44</a> <a class="link email has-icon js-contact" href="mailto:bogatyreva(at)gmail(dot)com?subject=polylog.ru" title="Написать письмо">email</a></p>
+{% endblock %}{# / block cta #}

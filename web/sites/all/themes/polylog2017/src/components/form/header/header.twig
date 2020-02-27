@@ -1,0 +1,24 @@
+<header class="header" aria-label="Поиск">
+
+  {# LOGO #}
+  <a class="logo ru" href="/" rel="home" title="На первую страницу">
+    PR-агентство «Полилог»
+  </a>
+
+  <div class="container">
+
+    {# SEARCH #}
+    {% include "/components/form/search/search.twig" %}
+
+    {# PHONE #}
+    <a class="header-link phone-number" id="header-phone" href="tel:+7-495-258-2045" title="Звоните">
+      <svg class="icon phone" role="presentation"><use xlink:href="#icon-phone" /></svg>+7 (495) <b>258-20-45</b>
+    </a>
+
+    {# LANGUAGE SWITCHER #}
+    <a class="header-locale-switcher" href="/en/home" title="Switch to English">
+      <span class="icon flag-gb">English</span>
+    </a>
+
+  </div>{# / container #}
+</header>{# / header #}

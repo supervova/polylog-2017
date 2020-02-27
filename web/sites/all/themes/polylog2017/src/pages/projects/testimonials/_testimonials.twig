@@ -1,0 +1,69 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/testimonials/testimonials.jpg' %}
+
+{% set letters = {
+  unesco       : { slug: 'unesco', client: 'Комиссия РФ&nbsp;по&nbsp;делам ЮНЕСКО', project: '36-я сессия Комитета Всемирного наследия ЮНЕСКО', link: '/ru/news/2012/07-17.htm'},
+  rosstandart  : { slug: 'rosstandart', client: 'Федеральное агентство по техническому регулированию и метрологии (Росстандарт)', project: 'Госуслуги Росстандарта в электронном виде', link: '/ru/projects/2017/elektronnye-gosuslugi-obespechenie-predostavleniya'},
+  rosturism    : { slug: 'rosturism', client: 'Федеральное агентство по туризму (Ростуризм)', project: 'Единый федеральный реестр туроператоров', link: '/ru/projects/2016/elektronnye-gosuslugi-razvitie-informacionnoy-sistemy'},
+  belarus      : { slug: 'belarus', client: 'Союзное государство', project: 'Информационное обеспечение Союзного государства России и&nbsp;Белоруссии', link: '/ru/case-studies/russia-belarus.htm'},
+  apec         : { slug: 'apec',  client: 'НП «Национальный деловой центр»', project: 'Деловой саммит АТЭС во&nbsp;Владивостоке', link: '/ru/news/2012/10-01.htm'},
+  komi         : { slug: 'komi', client: 'Глава Республики Коми', project: 'Презентация республики Коми в&nbsp;КНР', link: '/ru/news/2013/05-15.htm'},
+  yaroslavl    : { slug: 'yaroslavl-modern-state', client: 'Администрация Президента', project: 'Мировой политический форум &laquo;Современное государство и&nbsp;глобальная безопасность&raquo;', link: '/ru/news/2009/09-23.htm'},
+  cfa          : { slug: 'cfa', client: 'НП «Организация СФА»', project: '2-я Международная конференция «Инвестиции в Центральную и Восточную Европу»'},
+  immofinanz   : { slug: 'immofinanz', client: 'IMMOFINANZ Group', project: 'PR-поддержка IMMOFINANZ Group'},
+  philips      : { slug: 'philips', client: 'Подразделение Philips Consumer Lifestyle в&nbsp;России', project: 'PR-поддержка Philips Consumer Lifestyle в&nbsp;России', link: '/ru/news/2009/09-21.htm'},
+  logitech     : { slug: 'logitech', client: 'Компания Logitech', project: 'PR-сопровождение компании Logitech', link: '/ru/news/2012/12-05.htm'},
+  adobe        : { slug: 'adobe', client: 'Компания Adobe', project: 'Продвижение инициатив Adobe Systems в&nbsp;России', link: '/ru/news/2013/10-12.htm'},
+  uralsib      : { slug: 'uralsib', client: 'Банк Уралсиб', project: 'PR-поддержка Банка Уралсиб'},
+  rosbank      : { slug: 'rosbank', client: 'РОСБАНК', project: 'Пиар-сопровождение РОСБАНКа'},
+  ingosstrakh  : { slug: 'ingosstrakh', client: 'Ингосстрах', project: 'Поддержка информационной активности Ингосстраха'},
+  ingosstrakhEx: { slug: 'ingosstrakh-ex', client: 'Ингосстрах Exclusive', project: 'Продвижение суббренда «Ингосстрах Exclusive»'}
+} %}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">Отзывы</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для медицинских учреждений и&nbsp;фармацевтических компаний">
+    </figure>
+    <!-- CUT IN BODY ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <p class="col-lg-8 offset-lg-2 pt-42 pb-18 text-center">За&nbsp;годы работы мы&nbsp;накопили богатый опыт, но, важнее того,&nbsp;&mdash; хорошие, человеческие отношения с&nbsp;клиентами.<br>Ниже&nbsp;&mdash; благодарственные письма по&nbsp;результатам некоторых проектов. Мы&nbsp;высоко ценим ваши теплые слова в&nbsp;наш адрес.</p>
+
+    <div class="appreciation-letters grid row">
+
+      {% for item in letters %}
+        <figure class="appreciation-letter loose">
+          <a class="appreciation-letter-link js-mfp" href="/a/img/testimonials/{{ item.slug }}.jpg" title="Благодарственное письмо — {{ item.client }}">
+            <img class="appreciation-letter-img" src="/a/img/testimonials/{{ item.slug }}-sm.jpg" alt="Благодарственное письмо — {{ item.client }}">
+          </a>
+          <figcaption>
+            {{ item.project }}
+            {% if item.link %}
+              <br>
+              <a class="link forward" href="{{ item.link }}">О проекте</a>
+            {% endif %}
+          </figcaption>
+        </figure>
+      {% endfor %}
+
+    </div>
+    <!-- / CUT IN BODY ––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </article>
+
+</main>
+
+{% endblock %}{# / block content #}

@@ -1,0 +1,192 @@
+{
+  "root": {
+    "src": "./web/sites/all/themes/polylog2017/src"
+  },
+
+  "browserSync": {
+    "html": {
+      "server": {
+        "baseDir": "./web/"
+      },
+      "port": 9000,
+      "notify": false
+    },
+    "php": {
+      "proxy": "polylog.dev",
+      "files": [
+        "./web/sites/all/themes/polylog2017/src/**/*.twig",
+        "./web/sites/all/themes/polylog2017/**/*.php",
+        "./web/sites/all/themes/polylog2017/src/page*/**/*.html"
+      ],
+      "notify": false
+    }
+  },
+
+  "css": {
+    "src": [
+      "./web/sites/all/themes/polylog2017/src/**/*.scss",
+      "!./web/sites/all/themes/polylog2017/src/p-wip/head-styles.scss",
+      "!./web/sites/all/themes/polylog2017/src/p-front/head-styles.scss"
+    ],
+    "srcWIP": [
+      "./web/sites/all/themes/polylog2017/src/p-wip/head-styles-front.scss",
+      "./web/sites/all/themes/polylog2017/src/p-wip/head-styles.scss"
+    ],
+    "tmp": "./web/sites/all/themes/polylog2017/src/css",
+    "dest": "./web/a/css",
+    "autoprefixer": {
+      "browsers": [
+        "> 1%",
+        "last 2 versions"
+      ]
+    }
+  },
+
+  "uncss": {
+    "css": "./web/sites/all/themes/polylog2017/src/css/main.css",
+    "html": [
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/_contacts.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/_drupal-footer-w-form.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/_drupal-modal-w-form.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/_legacy.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/_login.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/_misc.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/_projects.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/blog-event-management.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/blog-hadoop-marketing-2017-06-05.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/blog-tutorials.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/blog.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/careers-culture.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/careers-internship.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/careers-jobs.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/careers-talents.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/careers.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/company-arj.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/company-contact-us.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/company-iso.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/company-management.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/company-news-2009-kg-polilog.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/company-news-2017-05-15.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/company.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/en-front.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/front.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/help-brand-management.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/help-pr-public-relations.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/help.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/projects-2017-btl-akcii-leeco.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/projects-2017-pokerstars.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/projects-2017-press-lanch.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/projects-2017-press-zavtrak.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/projects-industries-agriculture.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/projects-industries.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/projects-testimonials.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/projects.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/search-results.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/services-analytics-creativity.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/services-e-governance-solutions.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/services-event-management.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/services-fundraising.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/services-public-relations.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/services-public-relations.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/services.html",
+      "./web/sites/all/themes/polylog2017/src/p-wip/uncss/upcoming-events.html"
+    ]
+  },
+
+  "js": {
+    "src": [
+      "./web/sites/all/themes/polylog2017/src/02-content/link/link.js",
+      "./web/sites/all/themes/polylog2017/src/content/media/media.js",
+      "./web/sites/all/themes/polylog2017/src/03-form/form.js",
+      "./web/sites/all/themes/polylog2017/src/03-form/search/search.js",
+      "./web/sites/all/themes/polylog2017/src/03-media/carousel/carousel.js",
+      "./web/sites/all/themes/polylog2017/src/03-media/gallery/legacy.js",
+      "./web/sites/all/themes/polylog2017/src/03-navigation/navbar/navbar.js",
+      "./web/sites/all/themes/polylog2017/src/03-social-options/social-options.js",
+      "./web/sites/all/themes/polylog2017/src/04-list-view/list-view.js",
+      "./web/sites/all/themes/polylog2017/src/04-modal/modal.js",
+      "./web/sites/all/themes/polylog2017/src/main.js"
+    ],
+    "srcVendor": [
+      "./web/sites/all/themes/polylog2017/src/js/jquery.mobile.custom.js",
+      "./web/node_modules/bootstrap/js/dist/util.js",
+      "./web/node_modules/bootstrap/js/dist/alert.js",
+      "./web/node_modules/bootstrap/js/dist/button.js",
+      "./web/node_modules/bootstrap/js/dist/carousel.js",
+      "./web/node_modules/bootstrap/js/dist/collapse.js",
+      "./web/node_modules/bootstrap/js/dist/dropdown.js",
+      "./web/node_modules/bootstrap/js/dist/modal.js",
+      "./web/node_modules/magnific-popup/dist/jquery.magnific-popup.js",
+      "./web/node_modules/jquery-sticky/jquery.sticky.js",
+      "./web/node_modules/is-in-viewport/lib/isInViewport.js",
+      "./web/misc/drupal.js",
+      "./web/sites/all/modules/contrib/webform/js/webform.js"
+    ],
+    "lint": [
+      "./web/sites/all/themes/polylog2017/src/**/*.js",
+      "./web/sites/all/themes/polylog2017/src/main.js",
+      "!./web/sites/all/themes/polylog2017/src/js/**/*.js"
+    ],
+    "lintConfig": "./web/sites/all/themes/polylog2017/.eslintrc",
+    "tmp": "./web/sites/all/themes/polylog2017/src/js",
+    "dest": "./web/a/js",
+    "test": "./web/sites/all/themes/polylog2017/tests/index.html"
+  },
+
+  "html": {
+    "src": "./web/sites/all/themes/polylog2017/src/**/_*.pug",
+    "srcTwig": "./web/sites/all/themes/polylog2017/src/**/_*.twig",
+    "dest": "./web/sites/all/themes/polylog2017/src",
+
+    "lint": [
+      "./web/sites/all/themes/polylog2017/src/p-*/**/*.html",
+      "./web/sites/all/themes/polylog2017/src/s-*/**/*.html"
+    ],
+    "lintConfig": "./web/sites/all/themes/polylog2017/.htmlhintrc",
+    "psi": "/sites/all/themes/polylog2017/src/p-front/front-page.html"
+  },
+
+  "sprite": {
+
+    "mainSprite": {
+
+      "src": "./web/sites/all/themes/polylog2017/src/02-icon/sprite/*.svg",
+      "dest": "./web/sites/all/themes/polylog2017/src/02-icon",
+
+      "options": {
+        "shape": {
+          "spacing": {
+            "padding": 4
+          }
+        },
+        "mode": {
+          "css": {
+            "sprite": "../icon.svg",
+            "bust": false,
+            "render": {
+              "scss": {
+                "dest": "../_icon.scss",
+                "template": "./web/sites/all/themes/polylog2017/src/02-icon/_icon-template.mustache"
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
+  },
+
+  "img": {
+    "presentation": [
+      "./web/sites/all/themes/polylog2017/src/**/*.{jpg,png,gif,svg,webp}",
+      "!./web/sites/all/themes/polylog2017/src/**/data-*.svg",
+      "!./web/sites/all/themes/polylog2017/src/02-icon/sprite*{,/**}",
+      "!./web/sites/all/themes/polylog2017/src/img/**/*"
+    ],
+    "content": "./web/sites/all/themes/polylog2017/src/img/**/*.{jpg,png,gif,svg,webp}",
+    "dest": "./web/a/img"
+  }
+
+}

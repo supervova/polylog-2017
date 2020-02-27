@@ -1,0 +1,23 @@
+<!--noindex-->
+<form class="form search" action="/" method="post" role="search">
+
+  <input class="search-input" type="text" autocomplete="off" aria-label="Поиск на сайте" placeholder="Поиск: PR, организация мероприятий, IT-решения">
+
+  <button class="search-reset" type="reset" aria-label="Очистить" title="Очистить">
+    <span class="icon close" role="presentation"></span>
+  </button>
+
+  <button class="search-submit" type="submit" aria-label="Искать">
+    <svg class="icon find" role="presentation"><use xlink:href="#icon-search" /></svg>
+  </button>
+
+  <button class="search-cancel" type="button">
+    Отменить
+  </button>
+
+</form>
+
+<a class="search-toggler" href="/{{ post.locale }}/search" role="button" aria-haspopup="true" aria-label="Искать на сайте">
+  <svg class="icon find" role="presentation"><use xlink:href="#icon-search" /></svg>
+</a>
+<!--/noindex-->

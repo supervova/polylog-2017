@@ -1,0 +1,73 @@
+  <footer class="footer container">
+    <!--noindex-->
+    <div class="row">
+
+      {# FORM AND QUICK LINKS #}
+      <div class="footer-last-options col-lg-6">
+        {# FORM #}
+        <h3 class="footer-heading">Получайте на&nbsp;почту анонсы видеолекций и&nbsp;дайджест блога</h3>
+        {% include "/components/form/subscription/subscription.twig" %}
+
+        {# QUICK LINKS #}
+        <ul class="footer-quick-links" role="menu">
+          <li class="quick-links-item">
+            <h3 class="quick-links-caption">
+              <a class="quick-links-caption-link" href="/ru/projects">
+                Новости:
+              </a>
+            </h3>
+            <a class="quick-links-link" href="/ru/news/2017/01-17.htm">
+              <em>Молочный форум:</em> как&nbsp;сделать отраслевое мероприятие интересным
+            </a>
+          </li>
+          <li class="quick-links-item">
+            <h3 class="quick-links-caption">
+              <a class="quick-links-caption-link" href="/ru/blog/pr-tutorials">
+                Видеолекции:
+              </a>
+            </h3>
+            <a class="quick-links-link" href="/ru/pr-tutorials/pr-koncepciya-strategiya-plan">
+              PR: концепция, стратегия, план
+            </a>
+          </li>
+          <li class="quick-links-item">
+            <h3 class="quick-links-caption">
+              <a class="quick-links-caption-link" href="/ru/pr-blog/help">
+                Словарь:
+              </a>
+            </h3>
+            <a class="quick-links-link" href="/ru/help/pr-public-relations-svyazi-obshhestvennostyu-piar">
+              PR (public relations, связи с общественностью, пиар)
+            </a>
+          </li>
+        </ul>{# footer-quick-links #}
+      </div>{# / col: form and quick links #}
+
+      {# LIKE, SHARE AND SUBSCRIBE #}
+      <section class="footer-social col-lg-6 flex-lg-first">
+        <h3 class="footer-heading">
+          Нравится? Ставьте лайки, делитесь
+        </h3>
+
+        {% include "/components/social-tools/footer-like-share.twig" %}
+
+        <h3 class="footer-heading last">
+          PR&nbsp;и&nbsp;маркетинг в&nbsp;разных форматах. Подписывайтесь
+        </h3>
+
+        {% include "/components/social-tools/footer-social-media.twig" %}
+
+      </section>{# / like, share and subscribe #}
+    </div>{# / col: form and quick links #}
+    <!--/noindex-->
+
+    {# CONTACTS #}
+    <div class="footer-contacts" itemscope itemtype="http://schema.org/Organization">
+      <address class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="postalCode">123610</span>, <span itemprop="addressLocality">Москва</span>, <span itemprop="streetAddress">Краснопресненская наб. 12 (ЦМТ), подъезд 3, этаж 11, офис 1108.</span>
+      </address>
+      <span class="nowrap">Тел.: <a class="link phone-number" href="tel:+7-495-258-2045" content="+74952582045" itemprop="telephone" title="Звоните">+7 (495) 258-20-45</a></span> |
+      <a class="js-contact" href="mailto:service-request(at)gmail(dot)com" title="Написать письмо">Эл. почта</a>
+      <p class="footer-privacy">© <span itemprop="name">«Полилог»</span> | PR, event, IT c&nbsp;2000г. <a class="nowrap" href="/ru/company/privacy-policy#consent">Политика конфиденциальности</a></p>
+    </div>{# / contacts #}
+  </footer>{# / footer #}

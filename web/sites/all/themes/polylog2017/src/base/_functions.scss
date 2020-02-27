@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// 🎨 COLORS
+// -----------------------------------------------------------------------------
+
+// RETRIEVE COLOR INKS SASS MAPS
+@function color-ink($style: 'normal', $bg: 'normal') {
+
+  @if map-has-key($color-inks, $bg) and map-has-key($color-inks, $bg) {
+    @return map-get(map-get($color-inks, $bg), $style);
+  } @else {
+    @warn 'Could not find #{$bg}/#{$style} in color inks. Valid options are: "normal", "accent", "inverse", "muted"", "hint", "icon", "border" and "link".';
+  }
+}

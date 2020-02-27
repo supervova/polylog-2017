@@ -1,0 +1,93 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/nonprofit/nonprofit.jpg' %}
+{% set slag = 'nonprofit' %}
+{% set tid = '193' %}
+{% set title = '<span class="hidden-lg-up">НКО</span><span class="hidden-lg-down">Некоммерческие организации</span>' %}
+
+{% set
+  client01 = {
+    link: '/ru/news/2015/12-27.htm',
+    title: '5-летний юбилей Благотворительного фонда Елены и&nbsp;Геннадия Тимченко',
+    name: 'Фонд Тимченко',
+    alt: 'PR-услуги для фонда Тимченко',
+    thumbnail: '/a/img/s-projects/industries/nonprofit/case-studies/timtchenko-2015-12-27.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2005/12-24.htm',
+    title: 'КГ «Полилог» помогла юристам России объединиться',
+    name: 'Юристы России',
+    alt: 'PR-услуги для юристов',
+    thumbnail: '/a/img/s-projects/industries/nonprofit/case-studies/lawyers-2005-12-24.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для фондов и ассоциаций">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">Консалтинговая группа «Полилог» познакомилась с&nbsp;третьим сектором еще в&nbsp;2002&nbsp;году, когда мы&nbsp;осуществили организацию и&nbsp;PR-поддержку съезда Евроазиатского еврейского конгресса. В&nbsp;2006 году мы&nbsp;реализовали блок работ по&nbsp;связям с&nbsp;общественностью в&nbsp;рамках съезда Ассоциации юристов России с&nbsp;участием первых лиц государства. Помимо ассоциаций к&nbsp;нашим клиентам и&nbsp;партнерам из&nbsp;сектора НКО относятся фонды, профессиональные союзы и&nbsp;другие общественные объединения.</p>
+        <p>Для клиентов из&nbsp;третьего сектора мы&nbsp;поставляем полный цикл коммуникационных услуг: от&nbsp;организации мероприятий и&nbsp;PR-продвижения до&nbsp;комплексного менеджмента ассоциаций. У&nbsp;нас есть компетенции по&nbsp;монетизации некоммерческих проектов и&nbsp;фандрайзингу, а&nbsp;насыщенный проектный портфель дает нам возможность для организации работы с&nbsp;партнерами&nbsp;— привлечения не&nbsp;только информационных, технологических и&nbsp;интеллектуальных партнеров.</p>
+        <p>Примерами нашей работы с&nbsp;НКО являются креативные решения, техническое обеспечение и&nbsp;PR-сопровождение мероприятий Благотворительного фонда Елены и&nbsp;Геннадия Тимченко; организационно-техническое сопровождение и&nbsp;освещение в&nbsp;СМИ II&nbsp;Конгресса травматологов и&nbsp;ортопедов, который стал одним из&nbsp;самых успешных медицинских форумов в&nbsp;своей области; мероприятия Ассоциации юристов России, организация «под ключ» <span class="nowrap">36-й</span> сессии Комитета Всемирного наследия ЮНЕСКО в&nbsp;Санкт-Петербурге.</p>
+        <p>Некоммерческие организации находятся в&nbsp;фазе активного развития. По&nbsp;какому пути развития пойдет третий сектор в&nbsp;ближайшее время? Некоммерческие организации становятся основным источником инноваций в&nbsp;решении общественных проблем. Поскольку общественные организации призваны идейно объединить людей, очень важно обеспечить правильное позиционирование этих идей в&nbsp;информационном поле. Таким образом, коммуникации в&nbsp;рамках деятельности некоммерческих организаций сводятся к&nbsp;продвижению идей, где&nbsp;мы, как никто другой, сможем помочь вам. <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

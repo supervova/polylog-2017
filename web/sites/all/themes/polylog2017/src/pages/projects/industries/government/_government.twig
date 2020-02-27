@@ -1,0 +1,94 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/government/government.jpg' %}
+{% set slag = 'government' %}
+{% set tid = '199' %}
+{% set title = 'Федеральные<span class="hidden-md-down"> органы</span> власти' %}
+
+{% set
+  client01 = {
+    link: '/ru/news/2016/01-13.htm',
+    title: 'Развитие федеральной информационной системы оказания государственных услуг Минпромторга России',
+    name: 'Минпромторг',
+    alt: 'PR-услуги для Минпромторга России',
+    thumbnail: '/a/img/s-projects/industries/government/case-studies/trading-ministry-2016-01-13.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2016/12-22.htm',
+    title: 'Всероссийский конкурс &laquo;Лучший по&nbsp;профессии в&nbsp;индустрии туризма&raquo;',
+    name: 'Ростуризм',
+    alt: 'Конкурс для Ростуризма',
+    thumbnail: '/a/img/s-projects/industries/government/case-studies/rostourism-2016-12-22.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner left-justified">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для Правительства и Администрации президента">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">Работа Консалтинговой группы «Полилог» с&nbsp;федеральными органами власти началась в&nbsp;2004&nbsp;году, когда компания стала сотрудничать с&nbsp;Постоянным комитетом союзного государства России и&nbsp;Белоруссии. В&nbsp;рамках сотрудничества Полилог обеспечивал комплексную PR-поддержку деятельности комитета, а&nbsp;также реализовывал спецпроекты: осуществил разработку иллюстрированной энциклопедии Союзного государства, организовывал круглые столы, пресс-завтраки и&nbsp;другие пресс-мероприятия. </p>
+        <p>С&nbsp;тех пор клиентская база федеральных заказчиков значительно разрослась. У&nbsp;нас есть опыт работы с&nbsp;Управлением делами Президента, Министерством экономического развития, Министерством образования и&nbsp;науки, Министерством иностранных дел, Министерством по&nbsp;развитию Дальнего Востока, Министерством промышленности и&nbsp;торговли, Федеральным агентством по&nbsp;туризму (Ростуризм), Федеральным дорожным агентством (Росавтодор), Федеральным агентством по&nbsp;техническому урегулированию и&nbsp;метрологии (Росстандарт), Федеральным агентством по&nbsp;делам молодежи (Росмолодежь), Фондом социального страхования и&nbsp;другими федеральными структурами.</p>
+        <p>Мы&nbsp;являемся организаторами таких крупных президентских мероприятий как Мировой политический форум в&nbsp;Ярославле <span class="nowrap">(2009-2011),</span> <span class="nowrap">36-я</span> сессия Комитета Всемирного наследия ЮНЕСКО в&nbsp;Санкт-Петербурге, саммит АТЭС в&nbsp;2012 году и&nbsp;Восточный экономический форум во&nbsp;Владивостоке в&nbsp;2015&nbsp;году. Консалтинговая группа «Полилог» обладает ресурсными возможностями для организации крупномасштабных мероприятий «под ключ», а&nbsp;опыт работы как с&nbsp;зарубежными, так и&nbsp;с&nbsp;национальными СМИ позволяет осуществлять PR-поддержку таких мероприятий.</p>
+        <p>Помимо организации мероприятий и&nbsp;PR-сопровождения мы&nbsp;обладаем опытом внедрения IT-решений для совершенствования функции государственного управления заказчиков. Глубокое понимание тематики административной реформы позволяет нам прорабатывать детальные бизнес-требования заказчика. Мы&nbsp;не&nbsp;предлагаем типовые решения в&nbsp;сфере информационных технологий. Консалтинговая группа «Полилог» предлагает разработку уникальных IT-продуктов по&nbsp;оптимизации процессов оказания государственных услуг в&nbsp;электронном виде и&nbsp;организации межведомственного электронного взаимодействия, а&nbsp;также внедрения программ открытых данных.</p>
+        <p>Разносторонний опыт работы с&nbsp;федеральными органами власти, полное соответствие требованиям Администрации и&nbsp;Службы безопасности Президента&nbsp;РФ, а&nbsp;также эффективная система менеджмента по&nbsp;международным стандартам ISO 9001:2008 позволяет КГ&nbsp;«Полилог» эффективно решить задачи заказчика. <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Vladimir Nikishin -- One-man band -- @supervova
+
+# THANKS
+
+  Polina Nikishina -- daughter, I <3 u
+
+# TECHNOLOGY COLOPHON
+
+  HTML, CSS, JS, Drupal, Git, Composer, Npm, Gulp

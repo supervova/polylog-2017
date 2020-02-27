@@ -1,0 +1,103 @@
+{% extends "/pages/base/base.twig" %}
+
+{% block html_head_add_on %}
+
+<style>
+.page-header-banner {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+figcaption {
+  color: rgb(30, 33, 37);
+}
+
+</style>
+
+{% endblock %}
+
+{% block body %}
+<body class="section-upcoming-events page-event has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">Московский культурный форум 2018</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+<figure class="page-header-banner">
+  <img src="/a/img/s-projects/upcoming-events/headers/mcf-2018.svg" alt="Московский культурный форум 2018">
+</figure>
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+<div class="row gutters-sm pt-lg-66 pb-2">
+  <div class="main-content base" itemscope itemtype="http://schema.org/Event">
+    <p class="lead"><span itemprop="location" itemscope itemtype="http://schema.org/Place">В&nbsp;Центральном выставочном зале «Манеж» <span class="sr-only" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">(Москва)</span></span></span> с&nbsp;<time datetime="2018-03-23T10:00" itemprop="startDate" content="2018-03-23T10:00">23</time>&nbsp;по&nbsp;<time datetime="2018-03-25T19:00" itemprop="endDate" content="2018-03-25T19:00">25&nbsp;марта</time> пройдет <span itemprop="name">Московский культурный форум 2018</span>, где соберутся деятели культуры и&nbsp;искусства, руководители профильных министерств и&nbsp;ведомств, представители бизнеса, а&nbsp;также все, кто ценит искусство. </p>
+    <p>Организатор форума&nbsp;— Департамент культуры города Москвы, а&nbsp;Консалтинговая группа «Полилог» обеспечивает комплексную информационную поддержку мероприятия в&nbsp;СМИ и&nbsp;социальных сетях. </p>
+    <p itemprop="description">Участников и&nbsp;гостей форума ожидает трехдневная программа, которая поделится на&nbsp;деловую часть&nbsp;— для специалистов сферы культуры и&nbsp;искусства и&nbsp;фестивально-образовательную&nbsp;— для жителей и&nbsp;гостей столицы.</p>
+    <p>Вход на&nbsp;форум все три дня свободный.</p>
+    <h3 class="list-caption">Программа форума:</h3>
+    <ul>
+      <li><a href="https://www.mos.ru/city/projects/mkf2018/" target="_blank">На&nbsp;сайте Мэра и Правительства Москвы</a></li>
+      <li><a href="https://www.facebook.com/mosdepkultura/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/kultura_mos/" target="_blank">Instagram</a></li>
+      <li><a href="https://vk.com/kultmos" target="_blank">Вконтакте</a></li>
+    </ul>
+  </div>
+
+  <div class="col-lg-3 offset-lg-1">
+    <figure itemscope itemtype="http://schema.org/Person">
+      <div class="media-wrapper hidden-md-down">
+        <img src="/a/img/people/maria-belykh.jpg" itemprop="image" alt="Мария Белых, менеджер проектов">
+      </div>
+      <figcaption class="img-person-caption mt-lg-30">
+        <h3 class="mb-0">Контакты для СМИ</h3>
+        <span itemprop="name">Мария Белых</span>
+        <ul class="list-icon">
+          <li class="list-icon-item phone-xs">
+            <a class="link phone-number" href="tel:+7-926-339-7072" content="+7926339707" title="Звоните">+7 (926) 339-70-72</a>
+          </li>
+          <li class="list-icon-item email">
+            <a class="js-contact" href="mailto:belykh(at)gmail(dot)com?subject=polylog.ru" title="Написать письмо">Написать письмо</a>
+          </li>
+        </ul>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+<!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+  </article>
+</main>
+
+{% endblock %}{# / block content #}
+
+{% block cta %}
+  {% include "/components/cta/cta-careers-cv.twig" %}
+{% endblock %}{# / block cta #}

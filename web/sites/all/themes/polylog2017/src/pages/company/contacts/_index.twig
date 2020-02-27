@@ -1,0 +1,115 @@
+{% extends "/pages/base/base.twig" %}
+
+{% block html_head_add_on %}
+  <style type="text/css">
+    .form.contact,
+    .webform-client-form {
+      padding: 1.6rem 0 .2rem;
+    }
+
+    @media (min-width: 768px) {
+      .form.contact,
+      .webform-client-form {
+        padding-top: 4rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .form.contact,
+      .webform-client-form {
+        padding-top: 6.4rem;
+      }
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+<body class="section-company has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">Контактная информация</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+<!-- Header banner -->
+    <div class="page-header-map">
+      <div class="page-header-prelorer" role="progressbar" aria-busy="true" aria-label="Loading, please wait." ></div>
+      <div class="page-header-map-wrapper">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad727951eaf6de88f142a4dbe77e2d2e0b9090d166a003d697c9ae1da782fbc1d&amp;width=900&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      {# <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8980.678207639354!2d37.55777891468178!3d55.755556793525265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bd1c4b2c753%3A0x6d665ce8cd00b23!2zUFIt0LDQs9C10L3RgtGB0YLQstC-ICLQn9C-0LvQuNC70L7QsyI!5e0!3m2!1sru!2s!4v1500715248942" width="900" height="209" allowfullscreen></iframe> #}
+    </div>
+<!-- / header banner -->
+
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+    <div class="row gutters-sm">
+
+      <div class="main-content base">
+        <p><strong>Нужен PR, организация мероприятий, IT? Звоните, пишите&nbsp;— обсудим.</strong></p>
+        <ul class="list-icon relaxed">
+          <li class="list-icon-item address">123610, Москва, Краснопресненская набережная, 12<br/>
+          (Центр международной торговли, ЦМТ),<br/>
+          подъезд&nbsp;3, этаж&nbsp;11, офис 1108
+          </li>
+          <li class="list-icon-item phone-xs">Тел./факс: <a class="link phone-number" href="tel:+7-495-258-2045" title="Звоните">+7 (495) 258-20-45</a><span>, </span><a class="link phone-number" href="tel:+7-495-258-2046" title="Звоните">258-20-46</a><br/>
+          <span class="text-muted"> (секретарь работает с&nbsp;10:15 до&nbsp;19&nbsp;часов по&nbsp;будням)</span>
+          </li>
+          <li class="list-icon-item email">
+            <a class="js-contact" href="mailto:service-request(at)gmail(dot)com" title="Написать письмо">Эл. почта</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 offset-lg-1 hidden-md-down">
+        <figure class="img-module mt-m6">
+
+          <img src="/a/img/s-company/contacts/wtc.png" alt="Центр международной торговли">
+
+          <figcaption>
+            ЦМТ
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- <?php print render(node_view(node_load(3598), 'full', NULL)); ?> -->
+      {% include "/components/form/contact/form.twig" %}
+    </div>
+<!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}
+
+{% block cta %}
+{% endblock %}{# / block cta #}

@@ -1,0 +1,31 @@
+{# Use it in search results, category and author archives, blog feed #}
+
+<li class="entry" id="entry-{{post.ID}}" itemscope itemtype="https://schema.org/Article">
+
+  {% if post.thumbnail.src %}
+  <figure class="media-wrapper">
+    <img class="entry-img" src="{{post.thumbnail.src}}" alt="{{post.title}}">
+  </figure>
+  {% endif %}
+
+  <a class="entry-body" href="{{post.link}}">
+    <h2 class="entry-headline" itemprop="headline">
+      {{post.title}}
+    </h2>
+    <p class="entry-summary" itemprop="about">{{post.get_preview}}</p>
+    <meta itemprop="author" content="{{post.author}}">
+    <meta itemprop="datePublished" content="{{post.post_date|date('Y-m-d')}}">
+    <meta itemprop="publisher" content="{{company.name}}">
+  </a>
+
+  {#
+  {% block footer %}
+  <footer class="entry-footer meta">
+    <time class="meta-date" itemprop="datePublished" datetime="{{post.post_date|date('Y-m-d')}}"><i>{{post.post_date|date('j')}}</i> {{post.post_date|date('M Y')}}</time>
+    <ul class="meta-tags" itemprop="keywords">
+      <li><a href="#todo">Менеджмент</a></li>
+    </ul>
+  </footer>
+  {% endblock %}
+  #}
+</li>

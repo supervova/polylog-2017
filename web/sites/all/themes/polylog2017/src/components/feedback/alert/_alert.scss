@@ -1,0 +1,7 @@
+// H5BP .browserupgrade, noscript etc
+.alert.browser-requirements {
+  @extend .alert-warning;
+
+  background: $alert-warning-bg;
+  color: $alert-warning-text;
+}

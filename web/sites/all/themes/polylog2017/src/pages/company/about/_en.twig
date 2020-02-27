@@ -1,0 +1,215 @@
+{% extends "/pages/base/base.twig" %}
+
+{% block html_head_add_on %}
+  <style type="text/css">
+    @media (max-width: 767px) {
+      .page-header-headline > i {
+        display: none;
+      }
+    }
+    .mosaic-pic.event-conference {
+      background-image: url('/a/img/s-company/about/doctors.jpg');
+    }
+    .mosaic-pic.event-forum {
+      background-image: url('/a/img/s-company/about/eef.jpg');
+    }
+    .mosaic-pic.pr-veb {
+      background-image: url('/a/img/s-company/about/masha.jpg');
+    }
+    .mosaic-pic.office-view {
+      background-image: url('/a/img/s-company/about/view.jpg');
+    }
+    .mosaic-pic.pr-team {
+      background-image: url('/a/img/s-company/about/dasha.jpg');
+    }
+    .mosaic-pic.pr-award {
+      background-image: url('/a/img/s-company/about/award.jpg');
+    }
+    .section.benefits {
+      padding-top: 2.2rem;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+<body class="section-company has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">Company overview</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="/a/img/s-company/about/header.jpg" alt="Team">
+    </figure>
+
+<!-- CUT TO BODY -->
+    <div class="page-lead d-flex justify-content-center text-center pt-66 mb-36">
+      <p class="col-lg-7">Established in&nbsp;2000, Polylog Consulting Group specializes in&nbsp;PR and integrated marketing campaigns. Our services include&nbsp;PR, event management, GR, and corporate media.</p>
+    </div>
+
+    <figure class="mosaic">
+
+      <div class="row">
+
+        {# Img: Conference #}
+        <div class="col-lg-3 hidden-md-down">
+          <div class="mosaic-pic event-conference" role="img" aria-label="Event management" title="Event management"></div>
+        </div>{# / img #}
+
+        {# Metric #}
+        <div class="col-sm-6 col-lg-3">
+          <div class="tile metric text-center">
+
+            <div class="tile-body aligned-center-2-lines">
+              <h2 class="tile-number">
+                2000
+              </h2>
+              <span class="tile-thought-end compact">
+                year of establishment
+              </span>
+            </div>
+
+          </div>{# / metric #}
+        </div>{# / metric #}
+
+        {# Img: Forum #}
+        <div class="col-sm-6 col-lg-6 hidden-xs-down">
+          <div class="mosaic-pic event-forum" role="img" aria-label="Event management" title="Event management"></div>
+        </div>{# / img #}
+
+        <div class="col-sm-6 col-lg-6">
+          <div class="mosaic-pic pr-veb" role="img" aria-label="Public relations" title="Public relations"></div>
+        </div>{# / img #}
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="tile metric text-center">
+
+            <div class="tile-body aligned-center-3-lines">
+              <h2 class="tile-number">
+                92
+              </h2>
+              <span class="tile-thought-end compact">
+                almost one hundred employees
+              </span>
+            </div>
+
+          </div>{# / metric #}
+        </div>{# / metric #}
+
+        <div class="col-lg-3 hidden-md-down">
+          <div class="mosaic-pic office-view has-instagram-link" role="img" aria-label="The agency meeting room" title="The agency meeting room">
+            <a class="mosaic-hidden-link" href="https://www.instagram.com/polylogteam/" target="_blank">We're on Instagram</a>
+          </div>
+        </div>{# / img #}
+
+      </div>
+    </figure>
+
+    <hr class="tiles2title hidden">
+
+    <section class="section section-marketing">
+
+      <h2 class="section-headline text-center next-is-icon">
+        Dozens of&nbsp;PR&nbsp;consultants, managers and&nbsp;thought leaders<br>
+        <small>work for&nbsp;the&nbsp;client</small>
+      </h2>
+
+      <div class="row">
+
+        <div class="section-marketing-col team">
+          <h3>Team</h3>
+          <p>Polylog is&nbsp;a&nbsp;professional team with education and experience in&nbsp;fields such as&nbsp;journalism, economics, sociology, psychology, history.</p>
+        </div>
+
+        <div class="section-marketing-col experts">
+          <h3>Experts and celebrities</h3>
+          <p>Opinion leaders are involved in&nbsp;the work on&nbsp;projects. Experts in&nbsp;key areas of&nbsp;business. Television, radio, cinema and music celebrities. Officials.</p>
+        </div>
+
+        <div class="section-marketing-col travel-agency">
+          <h3>Travel agency</h3>
+          <p>We&nbsp;have our own travel agency Corporate Travel. It&nbsp;allows&nbsp;us to&nbsp;organize international events of&nbsp;any complexity.</p>
+        </div>
+
+      </div>
+    </section>
+
+    {# The Second Mosaic#}
+    <figure class="mosaic">
+
+      <div class="row">
+
+        {# Img: Dasha #}
+        <div class="col-lg-3 hidden-md-down">
+          <div class="mosaic-pic pr-team" role="img" aria-label="PR agency team" title="PR agency team"></div>
+        </div>{# / img #}
+
+        {# Img: Award #}
+        <div class="col-sm-6 col-lg-6 hidden-xs-down">
+          <div class="mosaic-pic pr-award" role="img" aria-label="PR agency awards" title="PR agency awards"></div>
+        </div>{# / img #}
+
+        {# Metric #}
+        <div class="col-sm-6 col-lg-3">
+          <div class="tile metric text-center">
+
+            <div class="tile-body aligned-center-3-lines">
+              <h2 class="tile-number">
+                600+
+              </h2>
+              <span class="tile-thought-end compact">
+                more&nbsp;than&nbsp;six hundred projects
+              </span>
+            </div>
+
+          </div>{# / metric #}
+        </div>{# / metric #}
+
+      </div>
+    </figure>
+
+    <section class="section benefits under-mosaic">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h2 class="section-headline secondary">Together for&nbsp;a&nbsp;long time</h2>
+          <ul>
+            <li>We&nbsp;emphasize long-term relationships, not one-off projects; 90% of&nbsp;our clients are regular customers.</li>
+            <li>We&nbsp;are a&nbsp;consulting group, not just an&nbsp;agency; our work is&nbsp;based on&nbsp;a&nbsp;thorough understanding of&nbsp;our clients’ needs and ranges from designing creative solutions to&nbsp;organizing campaigns and projects of&nbsp;any degree of&nbsp;complexity.</li>
+            <li><strong>„Polylog” is&nbsp;the only Russian PR&nbsp;agency certified according to&nbsp;ISO 9001:2008.</strong> Areas are development and implementation of&nbsp;public relations programs and processes related to&nbsp;the organization of&nbsp;business events.</li>
+            <li>We&nbsp;achieve results, keeping track of&nbsp;client’s KPIs.</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="section-headline secondary">Awards and ratings</h2>
+          <p class="mb-0"><strong><span class="hlaquo-body">“</span>Polylog” has ranked high in&nbsp;the industry rankings for many years.</strong></p>
+          <ul>
+            <li>Leading PR&nbsp;agencies to&nbsp;the AllAdvertising.</li>
+            <li>Expert Magazine’s list of&nbsp;Russia’s Top 150 consulting groups.</li>
+            <li>RIA Novosti group’s list of&nbsp;Russian communications (PR) companies.</li>
+            <li>НР2К&nbsp;— National rating of&nbsp;communication companies.</li>
+          </ul>
+          <p>The national&nbsp;PR industry Silver Archer prize is&nbsp;among our professional awards.</p>
+        </div>
+
+      </div>
+    </section>
+  <hr class="text2cta hidden">
+
+<!-- / CUT TO BODY -->
+  </article>
+
+
+</main>
+
+{% endblock %}{# / block content #}

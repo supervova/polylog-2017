@@ -1,0 +1,93 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/auto/auto.jpg' %}
+{% set slag = 'auto' %}
+{% set tid = '38' %}
+{% set title = 'Автомобилестроение<span class="hidden-md-down"> и&nbsp;транспорт</span>' %}
+
+{% set
+  client01 = {
+    link: '/ru/news/2016/03-31.htm',
+    title: 'Итоговая пресс-конференция компании Scania',
+    name: 'Scania',
+    alt: 'PR-услуги для Scania',
+    thumbnail: '/a/img/s-projects/industries/auto/case-studies/scania-2016-03-31.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2012/08-31.htm',
+    title: 'Mitsubishi Motors на&nbsp;Московском международном автомобильном салоне',
+    name: 'Mitsubishi',
+    alt: 'Пиар-услуги для Mitsubishi',
+    thumbnail: '/a/img/s-projects/industries/auto/case-studies/mitsubishi-2012-08-31.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для автомобильной промышленности и транспортных компаний">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">Знакомство Консалтинговой группы «Полилог» с&nbsp;рынком транспорта и&nbsp;автомобилестроения произошло в&nbsp;2008&nbsp;году, когда мы&nbsp;осуществили подготовку и&nbsp;проведение презентации нового автомобиля Mitsubishi. С&nbsp;тех пор у&nbsp;нас накопился опыт организации и&nbsp;пресс-сопровождения презентаций автомобилей, бизнес-конференций автопроизводителей, организации поддержки участия автомобильных брендов в&nbsp;Московском международном автосалоне, проведения внутрикорпоративных мероприятий и&nbsp;встреч.</p>
+        <p>К&nbsp;нашим клиентом относятся как производители легковых автомобилей личного пользования (Mitsubishi), производители грузовых автомобилей (Scania), так и&nbsp;производители современной техники для содержания дорог (BUCHER, Меркатор). Также у&nbsp;нас есть кросс-отраслевой опыт работы с&nbsp;поставщиками услуг по&nbsp;автолизингу и&nbsp;автострахованию&nbsp;— мы&nbsp;обеспечивали абонентское PR-обслуживание компании CARCADE, специализирующейся на&nbsp;лизинге легкового автотранспорта для предприятий среднего и&nbsp;малого бизнеса, сотрудничали с&nbsp;Российским союзом автостраховщиков.</p>
+        <p>В&nbsp;рамках работы с&nbsp;отраслью Полилог предоставляет полный спектр услуг по&nbsp;организации профессиональных мероприятий и&nbsp;PR-освещению и&nbsp;поддержке упоминаемости в&nbsp;целевых регионах. Отрасль отличает большое количество каналов для B2C-коммуникации&nbsp;— профессиональных изданий, СМИ, форумов, блогеров, среди которых нами сформирован пул лояльных медиа-партнеров.</p>
+        <p>Еще в&nbsp;19&nbsp;веке Карл Маркс в&nbsp;«Капитале» отмечал транспортную промышленность как одну из&nbsp;основных отраслей, формирующих экономику: «То, что продает транспортная промышленность, является само перемещение». Сегодня отрасль не&nbsp;стоит на&nbsp;месте, 21&nbsp;век диктует свои правила: повсеместно внедряются эко-технологии, развивается экономика совместного потребления (sharing-сервисы и&nbsp;такси), развивается общественный транспорт. Мы&nbsp;хорошо понимаем последние рыночные тенденции и&nbsp;знаем, как построить эффективную коммуникацию с&nbsp;их&nbsp;учетом. <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// Centered
+// -----------------------------------------------------------------------------
+
+%blog-centered {
+  @include media-breakpoint-up(lg) {
+    max-width: 636px;
+  } // lg
+}
+
+.section-blog {
+  .article-eyebrow,
+  .tutorial-eyebrow,
+  .article-headline,
+  .article-lead,
+  .article-body,
+  .mosaic-caption,
+  .article-footer,
+  .figure.has-video {
+    @extend %blog-centered;
+  }
+}
+
+// Add space for social buttons
+.section-blog .article-lead,
+.section-blog .article-body {
+  @include media-breakpoint-up(lg) {
+    padding-right: (636px - 498px);
+  }
+}
+
+.section-blog .article-body {
+  position: relative;
+}
+
+// stylelint-disable selector-max-compound-selectors
+.section-blog .article-body .sticky-wrapper + p {
+  font-weight: bolder;
+}
+// stylelint-enable selector-max-compound-selectors
+
+
+// -----------------------------------------------------------------------------
+// Body
+// -----------------------------------------------------------------------------
+
+.section-blog .article-lead {
+  position: relative;
+}
+
+
+// -----------------------------------------------------------------------------
+// Comments
+// -----------------------------------------------------------------------------
+
+.section-blog .comments {
+  @extend %blog-centered;
+}
+

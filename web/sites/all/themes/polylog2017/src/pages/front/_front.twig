@@ -1,0 +1,352 @@
+{% extends "/pages/base/base.twig" %}
+
+{# eyebrow: Featured Project | Новый проект #}
+{# alignment: 'jumbotron-inner' | 'jumbotron-inner jumbotron-inner-left' | 'jumbotron-inner jumbotron-inner-right', #}
+{# ⚠️ lead should be .jumbotron-summary in order to add chevron #}
+{% set featured = {
+  link: '/ru/projects/2020/dni-dalnego-vostoka-moskve',
+  eyebrow: 'Новый проект',
+  headline: '<b>Дни Дальнего Востока</b> в&nbsp;Москве',
+  lead: 'С&nbsp;12&nbsp;по&nbsp;14&nbsp;декабря в&nbsp;«Экспоцентре» ежегодный Фестиваль «Дни Дальнего Востока в&nbsp;Москве» открыл для 27&nbsp;000 посетителей всё самое интересное, <span class="hidden-xs-down">перспективное, вкусное и&nbsp;музыкальное,</span> чем богат Дальний Восток<span class="hidden-xs-down"> нашей страны. Организацией мероприятия занималось агентство «Полилог»</span>.',
+  title: 'Дни Дальнего Востока в Москве 2019',
+  alignment: 'jumbotron-inner jumbotron-inner-right',
+  manager: 'руководитель проекта Андрей Макеев',
+
+} %}
+
+{% block html_head_add_on %}
+<!-- EXPAND IN STYLE ––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="/sites/all/themes/polylog2017/src/css/head-styles-front.css">
+<!-- / EXPAND IN STYLE ––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{% endblock %}
+
+{% block body %}
+<body class="page-front has-dark-jumbotron">
+{% endblock %}
+
+{% block content %}
+
+<!--
+
+
+
+
+CUT IN JUMBOTRON
+
+
+
+
+-->
+  <div class="jumbotron layered">
+    <figure class="jumbotron-hero" title="{{ featured.title }}">
+      <figcaption class="jumbotron-wrapper">
+        <div class="jumbotron-container">
+          <div class="{{ featured.alignment }}">
+            <a class="jumbotron-body" href="{{ featured.link }}">
+              <!--noindex-->
+              <span class="jumbotron-eyebrow ani-slide-down">{{ featured.eyebrow }}</span>
+              <h1 class="jumbotron-headline ani-slide-down">{{ featured.headline }}</h1>
+              {# <p class="jumbotron-byline lighter ani-slide-down"><b>Рассказывает</b> {{ featured.manager }}</p> #}
+              <p class="jumbotron-summary ani-slide-down">{{ featured.lead }}</p>
+              <!--/noindex-->
+            </a>
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+<!--
+
+
+
+
+/ CUT IN JUMBOTRON
+
+
+
+
+-->
+
+{# -----------------------------------------------------------------------------
+    BODY COPY
+   -------------------------------------------------------------------------- #}
+
+  <main class="container">
+<!--
+
+
+
+
+CUT IN BODY
+
+
+
+
+-->
+    {# USP & SERVICES #}
+    <div class="row">
+
+      {# USP #}
+      <div class="col-lg-6">
+        <div class="tile intro large group">
+
+          {# <a class="tile-header js-mfp-video" href="https://www.youtube.com/watch?v=IwT4Cv9YIfM"> #}
+          <a class="tile-header" href="/ru/services" title="На фото — генеральный директор компании, Олег Карпилов">
+            <div class="tile-body">
+              <h2 class="tile-headline">Вы&nbsp;хотите, чтобы вас знали  и&nbsp;уважали?</h2>
+              <p class="tile-summary">Чтобы о&nbsp;вас писали и&nbsp;говорили? Чтобы рекомендовали? Сделаем.</p>
+            </div>
+            <p class="tile-footer">{#<span class="icon video" role="presentation"></span>Видео#}Все услуги</p>
+            <img class="tile-img" src="/a/img/people/oleg-on-front.png" alt="Олег Карпилов, генеральный директор PR-агентства «Полилог»">
+            <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+          </a>
+
+          {# Clients #}
+          <div class="slider has-4-slides">
+
+            <ul class="slider-inner" role="listbox" aria-label="Клиенты">
+
+              {# Unesco, Philips, Beeline #}
+              <li class="slider-item">
+                <ul class="clients">
+                  <li class="clients-item"><span class="clients-logo unesco" aria-label="ЮНЕСКО" title="ЮНЕСКО">ЮНЕСКО</span></li>
+                  <li class="clients-item"><span class="clients-logo philips" aria-label="Philips" title="Philips">Philips</span></li>
+                  <li class="clients-item"><span class="clients-logo beeline" aria-label="Билайн" title="Билайн">Билайн</span></li>
+                </ul>
+              </li>
+
+              {# Mitsubishi, Microsoft, Logitech #}
+              <li class="slider-item second">
+                <ul class="clients">
+                  <li class="clients-item"><span class="clients-logo mitsubishi" aria-label="Mitsubishi" title="Mitsubishi Motors">Mitsubishi Motors</span></li>
+                  <li class="clients-item"><span class="clients-logo microsoft" aria-label="Microsoft" title="Microsoft">Microsoft</span></li>
+                  <li class="clients-item"><span class="clients-logo logitech" aria-label="Logitech" title="Logitech">Logitech</span></li>
+                </ul>
+              </li>
+
+              {# Sandoz, Scania, Samsung #}
+              <li class="slider-item third">
+                <ul class="clients">
+                  <li class="clients-item"><span class="clients-logo sandoz" aria-label="Sandoz" title="Sandoz">Sandoz</span></li>
+                  <li class="clients-item"><span class="clients-logo scania" aria-label="Scania" title="Scania">Scania</span></li>
+                  <li class="clients-item"><span class="clients-logo samsung" aria-label="Samsung" title="Samsung">Samsung</span></li>
+                </ul>
+              </li>
+
+              {# Barbie, APEC, Ochakovo #}
+              <li class="slider-item fourth">
+                <ul class="clients">
+                  <li class="clients-item"><span class="clients-logo barbie" aria-label="Barbie" title="Barbie">Barbie</span></li>
+                  <li class="clients-item"><span class="clients-logo apec" aria-label="Деловой саммит АТЭС 2012" title="Деловой саммит АТЭС 2012">Деловой саммит АТЭС 2012</span></li>
+                  <li class="clients-item"><span class="clients-logo ochakovo" aria-label="Очаково" title="Очаково">Очаково</span></li>
+                </ul>
+              </li>
+
+            </ul>{# clients list #}
+
+            <a class="link forward" href="/ru/projects">Все клиенты</a>
+          </div>{# / clients #}
+        </div>{# / tile #}
+      </div>{# / col: usp #}
+
+
+      {# SERVICES #}
+      <div class="col-lg-6 flex-lg-first">
+        <div class="row">
+
+         {# EVENT #}
+          <div class="col-sm-6">
+            <a class="tile event signage" href="/ru/services/event-management">
+              <div class="tile-body">
+                <h2 class="tile-headline services"><span class="icon event top"></span>Организация<br>
+                мероприятий</h2>
+                <h3 class="tile-subhead">съезды, выставки,<br>
+                конференции, BTL</h3>
+                <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+              </div>
+            </a>
+          </div>
+
+          {# PR #}
+          <div class="col-sm-6">
+            <a class="tile pr signage" href="/ru/services/public-relations">
+              <div class="tile-body">
+
+                <h2 class="tile-headline services"><span class="icon pr top"></span>PR<br>
+                (Public&nbsp;Relations)</h2>
+                <h3 class="tile-subhead">традиционные СМИ,<br>
+                новые медиа</h3>
+                <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+              </div>
+            </a>
+          </div>
+
+          {# FUNDRAISING #}
+          <div class="col-sm-6">
+            <a class="tile fundraising signage" href="/ru/services/fundraising">
+              <div class="tile-body">
+                <h2 class="tile-headline services"><span class="icon fundraising top"></span>Фандрайзинг</h2>
+                <h3 class="tile-subhead">привлечение средств для&nbsp;финансирования<br>
+                масштабных проектов</h3>
+                <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+              </div>
+            </a>
+          </div>
+
+          {# IT #}
+          <div class="col-sm-6">
+            <a class="tile rnd signage" href="http://it.polylog.ru" target="_blank" rel="noopener noreferrer">
+              <div class="tile-body">
+                <h2 class="tile-headline services"><span class="icon rnd top"></span>IT</h2>
+                <h3 class="tile-subhead">цифровые<br>
+                 решения</h3>
+                <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+              </div>
+            </a>
+          </div>
+
+        </div>{# / .row: services #}
+      </div>{# / .col: services #}
+    </div>{# / .row: usp + services #}
+
+    {# FEATURED PROJECTS & BLOG #}
+    <!--noindex-->
+    <div class="row">
+
+      {# FEATURED #}
+      <div class="col-lg-6">
+
+        {# Carousel #}
+        <div class="carousel slide has-tile js-manual" id="projects" data-ride="carousel">
+
+          {# Carousel viewport #}
+          <div class="tile large group like-link carousel-inner" role="listbox">
+
+            {# Hot Wheels #}
+            <a class="tile-slide carousel-item active" href="/ru/projects/2018/hot-wheels-polveka-raduet-detey-stavit-rekord">
+              <div class="tile-img top-fit in-large-tile" style="background-image: url('/a/img/clients/hot-wheels/2018-08-29-featured.jpg')" role="img" aria-label="Рекорд игрушечных машинок Hot Wheels"></div>
+              <h2 class="tile-headline">
+                <b>Юбилей и&nbsp;pекорд</b> игрушечных машинок Hot&nbsp;Wheels
+              </h2>
+              <p class="tile-summary">Консалтинговая группа «Полилог» разработала концепцию торжеств и&nbsp;всё это организовала</p>
+            </a>
+
+            {# Russia is an Opportunities Country #}
+            <a class="tile-slide carousel-item" href="/ru/projects/2018/forum-rossiya-strana-vozmozhnostey">
+              <div class="tile-img top-fit in-large-tile" style="background-image: url('/a/img/clients/presidential-administration/2018-04-02-featured.jpg')" role="img" aria-label="В форуме участвовали первые лица государства"></div>
+              <h2 class="tile-headline"><b>Форум</b> «Россия — страна возможностей»</h2>
+              <p class="tile-summary">Комплексная информационная поддержка мероприятия, проведенного в&nbsp;марте <span class="nowrap">2018-го</span> на&nbsp;ВДНХ</p>
+            </a>
+
+            {# Moscow Cutrural Forum #}
+            <a class="tile-slide carousel-item" href="/ru/projects/2018/moskovskiy-kulturnyy-forum">
+              <div class="tile-img top-fit in-large-tile" style="background-image: url('/a/img/clients/moscow/2018-04-18-featured.jpg?v2')" role="img" aria-label="Программа"></div>
+              <h2 class="tile-headline"><b>Московский</b> культурный форум</h2>
+              <p class="tile-summary">Информационная поддержка мероприятия в&nbsp;СМИ и&nbsp;социальных сетях</p>
+            </a>
+
+          </div>{# / Carousel viewport #}
+
+          {# Prev / Next #}
+          <a class="carousel-control left positive" href="#projects" data-slide="prev" role="button" aria-label="Назад"></a>
+          <a class="carousel-footer" href="/ru/projects">Все кейсы</a>
+          <a class="carousel-control right positive" href="#projects" data-slide="next" role="button" aria-label="Вперёд"></a>
+
+        </div>{# / carousel #}
+      </div>{# / col: featured #}
+
+      {# BLOG+ #}
+      <div class="col-lg-6">
+        <div class="row">
+
+          {# POLYCODE #}
+          <div class="col-sm-6 col-lg-12">
+            <a class="tile is-polycode poster wide" href="http://it.polylog.ru/polycode" target="_blank" rel="noopener noreferrer">
+              <div class="tile-body">
+                <h2 class="tile-headline">POLYCODE</h2>
+                <p class="tile-subhead">
+                  Платформа, объединяющая возможности
+                  <span class="d-lg-none"> органайзеров, ERP, CRM и&nbsp;BPM</span>
+                  <span class="d-none d-lg-block"> task-менеджеров, ERP-, CRM- и&nbsp;BPM-систем</span>
+                </p>
+                {# <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg> #}
+              </div>
+              <figure class="tile__figure">
+                <img class="tile-img" src="/a/img/p-front/card/polycode.svg" alt="POLYCODE">
+              </figure>
+            </a>
+          </div>
+
+          {# FOCUS / PR HELP #}
+          <div class="col-sm-6 hidden-md-down">
+            <a class="tile focus poster" href="/ru/pr-blog/help">
+              <div class="tile-body">
+                <h2 class="tile-headline">Энциклопедия PR</h2>
+                <h3 class="tile-subhead">От «Антикризисных коммуникаций» до&nbsp;«Яндекс.Аудиторий»</h3>
+              </div>
+              <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+            </a>
+          </div>
+
+          {# BLOG #}
+          <div class="col-sm-6">
+
+            <!-- <?php print views_embed_view('blog', $display_id = 'link_on_front'); ?> -->
+            <a class="tile blog poster" href="/ru/pr-blog/2018/avtobany-neon-kalkulyatory">
+              <div class="tile-body">
+                <h2 class="tile-headline">
+                  В блоге
+                </h2>
+                <h3 class="tile-subhead">Автобаны, неон и калькуляторы</h3>
+              </div>
+              <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward"></use></svg>
+            </a>
+          </div>
+
+        </div>{# / row #}
+      </div>{# / col: blog+ #}
+    </div>{# / row: featured + blog #}
+
+    {# PROMO, JOBS AND MANAGEMENT #}
+    <div class="row">
+
+      {# POLYLOG PROMO #}
+      {% include "/components/card/polylog-promo/2019-eof/front-tile.twig" %}
+
+      {# JOBS #}
+      <div class="col-sm-6 col-lg-3 flex-lg-first hidden-xs-down">
+        <a class="tile jobs poster" href="/ru/careers/jobs">
+          <div class="tile-body">
+            <h2 class="tile-headline">Работа <span class="hidden-xl-down">в&nbsp;«Полилоге»</span></h2>
+            <p class="tile-summary">Нам требуются<br>
+            талантливые пиарщики, маркетологи, event- и&nbsp;IT-специалисты. Приходите</p>
+          </div>
+          <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+        </a>
+      </div>
+
+      {# MANAGEMENT #}
+      <div class="col-sm-6 col-lg-3">
+        <a class="tile management poster" href="/ru/company/management">
+          <h2 class="tile-headline">Команда</h2>
+          <img class="tile-img" src="/a/img/people/max.png" alt="Максим Сучков, бизнес-директор PR-агентства «Полилог»">
+          <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+        </a>
+      </div>
+
+    </div>{# / row: promo, jobs, management #}
+    <!--/noindex-->
+<!--
+
+
+
+
+/ CUT IN BODY
+
+
+
+
+-->
+  </main>{# / page-content #}
+
+{% endblock %}{# / block content #}

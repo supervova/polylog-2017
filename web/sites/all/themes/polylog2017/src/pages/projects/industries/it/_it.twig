@@ -1,0 +1,93 @@
+{% extends "/pages/base/base.twig" %}
+
+{% set banner = '/a/img/s-projects/industries/it/it.jpg' %}
+{% set slag = 'information-communications-technology' %}
+{% set tid = '189' %}
+{% set title = '<span class="hidden-lg-up">IT и&nbsp;телеком</span><span class="hidden-lg-down">Информационно-коммуникационные технологии</span>' %}
+
+{% set
+  client01 = {
+    link: '/ru/news/2017/01-26.htm',
+    title: 'BTL-акции для&nbsp;китайского <span class="nowrap">IT-гиганта</span>',
+    name: 'LeEco',
+    alt: 'PR для LeEco',
+    thumbnail: '/a/img/s-projects/industries/it/case-studies/leeco-2017-01-26.jpg'
+  }
+%}
+
+{% set
+  client02 = {
+    link: '/ru/news/2015/03-30.htm',
+    title: 'Компания «Билайн» на&nbsp;<span class="nowrap">90-летии</span> Московского такси в&nbsp;парке ВДНХ',
+    name: 'Билайн',
+    alt: 'PR для «Билайн»',
+    thumbnail: '/a/img/s-projects/industries/it/case-studies/beeline-2015-03-30.jpg'
+  }
+%}
+
+{% block body %}
+<body class="section-projects has-page-header has-article-banner">
+{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <article class="article">
+
+    {# Page header #}
+    <div class="page-header">
+      <h1 class="page-header-headline">{{ title }}</h1>
+      <span class="page-header-icon" role="presentation"></span>
+    </div>{# / page header #}
+
+    <figure class="page-header-banner">
+      <img src="{{ banner }}" alt="PR-проекты для IT-сектора и коммуникационных компаний">
+    </figure>
+
+    {# Main row #}
+    <div class="row has-sidebar-and-breadcrumb">
+
+      <nav class="breadcrumb base">
+        <a class="breadcrumb-item home" href="/">Главная</a>
+        <a class="breadcrumb-item" href="/ru/projects">Проекты</a>
+        <a class="breadcrumb-item" href="/ru/projects/industries">Наш опыт по&nbsp;отраслям</a>
+        <span class="breadcrumb-item">{{ title }}</span>
+      </nav>
+
+      {# Main content #}
+      <div class="main-content second">
+        <p class="lead">Работа PR-агентства «Полилог» в&nbsp;сфере информационно-коммуникационных технологий началась в&nbsp;2003&nbsp;году. Первыми клиентами стали производители и&nbsp;дистрибьюторы компьютеров и&nbsp;комплектующих, которым мы&nbsp;формировали репутацию надежных поставщиков, в&nbsp;том числе продвигая победы в&nbsp;корпоративных и&nbsp;государственных тендерах.</p>
+        <p>Пул наших клиентов составляют вендоры, дистрибуторы, софтверные компании, интеграторы и&nbsp;телекоммуникационные компании. Наиболее значимыми проектами мы&nbsp;сами считаем долгосрочное информационное сопровождение «Билайн», PR-кампанию для Microsoft против пиратства и&nbsp;маркетинговые решения для Adobe. </p>
+        <p>Консультанты PR-агентства «Полилог» отлично разбираются в&nbsp;специфике этой отрасли, понимая принципы разграничения рынка информационно-коммуникационных технологий на&nbsp;B2B и&nbsp;B2C&nbsp;сегменты, и&nbsp;внимательно следят за&nbsp;тенденциями и&nbsp;динамикой ее&nbsp;развития. Поэтому мы&nbsp;готовы быстро диверсифицировать перечень наших услуг и&nbsp;предложить новые опции клиентам с&nbsp;учетом тенденций отрасли: конвергенция рынка ИКТ с&nbsp;рынком финансовых услуг, развитие виртуальной экономики, Big Data, интернет вещей.</p>
+        <p>Используя разносторонний опыт, мы&nbsp;предлагаем клиентам стратегическое планирование и&nbsp;проведение интегрированных маркетинговых кампаний с&nbsp;применением нетривиальных решений и&nbsp;таргетированным воздействием на&nbsp;целевую аудиторию. Комплексные решения для клиентов сопровождаются высокой профессиональной культурой выполнения поставленных задач и&nbsp;ориентацией на&nbsp;достижение заявленных KPI. <br class="br-lg-up"><br class="br-lg-up">
+        <a class="link forward" href="/ru/projects?services={{ tid }}">См. примеры работ</a></p>
+      </div>{# / main content #}
+
+      {# Sidebar #}
+      <div class="sidebar has-projects">
+
+        {# The 1st client #}
+        <a class="project" href="{{ client01.link }}">
+          <img src="{{ client01.thumbnail }}" alt="{{ client01.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client01.name }}">{{ client01.name }}</h3>
+            <h2 class="project-headline">{{ client01.title }}</h2>
+          </div>
+        </a>{# / the 1st client #}
+
+        <a class="project hidden-xs-down" href="{{ client02.link }}">
+          <img src="{{ client02.thumbnail }}" alt="{{ client02.alt }}">
+          <div class="project-caption">
+            <h3 class="project-eyebrow" title="{{ client02.name }}">{{ client02.name }}</h3>
+            <h2 class="project-headline">{{ client02.title }}</h2>
+          </div>
+        </a>{# / the 2nd client #}
+
+      </div>{# / sidebar #}
+    </div>{# / row #}
+
+  </article>
+</main>
+
+{% endblock %}{# / block content #}

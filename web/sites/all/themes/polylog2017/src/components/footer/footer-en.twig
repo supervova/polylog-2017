@@ -1,0 +1,31 @@
+  <footer class="footer container">
+    <!--noindex-->
+    <div class="row">
+      {# SUBSCRIBE #}
+      <div class="footer-last-options col-lg-6">
+        <h3 class="footer-heading">
+          Connect with Us
+        </h3>
+        {% include "/components/social-tools/footer-social-media.twig" %}
+      </div>{# / col: form and quick links #}
+
+      {# LIKE, SHARE AND SUBSCRIBE #}
+      <section class="footer-social col-lg-6 flex-lg-first">
+        <h3 class="footer-heading">
+          Do you like the page? Share it
+        </h3>
+        {% include "/components/social-tools/footer-like-share.twig" %}
+      </section>{# / like, share and subscribe #}
+    </div>{# / col: form and quick links #}
+    <!--/noindex-->
+
+    {# CONTACTS #}
+    <div class="footer-contacts" itemscope itemtype="http://schema.org/Organization">
+      <address class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">12&nbsp;Krasnopresnenskaya Naberezhnaya (WTC), Office&nbsp;1108</span>, <span itemprop="postalCode">123610</span> <span itemprop="addressLocality">Moscow, Russia</span>.
+      </address>
+      <span class="nowrap">Tel: <a class="link phone-number" href="tel:+7-495-258-2045" content="+74952582045" itemprop="telephone" title="Call Us">+7 (495) 258-20-45</a></span> |
+      <a class="js-contact" href="mailto:service-request(at)gmail(dot)com" title="Contact Us">Email</a>
+      <p class="footer-privacy">© <span itemprop="name">Polylog</span> | PR, events, IT since 2000. <a class="nowrap" href="/en/company/privacy-policy#consent">Privacy policy</a></p>
+    </div>{# / contacts #}
+  </footer>{# / footer #}

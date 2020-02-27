@@ -1,0 +1,9 @@
+{% extends "03-media-object/media-object.twig" %}
+
+{% block content %}
+  <h2 class="teaser-heading"><a href="{{post.link}}">{{post.title}}</a></h2>
+  {% if post.thumbnail.src %}
+    <img src="{{post.thumbnail.src}}" class="teaser-img" alt="{{post.title}}" title="{{post.title}}">
+  {% endif %}
+  <p>{{post.get_preview(25)}}</p>
+{% endblock %}

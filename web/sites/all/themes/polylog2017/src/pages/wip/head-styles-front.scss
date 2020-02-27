@@ -1,0 +1,48 @@
+// Bootstrap and plugins styles
+@import './web/sites/all/themes/polylog2017/src/base/variables';
+@import './node_modules/bootstrap/scss/variables';
+@import './node_modules/bootstrap/scss/mixins';
+
+
+.page-front .jumbotron-wrapper {
+  // vertical offset for text block
+  @include media-breakpoint-up(md) {
+    padding-top: 17.6rem;
+  }
+}
+
+.jumbotron-hero {
+  // prettier-ignore
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, .5),
+      rgba(0, 0, 0, .5)),
+    url('/a/img/clients/polylog/2020-02-08-hero-02.jpg');
+  background-repeat: no-repeat;
+  background-size: auto auto;
+
+  @include media-breakpoint-up(md) {
+    // vertical offset for text block
+    padding-top: 16rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    // prettier-ignore
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, .6),
+        rgba(0, 0, 0, .3) 33%,
+        rgba(0, 0, 0, 0)),
+      url('/a/img/clients/polylog/2020-02-08-hero-lg-02.jpg');
+
+    // С верхней шторкой
+    background-position: center top;
+    background-size: 100% 160px, auto auto;
+  }
+}
+
+.jumbotron-hero::after {
+  display: none;
+}
+
+

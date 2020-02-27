@@ -1,0 +1,111 @@
+// **
+// Bootstrap variables
+
+// Primary
+// $dropdown-bg:                           $gray-lightest;
+// $dropdown-border-color:                 $gray-light;
+// $dropdown-border-width:                 1px;
+
+// Secondary
+// $dropdown-divider-bg:                   $gray-light;
+// $dropdown-link-color:                   $color-text-secondary;
+// $dropdown-link-hover-color:             darken($color-text-secondary, $tone);
+// $dropdown-link-hover-bg:                $color-background-secondary;
+// $dropdown-link-active-color:            darken($color-text-secondary, ($tone * 2));
+// $dropdown-link-active-bg:               darken($color-background-secondary, ($tone * 2));
+// $dropdown-link-disabled-color:          $gray;
+// $dropdown-header-color:                 $gray;
+// *
+
+// -------------------------------------
+// Menu Items (li)
+// -------------------------------------
+
+.dropdown-item {
+  @extend %menu-item;
+  color: $color-text-secondary;
+  display: block;
+  font-weight: normal;
+  text-align: inherit;
+  width: 100%;
+}
+
+// Section Index Item
+
+.dropdown-item.index {
+  border-bottom: 1px solid $color-border;
+  margin-bottom: .7rem;
+  padding-bottom: .5rem;
+}
+
+
+// -------------------------------------
+// Links
+// -------------------------------------
+
+.dropdown-link {
+  @extend %menu-link;
+
+  @include media-breakpoint-up(md) {
+    border-radius: 2px;
+    text-align: left;
+    padding: 6px 16px 5px;
+  }
+}
+
+
+// -------------------------------------
+// Submenus
+// -------------------------------------
+
+.navbar-nav .dropdown-menu {
+  @include media-breakpoint-up(md) {
+    background-color: $color-background-alt-row;
+    border: 1px solid rba(0, 0, 0, .12);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .06);
+    margin: 1.6rem 0 0 12px;
+    padding: 7px;
+    top: 0;
+    left: 100%;
+    width: 276px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    padding-top: 5px;
+  }
+}
+
+
+// -------------------------------------
+// Navbar variations
+// -------------------------------------
+
+.navbar-nav .dropdown-menu {
+  @include media-breakpoint-up(md) {
+    &::before,
+    &::after { // Caret
+      border-color: rgba(0, 0, 0, 0);
+      border-style: solid;
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+
+    &::before { // Caret Outline
+      border-right-color: rgba(0, 0, 0, .12);
+      border-width: 8px 8px 8px 0;
+      top: 19px;
+      left: -8px;
+    }
+
+    &::after { // Caret Outline
+      border-right-color: $color-background-alt-row;
+      border-width: 7px 7px 7px 0;
+      top: 20px;
+      left: -7px;
+    }
+  }
+}
