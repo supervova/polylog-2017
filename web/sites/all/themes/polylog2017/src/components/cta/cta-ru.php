@@ -3,14 +3,14 @@
   <h3 class="cta-subhead">Давайте созвонимся</h3>
 
   <a class="cta-btn hidden-md-up" id="cta-bottom-phone" href="tel:+7-495-258-2045" role="button">
-    <span class="icon-phone" role="presentation">
+    <span class="icon-phone" aria-hidden="true">
       <svg><use xlink:href="#icon-phone" /></svg>
     </span>
     Позвонить
   </a>
 
   <button class="cta-btn hidden-sm-down js-open-modal" id="cta-bottom" data-href="/ru/company/contact-us" data-target="#modal" data-toggle="modal">
-    <span class="icon-phone" role="presentation">
+    <span class="icon-phone" aria-hidden="true">
       <svg><use xlink:href="#icon-phone" /></svg>
     </span>
     Обратная связь

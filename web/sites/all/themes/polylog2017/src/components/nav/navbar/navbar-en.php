@@ -5,7 +5,7 @@
     <li class="navbar-item dropdown" role="menuitem">
 
       <a class="navbar-dropdown-toggle services js-menu-link" id="dropdown-services" href="/en/services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="icon services" role="presentation"></span>
+        <span class="icon services" aria-hidden="true"></span>
         <span class="hidden-md-up">PR Services</span>
         <span class="hidden-sm-down">Services</span>
       </a>
@@ -56,7 +56,7 @@
 
     <li class="navbar-item" role="menuitem">
       <a class="navbar-dropdown-toggle projects js-menu-link" href="/en/projects">
-        <span class="icon projects" role="presentation"></span>
+        <span class="icon projects" aria-hidden="true"></span>
         Projects
       </a>
     </li>
@@ -64,7 +64,7 @@
     <li class="navbar-item dropdown" role="menuitem">
 
       <a class="navbar-dropdown-toggle company js-menu-link" id="dropdown-company" href="/en/company" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="icon company" role="presentation"></span>
+        <span class="icon company" aria-hidden="true"></span>
         Company
       </a>
 

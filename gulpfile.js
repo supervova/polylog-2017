@@ -370,15 +370,15 @@ const imgTasks = (src, subtitle, changePaths = false) => gulp.src(src)
   .pipe(gulp.dest(settings.img.dest))
   .pipe(size({ title: `images: ${subtitle}` }));
 
-// Graphics
-function imgGraphics(done) {
-  imgTasks(
-    settings.img.graphics, // src
-    'graphics', // subtitle
-    true,
-  );
-  done();
-}
+// Graphics ⚠️ Does not work
+// function imgGraphics(done) {
+//   imgTasks(
+//     settings.img.graphics, // src
+//     'graphics', // subtitle
+//     true,
+//   );
+//   done();
+// }
 
 function imgContent(done) {
   imgTasks(
@@ -386,6 +386,48 @@ function imgContent(done) {
     'content', // subtitle
   );
   done();
+}
+
+
+function imgGraphics() {
+  return gulp.src(settings.img.graphics)
+    .pipe(changed(settings.img.dest))
+    .pipe(
+      imagemin(
+        [
+          imageminGIF({
+            interlaced: true,
+            optimizationLevel: 3,
+          }),
+          imageminJPG({ quality: 85 }),
+          imageminPNG([0.8, 0.9]),
+          imageminSVG({
+            plugins: [
+              { removeViewBox: false },
+              { cleanupIDs: false },
+            ],
+          }),
+        ],
+        { verbose: true },
+      ),
+    )
+    .pipe(rename((path) => {
+      /* eslint-disable no-param-reassign */
+      path.dirname = path.dirname.replace('base', '');
+      path.dirname = path.dirname.replace('structures', '');
+      path.dirname = path.dirname.replace('hero', 'jumbotron');
+      path.dirname = path.dirname.replace('components', '');
+      path.dirname = path.dirname.replace('card/polylog-promo', 'polylog-promo');
+      path.dirname = path.dirname.replace('pages', '');
+      path.dirname = path.dirname.replace('front', 'p-front');
+      path.dirname = path.dirname.replace('careers', 's-careers');
+      path.dirname = path.dirname.replace('company', 's-company');
+      path.dirname = path.dirname.replace('projects', 's-projects');
+      path.dirname = path.dirname.replace('services', 's-services');
+      /* eslint-enable no-param-reassign */
+    }))
+    .pipe(gulp.dest(settings.img.dest))
+    .pipe(size({ title: 'graphics' }));
 }
 
 // OPTIMIZE
@@ -579,6 +621,7 @@ const build = gulp.series(
 
 exports.cleanSrc    = cleanSrc;
 exports.clean       = clean;
+exports.imgg        = imgGraphics;
 exports.img         = img;
 // exports.pug         = pugCompile;
 exports.twig        = twigCompile;

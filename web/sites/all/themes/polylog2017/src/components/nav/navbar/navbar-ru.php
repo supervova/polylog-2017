@@ -5,7 +5,7 @@
     <li class="navbar-item dropdown" role="menuitem">
 
       <a class="navbar-dropdown-toggle services js-menu-link" id="dropdown-services" href="/ru/services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="icon services" role="presentation"></span>
+        <span class="icon services" aria-hidden="true"></span>
         <span class="hidden-md-up"><?php print t('PR Services'); ?></span>
         <span class="hidden-sm-down"><?php print t('Services'); ?></span>
       </a>
@@ -52,7 +52,7 @@
     <li class="navbar-item dropdown" role="menuitem">
 
       <a class="navbar-dropdown-toggle projects js-menu-link" id="dropdown-projects" href="/ru/projects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="icon projects" role="presentation"></span>
+        <span class="icon projects" aria-hidden="true"></span>
         <?php print t('Projects'); ?>
       </a>
 
@@ -98,7 +98,7 @@
     <li class="navbar-item dropdown" role="menuitem">
 
       <a class="navbar-dropdown-toggle company js-menu-link" id="dropdown-company" href="/ru/company" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="icon company" role="presentation"></span>
+        <span class="icon company" aria-hidden="true"></span>
         <?php print t('Company'); ?>
       </a>
 
@@ -150,7 +150,7 @@
     <li class="navbar-item dropdown hidden-xs-down" role="menuitem">
 
       <a class="navbar-dropdown-toggle careers js-menu-link" id="dropdown-careers" href="/ru/careers/jobs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="icon career" role="presentation"></span>
+        <span class="icon career" aria-hidden="true"></span>
         Карьера
       </a>
 
@@ -196,7 +196,7 @@
     <li class="navbar-item dropdown hidden-xs-down">
 
       <a class="navbar-dropdown-toggle blog js-menu-link" id="dropdown-blog" href="/ru/pr-blog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="icon blog" role="presentation"></span>
+        <span class="icon blog" aria-hidden="true"></span>
         Блог
       </a>
 
