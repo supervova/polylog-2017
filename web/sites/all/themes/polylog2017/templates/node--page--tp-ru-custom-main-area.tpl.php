@@ -25,7 +25,7 @@
 
     <div class="page-header">
       <h1 class="page-header-headline"><?php print polylog2017_bb2html($title); ?></h1>
-      <span class="page-header-icon" role="presentation"></span>
+      <span class="page-header-icon" aria-hidden="true"></span>
     </div>
 
     <?php

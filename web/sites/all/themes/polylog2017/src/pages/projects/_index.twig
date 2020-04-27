@@ -7,33 +7,26 @@
 
 {% set featured = {
 
-  moscowDay: {
-    link: '/ru/news/2016/10-06.htm',
-    img: '/a/img/s-services/pr/featured/moscow.jpg',
-    alt: 'PR-поддержка Дня города Москвы 2016',
-    title: 'День города Москвы 2016'
+  victoryDay: {
+    link: '/ru/projects/2018/den-pobedy',
+    img: '/a/img/s-services/pr/featured/victory-day-2018.jpg',
+    alt: 'Многолетняя PR-поддержка Дня Победы в Москве',
+    title: 'День Победы 2018'
   },
 
   leeco: {
-    link: '/ru/news/2017/01-26.htm',
+    link: '/ru/projects/2017/btl-akcii-leeco',
     img: '/a/img/s-services/analytics-creativity/featured/leeco.jpg',
     alt: 'BTL-акции для LeEco',
     title: 'BTL-акции для LeEco'
   },
 
-  vidfest: {
-    link: '/ru/news/2015/06-11.htm',
-    img: '/a/img/s-services/index/fundraising-vidfest.jpg',
-    alt: 'Event-менеджмент — Первый фестиваль видеоблогеров «Видфест»',
-    title: 'Фестиваль видеоблогеров'
+  scania: {
+    link: '/ru/projects/2018/test-drayv-novogo-pokoleniya-scania',
+    img: '/a/img/s-services/pr/featured/scania.jpg',
+    alt: 'Тест-драйв нового поколения Scania',
+    title: 'Тест-драйв Scania'
   },
-
-  apec: {
-    link: '/ru/news/2012/10-01.htm',
-    img: '/a/img/s-services/event-management/featured/apec.jpg',
-    alt: 'Деловой саммит АТЭС во Владивостоке',
-    title: 'Деловой саммит АТЭС'
-  }
 } %}
 
 {% set projects = {
@@ -184,9 +177,7 @@
 
     {# Featured projects #}
     <div class="page-header-carousel carousel slide js-manual hidden-sm-down" id="carousel-fundraising" data-ride="carousel">
-
       <div class="carousel-inner" role="listbox">
-
         {% for project in featured %}
           {% if loop.first %}
             <figure class="carousel-item active">
@@ -201,14 +192,12 @@
           </figcaption>
         </figure>
         {% endfor %}
-
       </div>
 
       <ol class="carousel-indicators">
         <li data-target="#carousel-fundraising" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-fundraising" data-slide-to="1"></li>
         <li data-target="#carousel-fundraising" data-slide-to="2"></li>
-        <li data-target="#carousel-fundraising" data-slide-to="3"></li>
       </ol>
     </div>{# / featured #}
 

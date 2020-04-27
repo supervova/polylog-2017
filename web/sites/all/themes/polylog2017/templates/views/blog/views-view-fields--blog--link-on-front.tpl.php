@@ -33,5 +33,5 @@
       <?php print $fields['title']->content; ?>
     </h3>
   </div>
-  <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+  <svg class="icon forward" aria-hidden="true"><use xlink:href="#icon-forward" /></svg>
 </a>

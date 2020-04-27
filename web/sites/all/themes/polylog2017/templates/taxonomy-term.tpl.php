@@ -55,6 +55,6 @@ $full_name = render($content['field_alias']);
         <span class="hidden-md-down"><?php print $full_name; ?></span>
       <?php endif; ?>
     </h1>
-    <span class="page-header-icon" role="presentation"></span>
+    <span class="page-header-icon" aria-hidden="true"></span>
   </div>
 </main>

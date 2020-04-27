@@ -172,7 +172,7 @@
                 День города Москвы 2016: PR-сопровождение и&nbsp;аккредитация СМИ
               </h2>
 
-              <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+              <svg class="icon forward" aria-hidden="true"><use xlink:href="#icon-forward" /></svg>
 
             </div>
           </a>
@@ -190,7 +190,7 @@
                 Всем спасибо, все на&nbsp;собрание
               </h2>
 
-              <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+              <svg class="icon forward" aria-hidden="true"><use xlink:href="#icon-forward" /></svg>
 
             </div>
           </a>
@@ -208,7 +208,7 @@
                 Европейский подход  к&nbsp;информированию аудитории: какую стратегию  выберете&nbsp;вы?
               </h2>
 
-              <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+              <svg class="icon forward" aria-hidden="true"><use xlink:href="#icon-forward" /></svg>
 
             </div>
           </a>
@@ -226,7 +226,7 @@
                 B2B? B2C? B2C2B!
               </h2>
 
-              <svg class="icon forward" role="presentation"><use xlink:href="#icon-forward" /></svg>
+              <svg class="icon forward" aria-hidden="true"><use xlink:href="#icon-forward" /></svg>
 
             </div>
           </a>

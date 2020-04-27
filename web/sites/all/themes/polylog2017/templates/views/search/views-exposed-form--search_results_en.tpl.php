@@ -32,10 +32,10 @@ foreach ($widgets as $id => $widget) {
 ?>
 
 <button class="search-reset" type="reset" aria-label="Clear" title="Clear">
-  <span class="icon close" role="presentation"></span>
+  <span class="icon close" aria-hidden="true"></span>
 </button>
 <button class="search-submit" type="submit" aria-label="Search" title="Search">
-  <svg class="icon find" role="presentation">
+  <svg class="icon find" aria-hidden="true">
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
   </svg>
 </button>

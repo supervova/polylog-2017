@@ -48,7 +48,7 @@ $featured = render(block_get_blocks_by_region('featured_case_studies'));
           <a class="page-header-link" href="/en/projects">Our Work</a>
         <?php endif; ?>
       </h1>
-      <span class="page-header-icon" role="presentation"></span>
+      <span class="page-header-icon" aria-hidden="true"></span>
     </div>
 
     <?php

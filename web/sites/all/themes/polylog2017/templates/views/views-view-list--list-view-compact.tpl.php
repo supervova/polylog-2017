@@ -30,7 +30,7 @@ $sidebar = render(block_get_blocks_by_region('sidebar'));
         <?php endif; ?>
       </h1>
     <?php endif; ?>
-    <span class="page-header-icon" role="presentation"></span>
+    <span class="page-header-icon" aria-hidden="true"></span>
   </div>
 
 
