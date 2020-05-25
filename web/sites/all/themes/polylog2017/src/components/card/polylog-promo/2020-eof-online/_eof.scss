@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .tile.eof {
-  background: #011621;
+  background: #003 url('/a/img/polylog-promo/2020-eof-online/front-tile-bg.png') no-repeat;
   @include media-breakpoint-up(sm) {
     display: flex;
   }

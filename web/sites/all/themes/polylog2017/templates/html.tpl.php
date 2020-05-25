@@ -75,7 +75,7 @@ if ($lang == 'en') {
 <?php endif; ?>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600i%7CRoboto:100,300,400,500&amp;subset=cyrillic">
-<link rel="stylesheet" href="/a/css/main.css?v2020-04-17b">
+<link rel="stylesheet" href="/a/css/main.css?v2020-05-16a">
 
 <?php if ($field_css_head) : ?>
 <style>

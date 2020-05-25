@@ -3,7 +3,6 @@
 @import './node_modules/bootstrap/scss/variables';
 @import './node_modules/bootstrap/scss/mixins';
 
-
 .page-front .jumbotron-wrapper {
   // vertical offset for text block
   @include media-breakpoint-up(md) {
@@ -17,32 +16,50 @@
     linear-gradient(
       rgba(0, 0, 0, .5),
       rgba(0, 0, 0, .5)),
-    url('/a/img/clients/polylog/2020-02-08-hero-02.jpg');
+    url('/a/img/polylog-promo/2020-eof-online/front-tile-bg.png');
   background-repeat: no-repeat;
   background-size: auto auto;
 
   @include media-breakpoint-up(md) {
+    background-image: none;
     // vertical offset for text block
     padding-top: 16rem;
+
   }
 
-  @include media-breakpoint-up(lg) {
-    // prettier-ignore
-    background-image:
-      linear-gradient(
-        rgba(0, 0, 0, .6),
-        rgba(0, 0, 0, .3) 33%,
-        rgba(0, 0, 0, 0)),
-      url('/a/img/clients/polylog/2020-02-08-hero-lg-02.jpg');
+  // @include media-breakpoint-up(lg) {
+  //   // prettier-ignore
+  //   background-image:
+  //     linear-gradient(
+  //       rgba(0, 0, 0, .6),
+  //       rgba(0, 0, 0, .3) 33%,
+  //       rgba(0, 0, 0, 0)),
+  //     url('/a/img/clients/polylog/2020-02-08-hero-lg-02.jpg');
 
-    // С верхней шторкой
-    background-position: center top;
-    background-size: 100% 160px, auto auto;
-  }
+  //   // С верхней шторкой
+  //   background-position: center top;
+  //   background-size: 100% 160px, auto auto;
+  // }
 }
 
 .jumbotron-hero::after {
   display: none;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+    background-color: rgba(0, 0, 51, .7);
+  }
 }
 
+.jumbotron__img {
+  display: none;
 
+  @include media-breakpoint-up(lg) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 100px);
+    transform: translateY(calc(-50% - 5.8rem));
+    z-index: 20;
+  }
+}

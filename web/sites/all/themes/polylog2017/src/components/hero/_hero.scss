@@ -1,10 +1,36 @@
+// stylelint-disable selector-no-qualifying-type
+
 // -----------------------------------------------------------------------------
-// Containers
+// MARKUP
+// -----------------------------------------------------------------------------
+// #region
+
+// Base
+
+//  header.jumbotron.base             # фон с узором, заполняющим область
+//                                    # на больших экранах, и фоновой картинкой
+//    .jumbotron-container            # область равная шририне основного содержания,
+//                                    # по ней выравнивается блок текста
+//    .jumbotron-body                 # блок текста
+
+// Layered
+
+//  header.jumbotron.layered          # фон с узором, заполняющим область на больших экранах
+//    .jumbotron-hero                 # фоновая картинка
+//    .jumbotron-hero::after          # затемнение
+//        .jumbotron-wrapper          # абсолютно позиционированная обертка
+//                                    # нужна, чтобы поднять текст над затемнением
+//            .jumbotron-container    # область равная шририне основного содержания,
+//                                    # по нейвыравнивается блок текста
+//                .jumbotron-body     # блок текста
+// #endregion
+
+// -----------------------------------------------------------------------------
+// CONTAINERS
 // -----------------------------------------------------------------------------
 
-// -------------------------------------
-// The 1st level
-// -------------------------------------
+// THE 1ST LEVEL (Diagonal Pattern)
+// #region
 
 .jumbotron {
   background-position: center center;
@@ -30,16 +56,28 @@
   } // md
 }
 
-.jumbotron.layered {
+.jumbotron.layered,
+.jumbotron.has-video {
   @include media-breakpoint-up(xl) {
     background-image: url('/a/img/jumbotron/bg-jumbotron.svg');
   }
 }
 
+.jumbotron.has-video {
+  padding-top: 8.3rem;
+  height: 412px;
 
-// -------------------------------------
-// The 2nd level — Hero (Only -layered)
-// -------------------------------------
+  @include media-breakpoint-up(md) {
+    padding-top: 17.6rem;
+    height: 672px;
+  } // md
+}
+// #endregion
+
+// -----------------------------------------------------------------------------
+
+// THE 2ND LEVEL — HERO (Only -layered)
+// #region
 
 // Shell with main background-image
 
@@ -68,11 +106,12 @@
     height: 672px;
   } // md
 }
+// #endregion
 
+// -----------------------------------------------------------------------------
 
-// -------------------------------------
-// The 3d level (Only -layered)
-// -------------------------------------
+// THE 3D LEVEL (Only -layered)
+// #region
 
 // Wrapper for .eyebrow, .title, .byline and .summary
 // It is needed for absolute positioning of content over overlay.
@@ -98,13 +137,13 @@
     padding-top: 15.2rem;
   }
 }
+// #endregion
 
+// -----------------------------------------------------------------------------
 
-// -------------------------------------
-// The 4th level
-// -------------------------------------
-
+// THE 4TH LEVEL
 // The container in which block of content is aligned
+// #region
 
 .jumbotron-container {
   @extend %container;
@@ -149,12 +188,12 @@
     }
   }
 }
+// #endregion
 
-// -------------------------------------
-// The 5th level — Body
-// -------------------------------------
 
+// THE 5TH LEVEL — Body
 // It is content box and a link on front page
+// #region
 
 .jumbotron-container:not(.center) .jumbotron-body {
   @include media-breakpoint-up(lg) {
@@ -187,17 +226,15 @@ a.jumbotron-body {
     outline: 0;
   }
 }
-
+// #endregion
 
 // -----------------------------------------------------------------------------
-// Content
+// CONTENT
 // -----------------------------------------------------------------------------
 
-// -------------------------------------
-// Eyebrow
-// -------------------------------------
-
+// EYEBROW
 // It is a second head, located above a main headline
+// #region
 
 .jumbotron-eyebrow {
   color: $negative-secondary;
@@ -284,10 +321,10 @@ a.jumbotron-body {
     color: $text-dark-secondary;
   }
 }
+// #endregion
 
-// -------------------------------------
-// Main headline
-// -------------------------------------
+// MAIN HEADLINE
+// #region
 
 .jumbotron-headline {
   @extend %headline-huge;
@@ -303,7 +340,7 @@ a.jumbotron-body {
 // 1) W/ chevron icon
 // 2) On tablets and upper chevron appears under a summary
 
-a.jumbotron-body .jumbotron-headline {
+a.jumbotron-body:not(.has-xs-summary) .jumbotron-headline {
   &::after { // 1
     background: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Ctitle%3Echevron-right-in-circle-white%3C%2Ftitle%3E%3Cdefs%3E%3Ccircle%20id%3D%22a%22%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212%22%2F%3E%3Cmask%20id%3D%22b%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23fff%22%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cuse%20stroke%3D%22%23FFF%22%20mask%3D%22url(%23b)%22%20stroke-width%3D%222%22%20xlink%3Ahref%3D%22%23a%22%2F%3E%3Cpath%20d%3D%22M15.72%2013.12l-3.564%203.961-.67.744L10%2016.487l.669-.744%202.998-3.33-2.998-3.332L10%208.338%2011.487%207l.669.743%203.564%203.961.705.634-.067.074.067.075-.705.633z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat;
     content: '';
@@ -322,12 +359,12 @@ a.jumbotron-body .jumbotron-headline {
 .positive > .jumbotron-headline {
   color: $text-dark-primary;
 }
+// #endregion
 
-// -------------------------------------
-// Byline
-// -------------------------------------
-
+// BYLINE
 // Name of the manager who tell the story, placed atop an article or summary.
+// #region
+
 // 1) Borders shadows
 
 .jumbotron-byline {
@@ -361,14 +398,11 @@ a.jumbotron-body .jumbotron-headline {
 .jumbotron-byline.lighter {
   color: #fff;
 }
+// #endregion
 
-
-// -------------------------------------
-// Summary
-// -------------------------------------
-
+// SUMMARY
+// #region
 // A paragraph, that capsulizes the main points of a story.
-
 
 .jumbotron-summary {
   display: none;
@@ -378,22 +412,30 @@ a.jumbotron-body .jumbotron-headline {
   } // md
 }
 
-// 1) W/ chevron icon on tablets and up
-
-.jumbotron-body .jumbotron-summary::after {
-  @include media-breakpoint-up(md) { // 1
-    background: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Ctitle%3Echevron-right-in-circle-white%3C%2Ftitle%3E%3Cdefs%3E%3Ccircle%20id%3D%22a%22%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212%22%2F%3E%3Cmask%20id%3D%22b%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23fff%22%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cuse%20stroke%3D%22%23FFF%22%20mask%3D%22url(%23b)%22%20stroke-width%3D%222%22%20xlink%3Ahref%3D%22%23a%22%2F%3E%3Cpath%20d%3D%22M15.72%2013.12l-3.564%203.961-.67.744L10%2016.487l.669-.744%202.998-3.33-2.998-3.332L10%208.338%2011.487%207l.669.743%203.564%203.961.705.634-.067.074.067.075-.705.633z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat;
-    content: '';
-    display: block;
-    margin: 1.8rem auto 0;
-    opacity: .5;
-    width: 24px;
-    height: 24px;
-  } // md
+.has-xs-summary .jumbotron-summary {
+  display: block;
+}
+// With chevron startiong on xs
+.jumbotron-summary::after {
+  background: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Ctitle%3Echevron-right-in-circle-white%3C%2Ftitle%3E%3Cdefs%3E%3Ccircle%20id%3D%22a%22%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212%22%2F%3E%3Cmask%20id%3D%22b%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23fff%22%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cuse%20stroke%3D%22%23FFF%22%20mask%3D%22url(%23b)%22%20stroke-width%3D%222%22%20xlink%3Ahref%3D%22%23a%22%2F%3E%3Cpath%20d%3D%22M15.72%2013.12l-3.564%203.961-.67.744L10%2016.487l.669-.744%202.998-3.33-2.998-3.332L10%208.338%2011.487%207l.669.743%203.564%203.961.705.634-.067.074.067.075-.705.633z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat;
+  content: '';
+  display: block;
+  margin: 1.8rem auto 0;
+  opacity: .5;
+  width: 24px;
+  height: 24px;
 
   @include media-breakpoint-up(lg) {
     margin: 1.8rem 0 0;
   } // lg
+}
+
+// With chevron startiong on md
+
+:not(.jumbotron-body.has-xs-summary) .jumbotron-summary::after {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 } // chevron
 
 // Centered chevron on centered composition
@@ -410,11 +452,28 @@ a.jumbotron-body .jumbotron-headline {
 .positive > .jumbotron-lead {
   color: $text-dark-primary;
 }
+// #endregion
 
+// JUMBOTRON
+.jumbotron__video-bg {
+  display: none;
 
-// -------------------------------------
-// Quote
-// -------------------------------------
+  @include media-breakpoint-up(md) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// PRODUCT PAGES
+// -----------------------------------------------------------------------------
+// #region
+
+// QUOTE
 
 .jumbotron-quote {
   margin-bottom: ($spacer-y * .5);
@@ -439,9 +498,7 @@ a.jumbotron-body .jumbotron-headline {
   } // lg
 }
 
-// -------------------------------------
-// Button
-// -------------------------------------
+// BUTTON
 
 .jumbotron-btn {
   @extend %btn;
@@ -488,9 +545,7 @@ a.jumbotron-body .jumbotron-headline {
   } // icon
 }
 
-// -------------------------------------
-// Person
-// -------------------------------------
+// PERSON
 
 // Shell
 .jumbotron-person {
@@ -577,10 +632,12 @@ a.jumbotron-body .jumbotron-headline {
 .jumbotron-person > figcaption {
   color: rgba(255, 255, 255, .54);
 }
+// #endregion
 
-// -------------------------------------
-// Choreography
-// -------------------------------------
+// -----------------------------------------------------------------------------
+// CHOREOGRAPHY
+// -----------------------------------------------------------------------------
+// #region
 
 // -ani-slide-down
 
@@ -626,45 +683,4 @@ a.jumbotron-body .jumbotron-headline {
     } // bubble
   } // lg
 }
-
-// -------------------------------------
-// Bootstrap defaults
-// -------------------------------------
-
-// .jumbotron-fluid {
-//   padding-right: 0;
-//   padding-left: 0;
-//   border-radius: 0; }
-
-// .jumbotron {
-//   background-color: #e7eaee;
-//   border-radius: 12px;
-//   margin-bottom: 2rem;
-//   padding: 2rem 1rem;
-//   padding: 4rem 2rem; }
-
-
-// -------------------------------------
-// Markup
-// -------------------------------------
-
-// Base
-
-//  header.jumbotron.base             # фон с узором, заполняющим область
-//                                    # на больших экранах, и фоновой картинкой
-//    .jumbotron-container            # область равная шририне основного содержания,
-//                                    # по нейвыравнивается блок текста
-//    .jumbotron-body                 # блок текста
-
-// Layered
-
-//  header.jumbotron.layered          # фон с узором, заполняющим область на больших экранах
-//    .jumbotron-hero                 # фоновая картинка
-//    .jumbotron-hero::after          # затемнение
-//        .jumbotron-wrapper          # абсолютно позиционированная обертка
-//                                    # нужна, чтобы поднять текст над затемнением
-//            .jumbotron-container    # область равная шририне основного содержания,
-//                                    # по нейвыравнивается блок текста
-//                .jumbotron-body     # блок текста
-
-
+// #endregion
